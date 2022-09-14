@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.0, created on 2022-09-14 15:46:43
+/* Smarty version 4.2.0, created on 2022-09-14 16:26:16
   from 'D:\xampp\htdocs\smarty-bitbucket\demo\templates\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.0',
-  'unifunc' => 'content_6321db4361d656_08564087',
+  'unifunc' => 'content_6321e488a49f27_68272246',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '249711bd8eff1b0b07199525fb9a77bed72816fd' => 
     array (
       0 => 'D:\\xampp\\htdocs\\smarty-bitbucket\\demo\\templates\\index.tpl',
-      1 => 1663008864,
+      1 => 1663165571,
       2 => 'file',
     ),
   ),
@@ -22,17 +22,17 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_6321db4361d656_08564087 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6321e488a49f27_68272246 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->smarty->ext->configLoad->_loadConfigFile($_smarty_tpl, "test.conf", "setup", 0);
 ?>
 
 <?php $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'foo'), 0, false);
 ?>
 
-<div class="container-fluid p-5 bg-success text-white text-center">
+<div class="container-fluid p-5 myBg text-white text-center">
   <h1><?php echo mb_strtoupper($_smarty_tpl->tpl_vars['fullName']->value ?? '', 'UTF-8');?>
 </h1>
-  <p>Фудбалски Клуб Јени Маале Битола</p> 
+  <p>Football club Jeni Maale Bitola</p> 
 </div>
 
 <div class="col-sm-12">

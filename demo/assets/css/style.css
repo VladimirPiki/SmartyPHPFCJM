@@ -29,6 +29,10 @@ html,body{
 .navbar{
 	background-color:#029934!important;
 }
+.myBg{
+	background-color:#029934!important;
+	color: white;
+}
 footer{
 	/*
 	background-image: url('../img/IstutkanaHartija.jpg');

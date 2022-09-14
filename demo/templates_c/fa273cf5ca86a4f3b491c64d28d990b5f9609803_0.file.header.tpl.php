@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.0, created on 2022-09-14 16:19:57
+/* Smarty version 4.2.0, created on 2022-09-14 16:24:37
   from 'D:\xampp\htdocs\smarty-bitbucket\demo\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.0',
-  'unifunc' => 'content_6321e30d9fb6a1_81543438',
+  'unifunc' => 'content_6321e4255e5572_25034977',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fa273cf5ca86a4f3b491c64d28d990b5f9609803' => 
     array (
       0 => 'D:\\xampp\\htdocs\\smarty-bitbucket\\demo\\templates\\header.tpl',
-      1 => 1663165195,
+      1 => 1663165225,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6321e30d9fb6a1_81543438 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6321e4255e5572_25034977 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,8 +35,8 @@ function content_6321e30d9fb6a1_81543438 (Smarty_Internal_Template $_smarty_tpl)
   <!--Icons link-->
 	<link rel="stylesheet" href="assets/icons/fontawesome-free-6.1.2-web/css/all.css">
 
-  	  <!--my style my events-->
-	  <link href="assets/css/style.css" rel="stylesheet">
+  <!--my style my events-->
+	<link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body><?php }
 }

@@ -1,9 +1,9 @@
 {config_load file="test.conf" section="setup"}
 {include file="header.tpl" title=foo}
 
-<div class="container-fluid p-5 bg-success text-white text-center">
+<div class="container-fluid p-5 myBg text-white text-center">
   <h1>{$fullName|upper}</h1>
-  <p>Фудбалски Клуб Јени Маале Битола</p> 
+  <p>Football club Jeni Maale Bitola</p> 
 </div>
 
 <div class="col-sm-12">
