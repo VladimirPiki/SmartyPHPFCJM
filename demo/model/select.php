@@ -15,7 +15,7 @@
     //za koja tabela se raboti
     //$table_name=$_GET['table_name']; //$smarty.get.table_name
     //$table_name=$smarty.get.table_name;
-    $table_name="igrachi";
+   $table_name="natprevaruvanje";
     
     $data=[];
 
@@ -64,8 +64,6 @@
 
             $results=$objIncome ->selectIncome();//DAO
 
-            //var_dump($results);
-
             foreach($results as $row ){
                 $data[]=array(
                 "income_id" => $row["income_id"],
@@ -86,8 +84,6 @@
             $objNatprevaruvanje = new NatprevaruvanjeDAO($objDB);
 
             $results=$objNatprevaruvanje -> selectNatprevaruvanje();//DAO
-
-            //var_dump($results);
 
             foreach($results as $row ){
                 $data[]=array(
@@ -116,8 +112,6 @@
 
             $results=$objOutcome ->selectOutcome();//DAO
 
-            //var_dump($results);
-
             foreach($results as $row ){
                 $data[]=array(
                 "outcome_id" => $row["outcome_id"],
@@ -142,8 +136,6 @@
 
             $results=$objPublika ->selectPublika();//DAO
 
-            //var_dump($results);
-
             foreach($results as $row ){
                 $data[]=array(
                 "datum_id" => $row["datum_id"],
@@ -161,8 +153,6 @@
             $objSostav = new SostavDAO($objDB);
 
             $results=$objSostav ->selectSostav();//DAO
-    
-            //var_dump($results);
 
             foreach($results as $row ){
                 $data[]=array(
@@ -210,8 +200,6 @@
 
             $results=$objStadion ->selectStadion();//DAO
 
-            //var_dump($results);
-
             foreach($results as $row ){
                 $data[]=array(
                 "stadion_id" => $row["stadion_id"],
@@ -228,8 +216,6 @@
             $objUprava = new UpravaDAO($objDB);
 
             $results=$objUprava -> selectUprava();//DAO
-
-            //var_dump($results);
 
             foreach($results as $row ){
                 $data[]=array(
