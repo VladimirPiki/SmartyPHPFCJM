@@ -4,41 +4,68 @@ require_once 'model/select.php';
 
 $menu=array(
 	"1"=>array("title"=>"Играчи",
-				"page"=>"igrachi.tpl",
+				"page"=>"igrachi",
 				"url"=>"templates/igrachi.tpl"),
 	"2"=>array("title"=>"Играчи кој доаѓаат",
-				"page"=>"income.tpl",
+				"page"=>"income",
 				"url"=>"templates/income.tpl"),
 	"3"=>array("title"=>"Натпреварување",
-				"page"=>"natprevaruvanje.tpl",
+				"page"=>"natprevaruvanje",
 				"url"=>"templates/natprevaruvanje.tpl"),
 	"4"=>array("title"=>"Играчи кој заминуваат од клубот",
-				"page"=>"outcome.tpl",
+				"page"=>"outcome",
 				"url"=>"templates/outcome.tpl"),
 	"5"=>array("title"=>"Публика",
-				"page"=>"publika.tpl",
+				"page"=>"publika",
 				"url"=>"templates/publika.tpl"),
 	"6"=>array("title"=>"Состав",
-				"page"=>"sostav.tpl",
+				"page"=>"sostav",
 				"url"=>"templates/sostav.tpl"),
 	"7"=>array("title"=>"Стадион",
-				"page"=>"stadion.tpl",
+				"page"=>"stadion",
 				"url"=>"templates/stadion.tpl"),
 	"8"=>array("title"=>"Стручен штаб",
-				"page"=>"uprava.tpl",
+				"page"=>"uprava",
 				"url"=>"templates/uprava.tpl"),
 
 );
-
-for($i=1;count($menu);$i++){
+echo "<ul>";
+for($i=1;$i < count($menu);$i++){
 	echo '<li><a href="'.$menu[$i]["page"].'">'.$menu[$i]["title"].'</a></li>';
 }
-
-$_GET["uprava"];
-$smarty->display("uprava.tpl");
+echo "</ul>";
+//$_GET["uprava"];
+//$smarty->display("uprava.tpl");
+	if(isset($_GET["page"]) && $_GET["page"]=="igrachi")
+	{
+		$smarty->display("igrachi.tpl");
+	}
+	if(isset($_GET["page"]) && $_GET["page"]=="income")
+	{
+		$smarty->display("income.tpl");
+	}
+	if(isset($_GET["page"]) && $_GET["page"]=="natprevaruvanje")
+	{
+		$smarty->display("natprevaruvanje.tpl");
+	}
+	if(isset($_GET["page"]) && $_GET["page"]=="outcome")
+	{
+		$smarty->display("outcome.tpl");
+	}
+	if(isset($_GET["page"]) && $_GET["page"]=="publika")
+	{
+		$smarty->display("publika.tpl");
+	}
+	if(isset($_GET["page"]) && $_GET["page"]=="sostav")
+	{
+		$smarty->display("sostav.tpl");
+	}
+	if(isset($_GET["page"]) && $_GET["page"]=="stadion")
+	{
+		$smarty->display("stadion.tpl");
+	}
 	if(isset($_GET["page"]) && $_GET["page"]=="uprava")
 	{
 		$smarty->display("uprava.tpl");
 	}
-
 ?>

@@ -6,6 +6,7 @@
   <p>Football club Jeni Maale Bitola</p> 
 </div>
 
+
     <nav class="navbar navbar-expand-sm  navbar-dark sticky-top">
         <div class="container-fluid">
                     <a href="#!main"><img src="assets/img/profilna nova.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"></a>
