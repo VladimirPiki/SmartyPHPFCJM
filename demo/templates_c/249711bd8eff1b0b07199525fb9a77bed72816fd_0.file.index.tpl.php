@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.0, created on 2022-09-14 16:26:16
+/* Smarty version 4.2.0, created on 2022-09-19 18:03:09
   from 'D:\xampp\htdocs\smarty-bitbucket\demo\templates\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.0',
-  'unifunc' => 'content_6321e488a49f27_68272246',
+  'unifunc' => 'content_632892bdc46ab3_21317779',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '249711bd8eff1b0b07199525fb9a77bed72816fd' => 
     array (
       0 => 'D:\\xampp\\htdocs\\smarty-bitbucket\\demo\\templates\\index.tpl',
-      1 => 1663165571,
+      1 => 1663603387,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_6321e488a49f27_68272246 (Smarty_Internal_Template $_smarty_tpl) {
+function content_632892bdc46ab3_21317779 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->smarty->ext->configLoad->_loadConfigFile($_smarty_tpl, "test.conf", "setup", 0);
 ?>
 
@@ -34,6 +34,57 @@ $_smarty_tpl->smarty->ext->configLoad->_loadConfigFile($_smarty_tpl, "test.conf"
 </h1>
   <p>Football club Jeni Maale Bitola</p> 
 </div>
+
+    <nav class="navbar navbar-expand-sm  navbar-dark sticky-top">
+        <div class="container-fluid">
+                    <a href="#!main"><img src="assets/img/profilna nova.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar ">
+                        <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#!main"><i class="fa-solid fa-house fa-2x" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Тим</a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#!igrachi">Играчи</a></li></li>
+                            <hr>
+                            <li><a class="dropdown-item" href="#!uprava">Стручен штаб</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Натпреварување</a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#!natprevaruvanje">Натпреварување</a></li>
+                            <hr>
+                            <li><a class="dropdown-item" href="#!sostav">Состав</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">"Тумбе кафе"</a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item"  href="#!stadion">Стадион</a></li>
+                            <hr>
+                            <li><a class="dropdown-item"  href="#!publika">Публика</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Трансфери</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#!income">Играчи кој доаѓаат</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#!outcome">Играчи кој заминуваат од клубот</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!main"><img src="assets/img/Kojot.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"></a>
+                        </li>
+                        </ul>
+            </div>
+        </div>
+    </nav>
 
 <div class="col-sm-12">
      <h3>Играчи</h3>
@@ -149,6 +200,8 @@ for ($__section_igrachi_position_0_iteration = 1, $_smarty_tpl->tpl_vars['__smar
     </table>
     </div>
 </div>
+
+
 <div class="col-sm-12">
     <h3>Натпреварување</h3>
 <div class="table-responsive ng-scope">
@@ -2115,8 +2168,8 @@ for ($__section_stadion_position_3_iteration = 1, $_smarty_tpl->tpl_vars['__smar
                 </tbody>
 
             </table>
-    </div>
-
+        </div>
+</div>
 
 <div class="col-sm-12">
         <div ng-view="" class="ng-scope"><h3 class="ng-scope">Публика</h3></div>
@@ -2389,18 +2442,77 @@ for ($__section_outcome_position_6_iteration = 1, $_smarty_tpl->tpl_vars['__smar
 
 </div>
 
+<div class="col-sm-12">
+    <div class="table-responsive myView">
+        <h3 class="text-center">Стручен штаб</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr class="text-center">
+                    <th>
+                        Број на членот
+                    </th>
+                    <th>
+                        <select class="form-control text-center" name="searchByZalaganje" id="searchByZalaganje" ng-model="searchByZalaganje">
+                            <option value="">Залагање во клубот</option>
+                            <option>nedovolno</option>
+                            <option >dovolno</option>
+                            <option >istaknato</option>
+                        </select>
+                    </th>
+                    <th>
+                        <select class="form-control text-center" name="searchByRabotnaOcenka" id="searchByRabotnaOcenka" ng-model="searchByRabotnaOcenka">
+                            <option value="">Работна оценка</option>
+                            <option>1</option>
+                            <option >2</option>
+                            <option >3</option>
+                            <option >4</option>
+                            <option >5</option>
+                        </select>
+                    </th>
+                    <th><i class="fa-solid fa-pen"></i>edit</th>
+                    <th><i class="fa-solid fa-trash-can"></i>delete</th>
+                </tr>
+            </thead>
+            <?php
+$__section_uprava_position_7_loop = (is_array(@$_loop=$_smarty_tpl->tpl_vars['uprava']->value) ? count($_loop) : max(0, (int) $_loop));
+$__section_uprava_position_7_total = $__section_uprava_position_7_loop;
+$_smarty_tpl->tpl_vars['__smarty_section_uprava_position'] = new Smarty_Variable(array());
+if ($__section_uprava_position_7_total !== 0) {
+for ($__section_uprava_position_7_iteration = 1, $_smarty_tpl->tpl_vars['__smarty_section_uprava_position']->value['index'] = 0; $__section_uprava_position_7_iteration <= $__section_uprava_position_7_total; $__section_uprava_position_7_iteration++, $_smarty_tpl->tpl_vars['__smarty_section_uprava_position']->value['index']++){
+?>
+            <tbody>
+                <tr class="ng-scope">
+                    <td class="ng-binding"><?php echo $_smarty_tpl->tpl_vars['uprava']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_uprava_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_uprava_position']->value['index'] : null)]['dres_id'];?>
+</td>
+                    <td class="ng-binding"><?php echo $_smarty_tpl->tpl_vars['uprava']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_uprava_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_uprava_position']->value['index'] : null)]['zalaganje'];?>
+</td>
+                    <td class="ng-binding"><?php echo $_smarty_tpl->tpl_vars['uprava']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_uprava_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_uprava_position']->value['index'] : null)]['rabotna_ocenka'];?>
+</td>
+                    <td title="Edit "><i class="fa-solid fa-pen"></i></td>
+                    <td title="Delete">
+                        <button type="button" class="btn myBtn" data-bs-toggle="modal" data-bs-target="#myModal" ng-click="passPosition($index)"> <i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+            <?php
+}
+}
+?>
+        </table>
+    </div>
+</div>
 
 
 
 An example of a section loop:
 
     <?php
-$__section_outer_7_loop = (is_array(@$_loop=$_smarty_tpl->tpl_vars['FirstName']->value) ? count($_loop) : max(0, (int) $_loop));
-$__section_outer_7_total = $__section_outer_7_loop;
+$__section_outer_8_loop = (is_array(@$_loop=$_smarty_tpl->tpl_vars['FirstName']->value) ? count($_loop) : max(0, (int) $_loop));
+$__section_outer_8_total = $__section_outer_8_loop;
 $_smarty_tpl->tpl_vars['__smarty_section_outer'] = new Smarty_Variable(array());
-if ($__section_outer_7_total !== 0) {
-for ($__section_outer_7_iteration = 1, $_smarty_tpl->tpl_vars['__smarty_section_outer']->value['index'] = 0; $__section_outer_7_iteration <= $__section_outer_7_total; $__section_outer_7_iteration++, $_smarty_tpl->tpl_vars['__smarty_section_outer']->value['index']++){
-$_smarty_tpl->tpl_vars['__smarty_section_outer']->value['rownum'] = $__section_outer_7_iteration;
+if ($__section_outer_8_total !== 0) {
+for ($__section_outer_8_iteration = 1, $_smarty_tpl->tpl_vars['__smarty_section_outer']->value['index'] = 0; $__section_outer_8_iteration <= $__section_outer_8_total; $__section_outer_8_iteration++, $_smarty_tpl->tpl_vars['__smarty_section_outer']->value['index']++){
+$_smarty_tpl->tpl_vars['__smarty_section_outer']->value['rownum'] = $__section_outer_8_iteration;
 ?>
         <?php if ((1 & (isset($_smarty_tpl->tpl_vars['__smarty_section_outer']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_outer']->value['index'] : null) / 2)) {?>
             <?php echo (isset($_smarty_tpl->tpl_vars['__smarty_section_outer']->value['rownum']) ? $_smarty_tpl->tpl_vars['__smarty_section_outer']->value['rownum'] : null);?>
@@ -2423,11 +2535,11 @@ $_smarty_tpl->tpl_vars['__smarty_section_outer']->value['rownum'] = $__section_o
     An example of section looped key values:
 
     <?php
-$__section_sec1_8_loop = (is_array(@$_loop=$_smarty_tpl->tpl_vars['contacts']->value) ? count($_loop) : max(0, (int) $_loop));
-$__section_sec1_8_total = $__section_sec1_8_loop;
+$__section_sec1_9_loop = (is_array(@$_loop=$_smarty_tpl->tpl_vars['contacts']->value) ? count($_loop) : max(0, (int) $_loop));
+$__section_sec1_9_total = $__section_sec1_9_loop;
 $_smarty_tpl->tpl_vars['__smarty_section_sec1'] = new Smarty_Variable(array());
-if ($__section_sec1_8_total !== 0) {
-for ($__section_sec1_8_iteration = 1, $_smarty_tpl->tpl_vars['__smarty_section_sec1']->value['index'] = 0; $__section_sec1_8_iteration <= $__section_sec1_8_total; $__section_sec1_8_iteration++, $_smarty_tpl->tpl_vars['__smarty_section_sec1']->value['index']++){
+if ($__section_sec1_9_total !== 0) {
+for ($__section_sec1_9_iteration = 1, $_smarty_tpl->tpl_vars['__smarty_section_sec1']->value['index'] = 0; $__section_sec1_9_iteration <= $__section_sec1_9_total; $__section_sec1_9_iteration++, $_smarty_tpl->tpl_vars['__smarty_section_sec1']->value['index']++){
 ?>
         phone: <?php echo $_smarty_tpl->tpl_vars['contacts']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_sec1']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_sec1']->value['index'] : null)]['phone'];?>
 

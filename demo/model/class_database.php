@@ -70,5 +70,12 @@ class DB
 		$this->conn->exec($sql);
 	}
 
+	
+	public function selectRowStoredProcedure($selectRowStoredProcedureName){
+		$stmt=$this->conn->prepare("call $selectRowStoredProcedureName()");
+		$stmt->execute();
+		return $stmt->fetchAll();
+	}
+
 }
 ?>

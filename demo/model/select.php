@@ -15,8 +15,7 @@
     //za koja tabela se raboti
     //$table_name=$_GET['table_name']; //$smarty.get.table_name
     //$table_name=$smarty.get.table_name;
-   $table_name="natprevaruvanje";
-    
+    $table_name="uprava";
     $data=[];
 
 
