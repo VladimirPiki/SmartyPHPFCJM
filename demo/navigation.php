@@ -34,12 +34,11 @@ for($i=1;count($menu);$i++){
 	echo '<li><a href="'.$menu[$i]["page"].'">'.$menu[$i]["title"].'</a></li>';
 }
 
-
-
+$_GET["uprava"];
+$smarty->display("uprava.tpl");
 	if(isset($_GET["page"]) && $_GET["page"]=="uprava")
 	{
 		$smarty->display("uprava.tpl");
 	}
-	$_GET["uprava"];
-$smarty->display("uprava.tpl");
+
 ?>
