@@ -29,7 +29,7 @@ $menu=array(
 				"url"=>"templates/uprava.tpl"),
 
 );
-
+echo"test";
 echo"proba";
 echo "<ul>";
 for($i=1;$i < count($menu);$i++){
