@@ -29,6 +29,8 @@ $menu=array(
 				"url"=>"templates/uprava.tpl"),
 
 );
+
+echo"proba";
 echo "<ul>";
 for($i=1;$i < count($menu);$i++){
 	echo '<li><a href="'.$menu[$i]["page"].'">'.$menu[$i]["title"].'</a></li>';
