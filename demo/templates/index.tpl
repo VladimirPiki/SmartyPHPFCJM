@@ -1,5 +1,7 @@
 {config_load file="test.conf" section="setup"}
 
+navigation
+
 An example of a section loop:
 
     {section name=outer
