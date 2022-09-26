@@ -1,32 +1,33 @@
 <?php
-/* Smarty version 4.2.0, created on 2022-09-26 19:12:56
+/* Smarty version 4.2.0, created on 2022-09-26 22:40:10
   from 'D:\xampp\htdocs\SmartyPHPFCJM\demo\templates\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.0',
-  'unifunc' => 'content_6331dd989d1fe6_56991784',
+  'unifunc' => 'content_63320e2a8a8393_62183008',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '277cfa17baf4a59fa405043e3c7877f66e4b9cd9' => 
     array (
       0 => 'D:\\xampp\\htdocs\\SmartyPHPFCJM\\demo\\templates\\index.tpl',
-      1 => 1664209151,
+      1 => 1664224804,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
+    'file:header.tpl' => 1,
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_6331dd989d1fe6_56991784 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63320e2a8a8393_62183008 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->smarty->ext->configLoad->_loadConfigFile($_smarty_tpl, "test.conf", "setup", 0);
 ?>
 
-
-navigation
+<?php $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'foo'), 0, false);
+?>
 
 An example of a section loop:
 

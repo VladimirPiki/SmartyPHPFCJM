@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.0, created on 2022-09-26 17:42:27
+/* Smarty version 4.2.0, created on 2022-09-27 00:13:53
   from 'D:\xampp\htdocs\SmartyPHPFCJM\demo\templates\uprava.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.0',
-  'unifunc' => 'content_6331c8638f3f84_98439679',
+  'unifunc' => 'content_63322421c35c15_44780464',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '07bea3935ed2575dadab6644cb694707760e2780' => 
     array (
       0 => 'D:\\xampp\\htdocs\\SmartyPHPFCJM\\demo\\templates\\uprava.tpl',
-      1 => 1663599393,
+      1 => 1664230432,
       2 => 'file',
     ),
   ),
@@ -20,39 +20,38 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6331c8638f3f84_98439679 (Smarty_Internal_Template $_smarty_tpl) {
-?><div class="col-sm-12">
-    <div class="table-responsive myView">
-        <h3 class="text-center">Стручен штаб</h3>
-        <table class="table table-striped">
-            <thead>
-                <tr class="text-center">
-                    <th>
-                        Број на членот
-                    </th>
-                    <th>
-                        <select class="form-control text-center" name="searchByZalaganje" id="searchByZalaganje" ng-model="searchByZalaganje">
-                            <option value="">Залагање во клубот</option>
-                            <option>nedovolno</option>
-                            <option >dovolno</option>
-                            <option >istaknato</option>
-                        </select>
-                    </th>
-                    <th>
-                        <select class="form-control text-center" name="searchByRabotnaOcenka" id="searchByRabotnaOcenka" ng-model="searchByRabotnaOcenka">
-                            <option value="">Работна оценка</option>
-                            <option>1</option>
-                            <option >2</option>
-                            <option >3</option>
-                            <option >4</option>
-                            <option >5</option>
-                        </select>
-                    </th>
-                    <th><i class="fa-solid fa-pen"></i>edit</th>
-                    <th><i class="fa-solid fa-trash-can"></i>delete</th>
-                </tr>
-            </thead>
-            <?php
+function content_63322421c35c15_44780464 (Smarty_Internal_Template $_smarty_tpl) {
+?><div class="table-responsive myViewCover22">
+    <h3 class="text-center">Стручен штаб</h3>
+    <table class="table">
+        <thead>
+            <tr class="text-center">
+                <th>
+                    Број на дрес во стручен штаб
+                </th>
+                <th>
+                    <select class="form-control text-center myDropdown" name="searchByZalaganje" id="searchByZalaganje" ng-model="searchByZalaganje">
+                        <option class="myDropdown" value="">Залагање во клубот</option>
+                        <option class="myDropdown">nedovolno</option>
+                        <option class="myDropdown" >dovolno</option>
+                        <option class="myDropdown" >istaknato</option>
+                    </select>
+                </th>
+                <th>
+                    <select class="form-control text-center myDropdown" name="searchByRabotnaOcenka" id="searchByRabotnaOcenka" ng-model="searchByRabotnaOcenka">
+                        <option class="myDropdown" value="">Работна оценка</option>
+                        <option class="myDropdown">1</option>
+                        <option class="myDropdown" >2</option>
+                        <option class="myDropdown" >3</option>
+                        <option class="myDropdown" >4</option>
+                        <option class="myDropdown" >5</option>
+                    </select>
+                </th>
+                <th><i class="fa-solid fa-pen"></i>Измени</th>
+                <th><i class="fa-solid fa-trash-can"></i>Избриши</th>
+            </tr>
+        </thead>
+        <?php
 $__section_uprava_position_0_loop = (is_array(@$_loop=$_smarty_tpl->tpl_vars['uprava']->value) ? count($_loop) : max(0, (int) $_loop));
 $__section_uprava_position_0_total = $__section_uprava_position_0_loop;
 $_smarty_tpl->tpl_vars['__smarty_section_uprava_position'] = new Smarty_Variable(array());
@@ -67,13 +66,15 @@ for ($__section_uprava_position_0_iteration = 1, $_smarty_tpl->tpl_vars['__smart
 </td>
                     <td class="ng-binding"><?php echo $_smarty_tpl->tpl_vars['uprava']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_uprava_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_uprava_position']->value['index'] : null)]['rabotna_ocenka'];?>
 </td>
-                    <td title="Edit "><i class="fa-solid fa-pen"></i></td>
-                    <td title="Delete">
+                    <td title="Измени "><i class="fa-solid fa-pen"></i></td>
+                    <td title="Избриши <?php echo $_smarty_tpl->tpl_vars['uprava']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_uprava_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_uprava_position']->value['index'] : null)]['dres_id'];?>
+ || <?php echo $_smarty_tpl->tpl_vars['uprava']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_uprava_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_uprava_position']->value['index'] : null)]['zalaganje'];?>
+">
                         <button type="button" class="btn myBtn" data-bs-toggle="modal" data-bs-target="#myModal" ng-click="passPosition($index)"> <i class="fa-solid fa-trash-can"></i></button>
                     </td>
                 </tr>
             </tbody>
-            <?php
+        <?php
 }
 }
 ?>

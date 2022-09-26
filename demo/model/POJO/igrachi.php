@@ -2,54 +2,41 @@
 
 /**
  * @author Vladimir Krstevski <vlade.piki23@hotmail.com>
- * @link 
+ * @link https://www.linkedin.com/in/vladimir-krstevski-6182aa24b/
  */
 
 class Igrachi
 {
-       
-    //class attributes
-         private $dres_id;
-
-         private $ime;
-
-         private $prezime;
-
-         private $pozicija;
-
-         private $godini;
-
-         private $plata_denari;
-         
-         private $income_id;
-    //constructors
-
-    //setters
-
+    private $dres_id;
+    private $ime;
+    private $prezime;
+    private $pozicija;
+    private $godini;
+    private $plata_denari;
+    private $income_id;
+    private $igrachi_img_path;
+    
     /**
      * @param  $dres_id
      */
-        public function setDresId ($dres_id):void
-        {
-            // TODO implement here
-            $this->dres_id=$dres_id;
-        }
+    public function setDresId ($dres_id):void
+    {
+        $this->dres_id=$dres_id;
+    }
         
-        /**
-         * @param $ime
-         */
-        public function setIme ($ime):void
-        {
-            // TODO implement here
-            $this->ime=$ime;
-        }
+    /**
+    * @param $ime
+    */
+    public function setIme ($ime):void
+    {    
+        $this->ime=$ime;
+    }
 
         /**
          * @param $prezime
          */
         public function setPrezime($prezime):void
-        {
-            // TODO implement here
+        {   
             $this->prezime=$prezime;
         }
         
@@ -57,8 +44,7 @@ class Igrachi
          * @param $pozicija
          */
         public function setPozicija ($pozicija):void
-        {
-            // TODO implement here
+        {   
             $this->pozicija=$pozicija;
         }
 
@@ -66,8 +52,7 @@ class Igrachi
          * @param $godini
          */
         public function setGodini($godini):void
-        {
-            // TODO implement here
+        {    
             $this->godini=$godini;
         }
         
@@ -75,8 +60,7 @@ class Igrachi
          * @param $plata_denari
          */
         public function setPlataDenari ($plata_denari):void
-        {
-            // TODO implement here
+        {          
             $this->plata_denari=$plata_denari;
         }
 
@@ -84,19 +68,23 @@ class Igrachi
          * @param $income_id
          */
         public function setIncomeId ($income_id):void
-        {
-            // TODO implement here
-            $this->income_id=$income_id;
+        {         
+           $this->income_id=$income_id;
         }
 
-        //getters
-        
+        /**
+         * @param $igrachi_img_path
+         */
+        public function setIgrachiImgPath ($igrachi_img_path):void
+        {       
+            $this->igrachi_img_path=$igrachi_img_path;
+        }
+       
         /**
          * @return
          */
         public function getDresId ()
-        {
-            // TODO implement here
+        {      
             return $this->dres_id;
         }
 
@@ -104,8 +92,7 @@ class Igrachi
          * @return 
          */      
         public function getIme ()
-        {
-            // TODO implement here
+        {       
             return $this->ime;
         }
 
@@ -113,8 +100,7 @@ class Igrachi
          * @return 
          */
         public function getPrezime()
-        {
-            // TODO implement here
+        {       
             return $this->prezime;
         }
 
@@ -122,8 +108,7 @@ class Igrachi
          * @return 
          */
         public function getPozicija()
-        {
-            // TODO implement here
+        {        
             return $this->pozicija;
         }
 
@@ -131,8 +116,7 @@ class Igrachi
          * @return 
          */
         public function getGodini()
-        {
-            // TODO implement here
+        {         
             return $this->godini;
         }
 
@@ -140,8 +124,7 @@ class Igrachi
          * @return 
          */
         public function getPlataDenari()
-        {
-            // TODO implement here
+        {        
             return $this->plata_denari;
         }
         
@@ -149,10 +132,16 @@ class Igrachi
          * @return
          */
         public function getIncomeId()
-        {
-            // TODO implement here
+        {         
             return $this->income_id;
         }
-
+        
+        /**
+         * @return
+         */
+        public function getIgrachiImgPath()
+        {           
+            return $this->igrachi_img_path;
+        }
 }
 ?>

@@ -13,14 +13,11 @@
 
 
     //za koja tabela se raboti
-    //$table_name=$_GET['table_name']; //$smarty.get.table_name
-    //$table_name=$smarty.get.table_name;
     $table_name="igrachi";
     if(isset($_GET["table_name"])){
         $table_name=$_GET["table_name"];
     }
     $data=[];
-
 
     switch($table_name)
     {
@@ -30,6 +27,8 @@
             $objIgrachi = new IgrachiDAO($objDB);
             
             $results=$objIgrachi ->selectIgrachi();//DAO
+
+            //var_dump($results);
 
             foreach($results as $row ){
                 $data[]=array(
@@ -53,7 +52,8 @@
                 "ime_igrachi" => $row["ime_igrachi"],
                 "prezime_igrachi" => $row["prezime_igrachi"],
                 "pozicija_igrachi" => $row["pozicija_igrachi"],
-                "godini_igrachi" => $row ["godini_igrachi"]
+                "godini_igrachi" => $row ["godini_igrachi"],
+                "igrachi_img_path" => $row ["igrachi_img_path"]
             );
             }
 
@@ -66,6 +66,8 @@
 
             $results=$objIncome ->selectIncome();//DAO
 
+            //var_dump($results);
+
             foreach($results as $row ){
                 $data[]=array(
                 "income_id" => $row["income_id"],
@@ -74,7 +76,8 @@
                 "pozicija" => $row["pozicija"],
                 "godini" => $row["godini"],
                 "klub" => $row["klub"],
-                "iznos_denari" => $row["iznos_denari"]
+                "iznos_denari" => $row["iznos_denari"],
+                "income_img_path" => $row["income_img_path"]  
             );
             }
 
@@ -87,6 +90,8 @@
 
             $results=$objNatprevaruvanje -> selectNatprevaruvanje();//DAO
 
+            //var_dump($results);
+
             foreach($results as $row ){
                 $data[]=array(
                 "kolo_id" => $row["kolo_id"],
@@ -95,6 +100,27 @@
                 "rezultat" => $row["rezultat"],
                 "mesto" => $row["mesto"],
                 "sostav_id" => $row["sostav_id"],
+                "sostav_id" => $row["sostav_id"],
+                "datum_sostav" => $row["datum_sostav"],
+                "coach" => $row["coach"],
+                "goalkeeper" => $row["goalkeeper"],
+                "centre_back1" => $row["centre_back1"],
+                "centre_back2" => $row["centre_back2"],
+                "right_back" => $row["right_back"],
+                "left_back" => $row["left_back"],
+                "defensive_midfielder" => $row["defensive_midfielder"],
+                "center_midfielder" => $row["center_midfielder"],
+                "attacking_midfielder" => $row["attacking_midfielder"],
+                "right_forward" => $row["right_forward"],
+                "left_forward" => $row["left_forward"],
+                "center_forward" => $row["center_forward"],
+                "reserve1" => $row["reserve1"],
+                "reserve2" => $row["reserve2"],
+                "reserve3" => $row["reserve3"],
+                "reserve4" => $row["reserve4"],
+                "reserve5" => $row["reserve5"],
+                "reserve6" => $row["reserve6"],
+                "reserve7" => $row["reserve7"],
                 "stadion_id" => $row["stadion_id"],
                 "ime" => $row["ime"],
                 "adresa" => $row["adresa"],
@@ -114,6 +140,8 @@
 
             $results=$objOutcome ->selectOutcome();//DAO
 
+            //var_dump($results);
+
             foreach($results as $row ){
                 $data[]=array(
                 "outcome_id" => $row["outcome_id"],
@@ -125,7 +153,8 @@
                 "pozicija" => $row["pozicija"],
                 "godini" => $row["godini"],
                 "plata_denari" => $row["plata_denari"],
-                "income_id" => $row["income_id"]
+                "income_id" => $row["income_id"],
+                "outcome_img_path" => $row["outcome_img_path"]
                 );
             }
 
@@ -137,6 +166,8 @@
             $objPublika = new PublikaDAO($objDB);
 
             $results=$objPublika ->selectPublika();//DAO
+
+            //var_dump($results);
 
             foreach($results as $row ){
                 $data[]=array(
@@ -155,6 +186,8 @@
             $objSostav = new SostavDAO($objDB);
 
             $results=$objSostav ->selectSostav();//DAO
+    
+            //var_dump($results);
 
             foreach($results as $row ){
                 $data[]=array(
@@ -175,22 +208,12 @@
                 "reserve1" => $row["reserve1"],
                 "reserve2" => $row["reserve2"],
                 "reserve3" => $row["reserve3"],
-                "reserve2" => $row["reserve2"],
                 "reserve4" => $row["reserve4"],
                 "reserve5" => $row["reserve5"],
                 "reserve6" => $row["reserve6"],
                 "reserve7" => $row["reserve7"],
-                "dres_id" => $row["dres_id"],
-                "ime" => $row["ime"],
-                "prezime" => $row["prezime"],
-                "pozicija" => $row["pozicija"],
-                "godini" => $row["godini"],
-                "plata_denari" => $row["plata_denari"],
-                "income_id" => $row["income_id"],
-                "ime" => $row["ime"],
-                "prezime" => $row["prezime"],
-                "pozicija" => $row["pozicija"],
-                "godini" => $row["godini"]
+                "natprevar" => $row["natprevar"],
+                "sostav_img_path" => $row["sostav_img_path"]
             );
             }
 
@@ -202,6 +225,8 @@
             $objStadion= new StadionDAO($objDB);
 
             $results=$objStadion ->selectStadion();//DAO
+
+            //var_dump($results);
 
             foreach($results as $row ){
                 $data[]=array(
@@ -220,15 +245,13 @@
 
             $results=$objUprava -> selectUprava();//DAO
 
+            //var_dump($results);
+
             foreach($results as $row ){
                 $data[]=array(
-                "dres_id" => $row["dres_id"],
-                "ime" => $row["ime"],
-                "prezime" => $row["prezime"],
-                "pozicija" => $row["pozicija"],
-                "godini" => $row["godini"],
-                "zalaganje" => $row["zalaganje"],
-                "rabotna_ocenka" => $row["rabotna_ocenka"]
+                    "dres_id" => $row["dres_id"],
+                    "zalaganje" => $row["zalaganje"],
+                    "rabotna_ocenka" => $row["rabotna_ocenka"]
             );
             }
         break;

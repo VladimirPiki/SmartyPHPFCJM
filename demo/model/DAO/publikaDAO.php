@@ -1,17 +1,29 @@
 <?php
+
+/**
+ * @author Vladimir Krstevski <vlade.piki23@hotmail.com>
+ * @link https://www.linkedin.com/in/vladimir-krstevski-6182aa24b/
+ */
+
 require_once "model/POJO/publika.php";
 class PublikaDAO extends Publika
 {
-    //attributes class
+
     private $table_name="publika";
     private $database = null;
-    //constructor
+
+    /**
+     * @param mixed $objDB
+     */
     public function __construct( $objDB)
     {
         $this->database= $objDB;
     }
-    //methods
 
+
+     /**
+      * @return [type]
+      */
      public function insertPublika()
      {
         $datum_id=parent::getDatumId();
@@ -19,26 +31,23 @@ class PublikaDAO extends Publika
         $gostinska=parent::getGostinska();
         $karti_rasprodadeni=parent::getKartiRasprodadeni();
 
-        $columns_name="datum_id,domashna,gostinska,karti_rasprodadeni";
         $columns_value="'$datum_id',$domashna,$gostinska,$karti_rasprodadeni";
-
-       $this->database ->insertRow($this->table_name,$columns_name,$columns_value);
-
-      
+        $this->database ->callStoredProcedure("_insert_publika",$columns_value);
      }
 
+     /**
+      * @return [type]
+      */
      public function deletePublika()
      {
         $datum_id=parent::getDatumId();
-
-        $pk_name="datum_id";
         $pk_value="'$datum_id'";
-
-        $this->database ->deleteRow($this->table_name,$pk_name,$pk_value);
-
-       
+        $this->database ->callStoredProcedure("_delete_publika",$pk_value);
      }
 
+     /**
+      * @return [type]
+      */
      public function updatePublika()
      {  
         $datum_id=parent::getDatumId();
@@ -50,13 +59,16 @@ class PublikaDAO extends Publika
 
         $condition="datum_id='$datum_id'";
 
-        $this->database->updateRow($this->table_name,$columns,$condition);//class database
+        $this->database->updateRow($this->table_name,$columns,$condition);
         
      }
 
+     /**
+      * @return [type]
+      */
      public function selectPublika()
      {
-      return $this->database ->selectRow($this->table_name);
+      return $this->database ->selectRowStoredProcedure("_select_publika");
      }
 }
 ?>

@@ -1,127 +1,42 @@
-<div class="col-sm-12">
-<div ng-view="" class="ng-scope"><h3 class="ng-scope">Трансфери кој заминуваат</h3>
-<div class="table-responsive ng-scope">
-    <table class="table table-striped">
+<div class="table-responsive myViewCover22">
+  <h3 class="text-center">Трансфери кој заминуваат</h3>
+    <table class="table text-center">
         <thead>
             <tr>
-                <th>outcome_id</th>
+                <th>Трансфери кој заминуваат</th>
+                <th></th>
                 <th>
-                    <input type="text" name="searchByKlub" id="searchByKlub" ng-model="searchByKlub" placeholder="Пребарај по името на клубот" class="ng-pristine ng-untouched ng-valid ng-empty">
+                    <input class="form-control text-center fw-bold" type="text" name="searchByKlub" id="searchByKlub" ng-model="searchByKlub" placeholder="Името на клуб">
                 </th>
                 <th>
-                    <input type="text" name="searchByIznosDenari" id="searchByIznosDenari" ng-model="searchByIznosDenari" placeholder="Пребарај по износот на трансферот во денари" class="ng-pristine ng-untouched ng-valid ng-empty">
+                    <input class="form-control text-center fw-bold" type="text" name="searchByIznosDenari" id="searchByIznosDenari" ng-model="searchByIznosDenari" placeholder="Износот на трансфер">
                 </th>
                 <th>
-                    <select class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="searchByDresId" name="searchByDresId" ng-model="searchByDresId">
-                        <option value="" selected="selected">Изберете опции</option>
-                        <!-- ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="1" class="ng-binding ng-scope">
-                            1 || Mice  Dimov || Goalkeeper || 1997
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="2" class="ng-binding ng-scope">
-                            2 || Blagojche  Popovski || Centre Back || 1995
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="3" class="ng-binding ng-scope">
-                            3 || Andrej  Nedelkovski || Left Back || 1990
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="4" class="ng-binding ng-scope">
-                            4 || Darko  Joshevski || Right Back || 1991
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="5" class="ng-binding ng-scope">
-                            5 || Hristian  Risteski || Centre Back || 1999
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="6" class="ng-binding ng-scope">
-                            6 || Vladimir  Krsteski || Defensive Midfielder || 2000
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="7" class="ng-binding ng-scope">
-                            7 || Kire  Lazarov || Center Midfielder || 1997
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="8" class="ng-binding ng-scope">
-                            8 || Darko  Risteski || Attacking Midfilder || 1990
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="9" class="ng-binding ng-scope">
-                            9 || Borche  Manevski || Center Forward || 1988
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="10" class="ng-binding ng-scope">
-                            10 || Darko  Krstevski || Left Forward || 2006
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="11" class="ng-binding ng-scope">
-                            11 || Andrej  Markovski || Right Forward || 2000
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="12" class="ng-binding ng-scope">
-                            12 || Aleksandar  Markoski || Goalkeeper || 2001
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="13" class="ng-binding ng-scope">
-                            13 || Nikola  Piskacev || Left Back || 1980
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="14" class="ng-binding ng-scope">
-                            14 || Jove  Nikolov || Centre Back || 2008
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="15" class="ng-binding ng-scope">
-                            15 || Jove  Nikolovski || Right Back || 1997
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="16" class="ng-binding ng-scope">
-                            16 || Mile  Poposki || Defensive Midfielder || 1982
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="17" class="ng-binding ng-scope">
-                            17 || Jorgo  Popovski || Center Midfielder || 1985
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="18" class="ng-binding ng-scope">
-                            18 || Jordan  Mitev || Attacking Midfielder || 1985
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="19" class="ng-binding ng-scope">
-                            19 || Antimon  Krsteski || Goalkeeper || 1967
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="20" class="ng-binding ng-scope">
-                            20 || Cristiano  Ronaldo || Center Forward || 1997
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="21" class="ng-binding ng-scope">
-                            21 || Vlade  Krstevski || Left Forward || 1997
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="22" class="ng-binding ng-scope">
-                            22 || Deni  Popovski || Centre Back || 2007
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="23" class="ng-binding ng-scope">
-                            23 || Hristijan  Dragarski || Right Forward || 1991
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="24" class="ng-binding ng-scope">
-                            24 || Darko  Joshev || Physiotherapist || 1998
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="25" class="ng-binding ng-scope">
-                            25 || Hristi  Risteski || Condition Coach || 1990
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="26" class="ng-binding ng-scope">
-                            26 || Viktor  Koteski || Deputy Coach || 1979
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="27" class="ng-binding ng-scope">
-                            27 || Stefan  Ristevski || Coach || 1977
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="28" class="ng-binding ng-scope">
-                            28 || Darko  Risteski || Sports Director || 1980
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="30" class="ng-binding ng-scope">
-                            30 || Trajan  Rizovski || Left Back || 1995
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="31" class="ng-binding ng-scope">
-                            31 || Najdo  Sikijovski || Right Winger || 2006
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="33" class="ng-binding ng-scope">
-                            33 || Borche  Stojanovski || Left Winger || 2007
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="34" class="ng-binding ng-scope">
-                            34 || Boro  Stojanov || Center Midfielder || 1998
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="69" class="ng-binding ng-scope">
-                            69 || Vladimir  Krstevski || Director || 1967
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="77" class="ng-binding ng-scope">
-                            77 || Mice  Gacov || Right Back || 1998
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="78" class="ng-binding ng-scope">
-                            78 || Darko  Krstevski || Left back || 2000
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="79" class="ng-binding ng-scope">
-                            79 || Hristijan  Ristevski || Center back || 1998
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="83" class="ng-binding ng-scope">
-                            83 || Stojan  Dimov || Center Forward || 1990
-                        </option><!-- end ngRepeat: igrac in igrachi --><option ng-repeat="igrac in igrachi" value="93" class="ng-binding ng-scope">
-                            93 || Vlado  Pavlov || Coach || 1990
-                        </option><!-- end ngRepeat: igrac in igrachi -->
+                    <select class="form-control text-center myDropdown" id="searchByDresId" name="searchByDresId"  ng-model="searchByDresId">
+                        <option class="myDropdown"  value="">Број на дрес, име, презиме, позиција, години</option>
+                        <option class="myDropdown" >
+                            {$igrachi[igrachi_position].dres_id} || {$igrachi[igrachi_position].ime_igrachi}  {$igrachi[igrachi_position].prezime_igrachi} || {$igrachi[igrachi_position].pozicija_igrachi} || {$igrachi[igrachi_position].godini_igrachi}
+                        </option>
                     </select>
                 </th>
-                <th><i class="fa-solid fa-pen"></i>edit</th>
-                <th><i class="fa-solid fa-trash-can"></i>delete</th>
+                <th><i class="fa-solid fa-pen"></i>Измени</th>
+                <th><i class="fa-solid fa-trash-can"></i>Избриши</th>
             </tr>
         </thead>
-
         <tbody>
-        {section name=outcome_position loop=$outcome}
-            <tr class="ng-scope">
-                <td class="ng-binding">{$outcome[outcome_position].outcome_id} </td>
-                <td class="ng-binding">{$outcome[outcome_position].klub}</td>
-                <td class="ng-binding">{$outcome[outcome_position].iznos_denari|upper}</td>
-                <td class="ng-binding">{$outcome[outcome_position].dres_id}</td>
-                <td class="ng-binding">{$outcome[outcome_position].ime}</td>
-                <td class="ng-binding">{$outcome[outcome_position].prezime}</td>
-                <td class="ng-binding">{$outcome[outcome_position].pozicija}</td>
-                <td class="ng-binding">{$outcome[outcome_position].godini}</td>
-                <td class="ng-binding">{$outcome[outcome_position].plata_denari}</td>
-                <td class="ng-binding">{$outcome[outcome_position].income_id}</td>
-                <td class="text-center ng-binding">  <br>  <br> </td>
-                <td title="Edit"><i class="fa-solid fa-pen"></i></td>
-                <td title="Delete">
-                   <button type="button" class="btn myBtn" data-bs-toggle="modal" data-bs-target="#myModal" ng-click="passPosition($index)"> <i class="fa-solid fa-trash-can"></i></button>
-                </td>
-            </tr>
-        {/section}
-
+            {section name=outcome_position loop=$outcome}
+                <tr class="ng-scope">
+                    <td class="ng-binding"> <br> {$outcome[outcome_position].outcome_id} </td>
+                    <td><img class="rounded-circle" width="100" height="100" src="uploads/Images/outcome/{$outcome[outcome_position].outcome_img_path}" alt="{$outcome[outcome_position].outcome_img_path}"></td>
+                    <td class="ng-binding"><br> {$outcome[outcome_position].klub}</td>
+                    <td class="ng-binding"><br> {$outcome[outcome_position].iznos_denari}</td>
+                    <td class="ng-binding"><br> {$outcome[outcome_position].dres_id} || {$outcome[outcome_position].ime}  {$outcome[outcome_position].prezime} || {$outcome[outcome_position].pozicija} || {$outcome[outcome_position].godini}</td>
+                    <td title="Измени"><br><i class="fa-solid fa-pen"></i></td>
+                    <td title="Избриши {$outcome[outcome_position].outcome_id} || {$outcome[outcome_position].klub} ||  {$outcome[outcome_position].ime}  {$outcome[outcome_position].prezime}">
+                    <br><button type="button" class="btn myBtn" data-bs-toggle="modal" data-bs-target="#myModal" ng-click="passPosition($index)"> <i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                </tr>
+            {/section}
         </tbody>
-
     </table>
-</div>
-
 </div>

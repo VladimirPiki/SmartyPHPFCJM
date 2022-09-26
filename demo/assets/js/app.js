@@ -3,13 +3,13 @@ app.controller('myCtrl', function($scope,$http,$filter) {
 	$scope.error_alert=false;
   $scope.alert_success=false;
   $scope.datum = {
-    value: new Date(2010, 11, 28, 14, 57)
+    value: new Date(2022, 11, 28, 14, 57)
   };
   $scope.datum_sostav = {
     value: new Date(2022, 12, 31, 23, 59)
   };
   $scope.datum_id = {
-     value: new Date(2000, 12, 15)
+     value: new Date(2022, 11, 23)
   }
 
   var fullname="";
@@ -128,11 +128,13 @@ app.controller('myCtrl', function($scope,$http,$filter) {
 
 //Functions
   function postData(file,objData){
+    //if(objData.lenght > 0){}
     $http({
       method : "POST",
       url : "model/"+file+".php",
       data: objData
     }).then(function mySuccess(_response) {
+      //proverka na status 200, 201, 404, 500
       $scope.alert_success=true;
       $scope.error_alert=false;
     }, function myError(_response) {
@@ -146,18 +148,18 @@ app.controller('myCtrl', function($scope,$http,$filter) {
     $scope.alert_success=false;
   }
 
-  $scope.function_igrachi=function(ime,prezime,pozicija,godini,plata_denari,income_id)
+  $scope.function_igrachi=function(dres_id,ime,prezime,pozicija,godini,plata_denari,income_id,igrachi_img_path)
   {
     var objIgrachi=[];
-    objIgrachi.push({"ime":ime,"prezime":prezime,"pozicija":pozicija,"godini":godini,"plata_denari":plata_denari,"income_id":income_id,"table_name":"igrachi"});
+    objIgrachi.push({"dres_id":dres_id,"ime":ime,"prezime":prezime,"pozicija":pozicija,"godini":godini,"plata_denari":plata_denari,"income_id":income_id,"igrachi_img_path":igrachi_img_path,"table_name":"igrachi"});
     console.log(objIgrachi);
     postData("insert",objIgrachi);
   }
 
-  $scope.function_income=function(ime,prezime,pozicija,godini,klub,iznos_denari)
+  $scope.function_income=function(ime,prezime,pozicija,godini,klub,iznos_denari,income_img_path)
   {
     var objIncome=[];
-    objIncome.push({"ime":ime,"prezime":prezime,"pozicija":pozicija,"godini":godini,"klub":klub,"iznos_denari":iznos_denari,"table_name":"income"});
+    objIncome.push({"ime":ime,"prezime":prezime,"pozicija":pozicija,"godini":godini,"klub":klub,"iznos_denari":iznos_denari,"income_img_path":income_img_path,"table_name":"income"});
     console.log(objIncome);
     postData("insert",objIncome);
   }
@@ -165,16 +167,15 @@ app.controller('myCtrl', function($scope,$http,$filter) {
   $scope.function_natprevaruvanje=function(kolo_id,datum,protivnik,rezultat,mesto,sostav_id,stadion_id,datum_id)
   {
     var objNatprevaruvanje=[];
-    //datum treba da se konvertira vo format yyyy-mm-dd isto i za datum_id
     objNatprevaruvanje.push({"kolo_id":kolo_id,"datum":datum,"protivnik":protivnik,"rezultat":rezultat,"mesto":mesto,"sostav_id":sostav_id,"stadion_id":stadion_id,"datum_id":datum_id,"table_name":"natprevaruvanje"});
     console.log(objNatprevaruvanje);
     postData("insert",objNatprevaruvanje);
   }
 
-  $scope.function_outcome=function(klub,iznos_denari,dres_id)
+  $scope.function_outcome=function(klub,iznos_denari,dres_id,outcome_img_path)
   {
     var objOutcome=[];
-    objOutcome.push({"klub":klub,"iznos_denari":iznos_denari,"dres_id":dres_id,"table_name":"outcome"});
+    objOutcome.push({"klub":klub,"iznos_denari":iznos_denari,"dres_id":dres_id,"outcome_img_path":outcome_img_path,"table_name":"outcome"});
     console.log(objOutcome);
     postData("insert",objOutcome);
   }
@@ -187,10 +188,10 @@ app.controller('myCtrl', function($scope,$http,$filter) {
     postData("insert",objPublika);
   }
 
-  $scope.function_sostav=function(sostav_id,datum_sostav,coach,goalkeeper,centre_back1,centre_back2,right_back,left_back,defensive_midfielder,center_midfielder,attacking_midfielder,right_forward,left_forward,center_forward,reserve1,reserve2,reserve3,reserve4,reserve5,reserve6,reserve7)
+  $scope.function_sostav=function(sostav_id,datum_sostav,coach,goalkeeper,centre_back1,centre_back2,right_back,left_back,defensive_midfielder,center_midfielder,attacking_midfielder,right_forward,left_forward,center_forward,reserve1,reserve2,reserve3,reserve4,reserve5,reserve6,reserve7,sostav_img_path)
   {
     var objSostav=[];
-    objSostav.push({"sostav_id":sostav_id,"datum_sostav":datum_sostav,"coach":coach,"goalkeeper":goalkeeper,"centre_back1":centre_back1,"centre_back2":centre_back2,"right_back":right_back,"left_back":left_back,"defensive_midfielder":defensive_midfielder,"center_midfielder":center_midfielder,"attacking_midfielder":attacking_midfielder,"right_forward":right_forward,"left_forward":left_forward,"center_forward":center_forward,"reserve1":reserve1,"reserve2":reserve2,"reserve3":reserve3,"reserve4":reserve4,"reserve5":reserve5,"reserve6":reserve6,"reserve7":reserve7,"table_name":"sostav"});
+    objSostav.push({"sostav_id":sostav_id,"datum_sostav":datum_sostav,"coach":coach,"goalkeeper":goalkeeper,"centre_back1":centre_back1,"centre_back2":centre_back2,"right_back":right_back,"left_back":left_back,"defensive_midfielder":defensive_midfielder,"center_midfielder":center_midfielder,"attacking_midfielder":attacking_midfielder,"right_forward":right_forward,"left_forward":left_forward,"center_forward":center_forward,"reserve1":reserve1,"reserve2":reserve2,"reserve3":reserve3,"reserve4":reserve4,"reserve5":reserve5,"reserve6":reserve6,"reserve7":reserve7,"sostav_img_path":sostav_img_path,"table_name":"sostav"});
     console.log(objSostav);
     postData("insert",objSostav);
   }
@@ -213,7 +214,6 @@ app.controller('myCtrl', function($scope,$http,$filter) {
   }
 
   ///Delete functions
-
   $scope.getIndex=0;
   $scope.passPosition=function(position) // position=3
   {
@@ -227,6 +227,4 @@ app.controller('myCtrl', function($scope,$http,$filter) {
     objDelete.push({"table_name":table_name,"pk_value":pk_value});
     postData("delete",objDelete);
   }
-
-
 });

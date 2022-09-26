@@ -2,40 +2,25 @@
 
 /**
  * @author Vladimir Krstevski <vlade.piki23@hotmail.com>
- * @link 
+ * @link https://www.linkedin.com/in/vladimir-krstevski-6182aa24b/
  */
 
 class Natprevaruvanje
-{
-    //class attributes
+{  
     private  $kolo_id;
-
     private  $datum;
-
     private  $protivnik;
-
     private  $rezultat;
-
     private  $mesto;
-
     private  $sostav_id;
-
     private  $stadion_id;
-
     private  $datum_id;
-
-
-    //constructors
-
-    //getters,setters
- 
 
     /**
      * @return 
      */
     public function getKoloId()
     {
-        // TODO implement here
         return $this->kolo_id;
     }
 
@@ -44,7 +29,6 @@ class Natprevaruvanje
      */
     public function setKoloId( $kolo_id):void
     {
-        // TODO implement here
         $this->kolo_id=$kolo_id;
     }
 
@@ -53,7 +37,6 @@ class Natprevaruvanje
      */
     public function getDatum()
     {
-        // TODO implement here
         return $this->datum;
     }
 
@@ -62,7 +45,6 @@ class Natprevaruvanje
      */
     public function setDatum( $datum):void
     {
-        // TODO implement here
         $this->datum=$datum;
     }
 
@@ -71,7 +53,6 @@ class Natprevaruvanje
      */
     public function getProtivnik() 
     {
-        // TODO implement here
         return $this->protivnik;
     }
 
@@ -80,7 +61,6 @@ class Natprevaruvanje
      */
     public function setProtivnik( $protivnik):void
     {
-        // TODO implement here
         $this->protivnik=$protivnik;
     }
 
@@ -89,7 +69,6 @@ class Natprevaruvanje
      */
     public function getRezultat()
     {
-        // TODO implement here
         return $this->rezultat;
     }
 
@@ -98,7 +77,6 @@ class Natprevaruvanje
      */
     public function setRezultat( $rezultat):void
     {
-        // TODO implement here
         $this->rezultat=$rezultat;
     }
 
@@ -107,7 +85,6 @@ class Natprevaruvanje
      */
     public function getMesto()
     {
-        // TODO implement here
         return $this->mesto;
     }
 
@@ -116,7 +93,6 @@ class Natprevaruvanje
      */
     public function setMesto( $mesto):void
     {
-        // TODO implement here
         $this->mesto=$mesto;
     }
 
@@ -125,7 +101,6 @@ class Natprevaruvanje
      */
     public function getSostavId()
     {
-        // TODO implement here
         return $this->sostav_id;
     }
 
@@ -134,7 +109,6 @@ class Natprevaruvanje
      */
     public function setSostavId( $sostav_id):void
     {
-        // TODO implement here
         $this->sostav_id=$sostav_id;
     }
 
@@ -143,7 +117,6 @@ class Natprevaruvanje
      */
     public function getStadionId() 
     {
-        // TODO implement here
         return $this->stadion_id;
     }
 
@@ -152,7 +125,6 @@ class Natprevaruvanje
      */
     public function setStadionId( $stadion_id):void
     {
-        // TODO implement here
         $this->stadion_id=$stadion_id;
     }
 
@@ -161,7 +133,6 @@ class Natprevaruvanje
      */
     public function getDatumId() 
     {
-        // TODO implement here
         return $this->datum_id;
     }
 
@@ -170,8 +141,7 @@ class Natprevaruvanje
      */
     public function setDatumId( $datum_id):void
     {
-        // TODO implement here
         $this->datum_id=$datum_id;
     }
-
 }
+?>

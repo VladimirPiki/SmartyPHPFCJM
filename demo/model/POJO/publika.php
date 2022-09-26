@@ -2,31 +2,21 @@
 
 /**
  * @author Vladimir Krstevski <vlade.piki23@hotmail.com>
- * @link 
+ * @link https://www.linkedin.com/in/vladimir-krstevski-6182aa24b/
  */
 
 class Publika
 {
-    //class attributes
-
     private  $datum_id;
-
     private  $domashna;
-
     private  $gostinska;
-
     private  $karti_rasprodadeni;
-
-    //constructors
-
-    //getters,setters
 
     /**
      * @return
      */
     public function getDatumId() 
-    {
-        // TODO implement here
+    {     
         return $this->datum_id;
     }
 
@@ -34,8 +24,7 @@ class Publika
      * @param  $datum_id
      */
     public function setDatumId( $datum_id):void
-    {
-        // TODO implement here
+    {       
         $this->datum_id=$datum_id;
     }
 
@@ -43,8 +32,7 @@ class Publika
      * @return
      */
     public function getDomashna() 
-    {
-        // TODO implement here
+    {    
         return $this->domashna;
     }
 
@@ -52,8 +40,7 @@ class Publika
      * @param  $domashna
      */
     public function setDomashna( $domashna):void
-    {
-        // TODO implement here
+    {   
         $this->domashna=$domashna;
     }
 
@@ -61,8 +48,7 @@ class Publika
      * @return
      */
     public function getGostinska() 
-    {
-        // TODO implement here
+    {   
         return $this->gostinska;
     }
 
@@ -70,8 +56,7 @@ class Publika
      * @param  $gostinska
      */
     public function setGostinska( $gostinska):void
-    {
-        // TODO implement here
+    {   
         $this->gostinska=$gostinska;
     }
 
@@ -79,8 +64,7 @@ class Publika
      * @return
      */
     public function getKartiRasprodadeni() 
-    {
-        // TODO implement here
+    {   
         return $this->karti_rasprodadeni;
     }
 
@@ -89,8 +73,8 @@ class Publika
      */
     public function setKartiRasprodadeni( $karti_rasprodadeni):void
     {
-        // TODO implement here
+     
         $this->karti_rasprodadeni=$karti_rasprodadeni;
     }
-
 }
+?>

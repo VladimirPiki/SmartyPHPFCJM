@@ -2,81 +2,64 @@
 
 /**
  * @author Vladimir Krstevski <vlade.piki23@hotmail.com>
- * @link 
+ * @link https://www.linkedin.com/in/vladimir-krstevski-6182aa24b/
  */
 
 require_once "model/POJO/uprava.php";
 class UpravaDAO extends Uprava
 {
-     //attributes class
      private $table_name="uprava";
      private $database = null;
-     //constructor
+
+     /**
+      * @param mixed $objDB
+      */
      public function __construct( $objDB)
      {
          $this->database= $objDB;
      }
-     //methods
 
+    /**
+     * @return [type]
+     */
     public function insertUprava()
     {
         $dres_id=parent::getDresId();
         $zalaganje=parent::getZalaganje();
         $rabotna_ocenka=parent::getRabotnaOcenka();
-
-        $columns_name="dres_id,zalaganje,rabotna_ocenka";
         $columns_value="$dres_id,'$zalaganje',$rabotna_ocenka";
-
-        $this->database ->insertRow($this->table_name,$columns_name,$columns_value);
-
-        
+        $this->database ->callStoredProcedure("_insert_uprava",$columns_value);   
     }
 
+    /**
+     * @return [type]
+     */
     public function deleteUprava()
     {
         $dres_id=parent::getDresId();
-        
-        $pk_name="dres_id";
         $pk_value=$dres_id;
-
-        $this->database ->deleteRow($this->table_name,$pk_name,$pk_value);
-
-        
+        $this->database ->callStoredProcedure("_delete_uprava",$pk_value);    
     }
 
+    /**
+     * @return [type]
+     */
     public function updateUprava()
     {   
         $dres_id=parent::getDresId();
         $zalaganje=parent::getZalaganje();
         $rabotna_ocenka=parent::getRabotnaOcenka();
-
         $columns="zalaganje='$zalaganje',rabotna_ocenka=$rabotna_ocenka";
-
         $condition="dres_id=$dres_id";
-
-
-        $this->database ->updateRow($this->table_name,$columns,$condition);
-     
+        $this->database ->updateRow($this->table_name,$columns,$condition);  
     }
 
+    /**
+     * @return [type]
+     */
     public function selectUprava()
     {
-        return $this->database -> selectRow($this->table_name."
-        inner JOIN igrachi
-        ON igrachi.dres_id=uprava.dres_id"
-        );
+        return $this->database ->selectRowStoredProcedure("_select_uprava");
     }
-    
-
-/*
-public function selectUprava()
-{
-    return $this->database ->selectRowStoredProcedure("_select_uprava");
-}
-*/
-
-
-
-
 }
 ?>

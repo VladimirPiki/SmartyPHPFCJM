@@ -2,22 +2,26 @@
 
 /**
  * @author Vladimir Krstevski <vlade.piki23@hotmail.com>
- * @link 
+ * @link https://www.linkedin.com/in/vladimir-krstevski-6182aa24b/
  */
 
 require_once "model/POJO/natprevaruvanje.php";
 class NatprevaruvanjeDAO extends Natprevaruvanje
 {
-      //attributes class
       private $table_name="natprevaruvanje";
       private $database = null;
-      //constructor
+
+      /**
+       * @param mixed $objDB
+       */
       public function __construct( $objDB)
       {
           $this->database= $objDB;
       }
-      //methods
-      
+
+      /**
+       * @return [type]
+       */
       public function insertNatprevaruvanje()
       {
         $kolo_id=parent::getKoloId();
@@ -28,25 +32,23 @@ class NatprevaruvanjeDAO extends Natprevaruvanje
         $sostav_id=parent::getSostavID();
         $stadion_id=parent::getStadionId();
         $datum_id=parent::getDatumId();
-
-        $columns_name="kolo_id,datum,protivnik,rezultat,mesto,sostav_id,stadion_id,datum_id";
         $columns_value="$kolo_id,'$datum','$protivnik','$rezultat','$mesto',$sostav_id,$stadion_id,'$datum_id'";
-
-        $this->database ->insertRow($this->table_name,$columns_name,$columns_value);
+        $this->database ->callStoredProcedure("_insert_natprevaruvanje",$columns_value);  
       }
 
+      /**
+       * @return [type]
+       */
       public function deleteNatprevaruvanje()
       {
         $kolo_id=parent::getKoloId();
-
-        $pk_name="kolo_id";
         $pk_value=$kolo_id;
-
-        $this->database -> deleteRow($this->table_name,$pk_name,$pk_value);
-
-       
+        $this->database ->callStoredProcedure("_delete_natprevaruvanje",$pk_value);
       }
 
+      /**
+       * @return [type]
+       */
       public function updateNatprevaruvanje()
       {
         $kolo_id=parent::getKoloId();
@@ -57,30 +59,23 @@ class NatprevaruvanjeDAO extends Natprevaruvanje
         $sostav_id=parent::getSostavID();
         $stadion_id=parent::getStadionId();
         $datum_id=parent::getDatumId();
-
         $columns="  datum='$datum',
                     protivnik='$protivnik',
                     rezultat='$rezultat',
                     mesto='$mesto',
                     sostav_id=$sostav_id,
                     stadion_id=$stadion_id,
-                    datum_id='$datum_id'    ";
-
+                    datum_id='$datum_id'";
         $condition="kolo_id=$kolo_id";
-        
-        $this->database->updateRow($this->table_name,$columns,$condition);//class database
-
+        $this->database->updateRow($this->table_name,$columns,$condition);
       }
 
+      /**
+       * @return [type]
+       */
       public function selectNatprevaruvanje()
       {
-      return $this->database -> selectRow($this->table_name."
-      LEFT JOIN stadion
-	    ON (stadion.stadion_id=natprevaruvanje.stadion_id)
-      LEFT JOIN publika
-	    ON (publika.datum_id=natprevaruvanje.datum_id)");
+        return $this->database ->selectRowStoredProcedure("_select_natprevaruvanje");
       }
-
 }
-
 ?>

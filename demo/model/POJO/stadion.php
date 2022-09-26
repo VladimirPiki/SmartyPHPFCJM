@@ -2,30 +2,21 @@
 
 /**
  * @author Vladimir Krstevski <vlade.piki23@hotmail.com>
- * @link 
+ * @link https://www.linkedin.com/in/vladimir-krstevski-6182aa24b/
  */
 
 class Stadion
-{
-    //class attributes
+{ 
     private $stadion_id;
-
     private  $ime;
-
     private  $adresa;
-
     private  $kapacitet;
-
-    //constructors
-
-    //getters,setters
  
     /**
      * @return string
      */
     public function getStadionId()
-    {
-        // TODO implement here
+    { 
         return $this->stadion_id;
     }
 
@@ -34,7 +25,6 @@ class Stadion
      */
     public function setStadionId( $stadion_id):void
     {
-         // TODO implement here
         $this->stadion_id=$stadion_id;
     }
 
@@ -43,7 +33,6 @@ class Stadion
      */
     public function getIme() 
     {
-        // TODO implement here
         return $this->ime;
     }
 
@@ -52,7 +41,6 @@ class Stadion
      */
     public function setIme( $ime):void
     {
-         // TODO implement here
         $this->ime=$ime;
     }
 
@@ -60,8 +48,7 @@ class Stadion
      * @return
      */
     public function getAdresa() 
-    {
-        // TODO implement here
+    {  
         return $this->adresa;
     }
 
@@ -69,8 +56,7 @@ class Stadion
      * @param  $adresa
      */
     public function setAdresa( $adresa):void
-    {
-         // TODO implement here
+    {      
         $this->adresa=$adresa;
     }
 
@@ -78,8 +64,7 @@ class Stadion
      * @return
      */
     public function getKapacitet()
-    {
-        // TODO implement here
+    {       
         return $this->kapacitet;
     }
 
@@ -87,9 +72,9 @@ class Stadion
      * @param  $kapacitet
      */
     public function setKapacitet( $kapacitet):void
-    {
-         // TODO implement here
+    {      
         $this->kapacitet=$kapacitet;
     }
 
 }
+?>

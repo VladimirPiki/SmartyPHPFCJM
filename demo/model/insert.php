@@ -29,14 +29,14 @@ switch($table_name)
 
         //setters POJO
 
-       // $objIgrachi->setDresId("1");// Primary key bidejki e autoincremet i mozam da go izbrisam no go ostavam
+        $objIgrachi->setDresId($data[0]->dres_id);
         $objIgrachi->setIme($data[0]->ime);
         $objIgrachi->setPrezime($data[0]->prezime);
         $objIgrachi->setPozicija($data[0]->pozicija);
         $objIgrachi->setGodini($data[0]->godini);
         $objIgrachi->setPlataDenari($data[0]->plata_denari);
         $objIgrachi->setIncomeId($data[0]->income_id);
-
+        $objIgrachi->setIgrachiImgPath($data[0]->igrachi_img_path);
         //DAO
         $objIgrachi ->insertIgrachi();
 
@@ -56,6 +56,7 @@ switch($table_name)
         $objIncome->setGodini($data[0]->godini);
         $objIncome->setKlub($data[0]->klub);
         $objIncome->setIznosDenari($data[0]->iznos_denari);
+        $objIncome->setIncomeImgPath($data[0]->income_img_path);
         //DAO
         $objIncome ->insertIncome();
     break;
@@ -65,7 +66,7 @@ switch($table_name)
         
         $objNatprevaruvanje = new NatprevaruvanjeDAO($objDB);
         //setters POJO
-        $formatDatum=date("Y-m-d H:m:s",strtotime($data[0]->datum));
+        $formatDatum=date("Y-m-d H:i:s",strtotime($data[0]->datum));
         //echo $data[0]->datum." ".$formatDatum;
         $objNatprevaruvanje ->setKoloId($data[0]->kolo_id);
         $objNatprevaruvanje ->setDatum($formatDatum);
@@ -88,6 +89,7 @@ switch($table_name)
          $objOutcome ->setKlub($data[0]->klub);
          $objOutcome ->setIznosDenari($data[0]->iznos_denari);
          $objOutcome ->setDresId($data[0]->dres_id);
+         $objOutcome->setOutcomeImgPath($data[0]->outcome_img_path);
          //DAO
         $objOutcome ->insertOutcome();
     break;
@@ -97,6 +99,7 @@ switch($table_name)
         
         $objPublika = new PublikaDAO($objDB);
 
+        //Format time
         $formatDatumId=date("Y-m-d",strtotime($data[0]->datum_id));
         //setters POJO
         $objPublika ->setDatumId($formatDatumId);
@@ -113,7 +116,7 @@ switch($table_name)
             
             $objSostav = new SostavDAO($objDB);
             //setters POJO
-            $formatDatumSostav=date("Y-m-d H:m:s",strtotime($data[0]->datum_sostav));
+            $formatDatumSostav=date("Y-m-d H:i:s",strtotime($data[0]->datum_sostav));
 
             $objSostav ->setSostavId($data[0]->sostav_id);
             $objSostav ->setDatumSostav($formatDatumSostav);
@@ -136,6 +139,7 @@ switch($table_name)
             $objSostav ->setReserve5($data[0]->reserve5);
             $objSostav ->setReserve6($data[0]->reserve6);
             $objSostav ->setReserve7($data[0]->reserve7);
+            $objSostav ->setSostavImgPath($data[0]->sostav_img_path);
             //DAO
             $objSostav ->insertSostav();
 
