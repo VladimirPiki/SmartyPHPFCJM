@@ -15,7 +15,10 @@
     //za koja tabela se raboti
     //$table_name=$_GET['table_name']; //$smarty.get.table_name
     //$table_name=$smarty.get.table_name;
-    $table_name=$_GET["table_name"];
+    $table_name="igrachi";
+    if(isset($_GET["table_name"])){
+        $table_name=$_GET["table_name"];
+    }
     $data=[];
 
 
@@ -174,7 +177,8 @@
                 "reserve3" => $row["reserve3"],
                 "reserve2" => $row["reserve2"],
                 "reserve4" => $row["reserve4"],
-                "reserve5" => $row["reserve6"],
+                "reserve5" => $row["reserve5"],
+                "reserve6" => $row["reserve6"],
                 "reserve7" => $row["reserve7"],
                 "dres_id" => $row["dres_id"],
                 "ime" => $row["ime"],
