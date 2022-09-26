@@ -1,6 +1,29 @@
 <?php
+/* Smarty version 4.2.0, created on 2022-09-26 17:50:10
+  from 'D:\xampp\htdocs\SmartyPHPFCJM\demo\navigation.php' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.2.0',
+  'unifunc' => 'content_6331ca328a1402_46239674',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '9036549b4e0007416c6797357456ad4fe4a1a091' => 
+    array (
+      0 => 'D:\\xampp\\htdocs\\SmartyPHPFCJM\\demo\\navigation.php',
+      1 => 1664206966,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_6331ca328a1402_46239674 (Smarty_Internal_Template $_smarty_tpl) {
+echo '<?php'; ?>
+
 //demo/navigation.php
-$smarty->display('header.tpl');
 require_once 'model/select.php';
 
 $menu=array(
@@ -76,4 +99,6 @@ if(isset($_GET["page"]))
 		$smarty->display("uprava.tpl");
 	}
 */
-?>
+<?php echo '?>';
+}
+}
