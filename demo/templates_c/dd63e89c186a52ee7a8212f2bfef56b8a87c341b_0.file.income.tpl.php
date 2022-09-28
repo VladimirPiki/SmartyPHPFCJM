@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.0, created on 2022-09-28 11:14:44
+/* Smarty version 4.2.0, created on 2022-09-28 13:10:10
   from 'D:\xampp\htdocs\SmartyPHPFCJM\demo\templates\income.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.0',
-  'unifunc' => 'content_63341084142056_50640343',
+  'unifunc' => 'content_63342b92483ba3_82715388',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'dd63e89c186a52ee7a8212f2bfef56b8a87c341b' => 
     array (
       0 => 'D:\\xampp\\htdocs\\SmartyPHPFCJM\\demo\\templates\\income.tpl',
-      1 => 1664232964,
+      1 => 1664363408,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63341084142056_50640343 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63342b92483ba3_82715388 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="table-responsive myViewCover22">
     <h3 class="text-center">Трансфери кој доааѓат</h3>
         <table class="table text-center">
@@ -29,28 +29,28 @@ function content_63341084142056_50640343 (Smarty_Internal_Template $_smarty_tpl)
                         <th>Трансфери кој доааѓат</th>
                         <th></th>
                         <th>
-                            <input class="form-control text-center fw-bold" type="text" name="searchByName" id="searchByName" ng-model="searchByName" placeholder="Име">
+                            <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByName" id="searchByName" ng-model="searchByName" placeholder="Име">
                         </th>
                         <th> 
-                            <input class="form-control text-center fw-bold" type="text" name="searchByLastName" id="searchByLastName" ng-model="searchByLastName" placeholder="Презиме">
+                            <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByLastName" id="searchByLastName" ng-model="searchByLastName" placeholder="Презиме">
                         </th>
                         <th>
-                            <input class="form-control text-center fw-bold" type="text" name="searchByPosition" id="searchByPosition" ng-model="searchByPosition" placeholder="Позиција">
+                            <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByPosition" id="searchByPosition" ng-model="searchByPosition" placeholder="Позиција">
                         </th>
                         <th>
-                            <input class="form-control text-center fw-bold" type="text" name="searchByYear" id="searchByYear" ng-model="searchByYear" placeholder="Години">
+                            <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByYear" id="searchByYear" ng-model="searchByYear" placeholder="Години">
                         </th>
                         <th>
-                            <input class="form-control text-center fw-bold" type="text" name="searchByClub" id="searchByClub" ng-model="searchByClub" placeholder="Клубот">
+                            <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByClub" id="searchByClub" ng-model="searchByClub" placeholder="Клубот">
                         </th>
                         <th>
-                            <input class="form-control text-center fw-bold" type="text" name="searchByIznosDenari" id="searchByIznosDenari" ng-model="searchByIznosDenari" placeholder="Износот на трансферот">
+                            <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByIznosDenari" id="searchByIznosDenari" ng-model="searchByIznosDenari" placeholder="Износот на трансферот">
                         </th>
                         <th><i class="fa-solid fa-pen"></i>Измени</th>
                         <th><i class="fa-solid fa-trash-can"></i>Избриши</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="myTable">
                 <?php
 $__section_income_position_0_loop = (is_array(@$_loop=$_smarty_tpl->tpl_vars['income']->value) ? count($_loop) : max(0, (int) $_loop));
 $__section_income_position_0_total = $__section_income_position_0_loop;

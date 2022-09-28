@@ -5,13 +5,13 @@
             <tr class="text-center display-6">
                 <th>Стадион</th>
                 <th>
-                    <input class="form-control text-center fw-bold" type="text" name="searchByIme" id="searchByIme" ng-model="searchByIme" placeholder="Пребарај по име на стадионот">
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByIme" id="searchByIme" ng-model="searchByIme" placeholder="Пребарај по име на стадионот">
                 </th>
                 <th>
-                    <input class="form-control text-center fw-bold" type="text" name="searchByAdresa" id="searchByAdresa" ng-model="searchByAdresa" placeholder="Пребарај по адреса на стадионот">
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByAdresa" id="searchByAdresa" ng-model="searchByAdresa" placeholder="Пребарај по адреса на стадионот">
                 </th>
                 <th>
-                    <input class="form-control text-center fw-bold" type="number" name="searchByKapacitet" id="searchByKapacitet" ng-model="searchByKapacitet" placeholder="Пребарај по капацитет на стадионот">
+                    <input name="myInput" class="form-control text-center fw-bold" type="number" name="searchByKapacitet" id="searchByKapacitet" ng-model="searchByKapacitet" placeholder="Пребарај по капацитет на стадионот">
                 </th>
                 <th><i class="fa-solid fa-pen"></i>Измени</th>
                 <th><i class="fa-solid fa-trash-can"></i>Избриши</th>

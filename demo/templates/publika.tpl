@@ -5,19 +5,19 @@
             <tr>
                 <th>Датум</th>
                 <th>
-                    <input class="form-control fw-bold" type="number" name="searchByDomashna" id="searchByDomashna" ng-model="searchByDomashna" placeholder="Домашна публика на натпреварот">
+                    <input name="myInput" class="form-control fw-bold" type="number" name="searchByDomashna" id="searchByDomashna" ng-model="searchByDomashna" placeholder="Домашна публика на натпреварот">
                 </th>
                 <th>
-                    <input class="form-control fw-bold" type="number" name="searchByGostinska" id="searchByGostinska" ng-model="searchByGostinska" placeholder="Гостинска публика на натпреварот">
+                    <input name="myInput" class="form-control fw-bold" type="number" name="searchByGostinska" id="searchByGostinska" ng-model="searchByGostinska" placeholder="Гостинска публика на натпреварот">
                 </th>
                 <th>
-                    <input class="form-control fw-bold" type="number" name="searchByKartiRasprodadeni" id="searchByKartiRasprodadeni" ng-model="searchByKartiRasprodadeni" placeholder="Распродадени карти на натпреварот">
+                    <input name="myInput" class="form-control fw-bold" type="number" name="searchByKartiRasprodadeni" id="searchByKartiRasprodadeni" ng-model="searchByKartiRasprodadeni" placeholder="Распродадени карти на натпреварот">
                 </th>
                 <th><i class="fa-solid fa-pen"></i>Измени</th>
                 <th><i class="fa-solid fa-trash-can"></i>Избриши</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="myTable">
             {section name=publika_position loop=$publika}
                 <tr class="ng-scope">
                     <td class="ng-binding">{$publika[publika_position].datum_id} </td>

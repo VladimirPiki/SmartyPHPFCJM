@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.0, created on 2022-09-28 11:14:56
+/* Smarty version 4.2.0, created on 2022-09-28 13:13:40
   from 'D:\xampp\htdocs\SmartyPHPFCJM\demo\templates\natprevaruvanje.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.0',
-  'unifunc' => 'content_633410901b9ea9_51333667',
+  'unifunc' => 'content_63342c6460b120_86201609',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '656171ce9504c7b644f39c82e3aa520bbfad5749' => 
     array (
       0 => 'D:\\xampp\\htdocs\\SmartyPHPFCJM\\demo\\templates\\natprevaruvanje.tpl',
-      1 => 1664233642,
+      1 => 1664363602,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_633410901b9ea9_51333667 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63342c6460b120_86201609 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="table-responsive myViewCover22">
     <h3 class="text-center">Натпреварување</h3>
     <table class="table">
@@ -28,16 +28,16 @@ function content_633410901b9ea9_51333667 (Smarty_Internal_Template $_smarty_tpl)
             <tr class="text-center">
                 <th>Коло</th>
                 <th>
-                    <input class="form-control text-center fw-bold" type="text" name="searchByDatum" id="searchByDatum" ng-model="searchByDatum" placeholder="Датум">
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByDatum" id="searchByDatum" ng-model="searchByDatum" placeholder="Датум">
                 </th>
                 <th>
-                    <input class="form-control text-center fw-bold" type="text" name="searchByProtivnik" id="searchByProtivnik" ng-model="searchByProtivnik" placeholder="Противник">
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByProtivnik" id="searchByProtivnik" ng-model="searchByProtivnik" placeholder="Противник">
                 </th>
                 <th>
-                    <input class="form-control text-center fw-bold" type="text" name="searchByRezultat" id="searchByRezultat" ng-model="searchByRezultat" placeholder="Резултат">
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByRezultat" id="searchByRezultat" ng-model="searchByRezultat" placeholder="Резултат">
                 </th>
                 <th>
-                    <input class="form-control text-center fw-bold" type="text" name="searchByMesto" id="searchByMesto" ng-model="searchByMesto" placeholder="Место">
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByMesto" id="searchByMesto" ng-model="searchByMesto" placeholder="Место">
                 </th>
                  <th>
                     <select class="form-control text-center myDropdown" id="searchBySostavId" name="searchBySostavId" ng-model="searchBySostavId">
@@ -71,7 +71,7 @@ function content_633410901b9ea9_51333667 (Smarty_Internal_Template $_smarty_tpl)
             </tr>
         </thead>
 
-        <tbody>
+        <tbody id="myTable">
          <?php
 $__section_natprevaruvanje_position_0_loop = (is_array(@$_loop=$_smarty_tpl->tpl_vars['natprevaruvanje']->value) ? count($_loop) : max(0, (int) $_loop));
 $__section_natprevaruvanje_position_0_total = $__section_natprevaruvanje_position_0_loop;

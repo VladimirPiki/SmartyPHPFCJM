@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.0, created on 2022-09-27 00:48:37
+/* Smarty version 4.2.0, created on 2022-09-28 13:14:49
   from 'D:\xampp\htdocs\SmartyPHPFCJM\demo\templates\outcome.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.0',
-  'unifunc' => 'content_63322c4587bd49_50977152',
+  'unifunc' => 'content_63342ca9ad86c4_68262321',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e9949b39fae39f84b457b5d08a4cd722bc0b6eeb' => 
     array (
       0 => 'D:\\xampp\\htdocs\\SmartyPHPFCJM\\demo\\templates\\outcome.tpl',
-      1 => 1664232514,
+      1 => 1664363683,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63322c4587bd49_50977152 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63342ca9ad86c4_68262321 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="table-responsive myViewCover22">
   <h3 class="text-center">Трансфери кој заминуваат</h3>
     <table class="table text-center">
@@ -29,10 +29,10 @@ function content_63322c4587bd49_50977152 (Smarty_Internal_Template $_smarty_tpl)
                 <th>Трансфери кој заминуваат</th>
                 <th></th>
                 <th>
-                    <input class="form-control text-center fw-bold" type="text" name="searchByKlub" id="searchByKlub" ng-model="searchByKlub" placeholder="Името на клуб">
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByKlub" id="searchByKlub" ng-model="searchByKlub" placeholder="Името на клуб">
                 </th>
                 <th>
-                    <input class="form-control text-center fw-bold" type="text" name="searchByIznosDenari" id="searchByIznosDenari" ng-model="searchByIznosDenari" placeholder="Износот на трансфер">
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByIznosDenari" id="searchByIznosDenari" ng-model="searchByIznosDenari" placeholder="Износот на трансфер">
                 </th>
                 <th>
                     <select class="form-control text-center myDropdown" id="searchByDresId" name="searchByDresId"  ng-model="searchByDresId">
@@ -51,7 +51,7 @@ function content_63322c4587bd49_50977152 (Smarty_Internal_Template $_smarty_tpl)
                 <th><i class="fa-solid fa-trash-can"></i>Избриши</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="myTable">
             <?php
 $__section_outcome_position_0_loop = (is_array(@$_loop=$_smarty_tpl->tpl_vars['outcome']->value) ? count($_loop) : max(0, (int) $_loop));
 $__section_outcome_position_0_total = $__section_outcome_position_0_loop;
@@ -60,16 +60,16 @@ if ($__section_outcome_position_0_total !== 0) {
 for ($__section_outcome_position_0_iteration = 1, $_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index'] = 0; $__section_outcome_position_0_iteration <= $__section_outcome_position_0_total; $__section_outcome_position_0_iteration++, $_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index']++){
 ?>
                 <tr class="ng-scope">
-                    <td class="ng-binding"><?php echo $_smarty_tpl->tpl_vars['outcome']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index'] : null)]['outcome_id'];?>
+                    <td class="ng-binding"> <br> <?php echo $_smarty_tpl->tpl_vars['outcome']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index'] : null)]['outcome_id'];?>
  </td>
                     <td><img class="rounded-circle" width="100" height="100" src="uploads/Images/outcome/<?php echo $_smarty_tpl->tpl_vars['outcome']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index'] : null)]['outcome_img_path'];?>
 " alt="<?php echo $_smarty_tpl->tpl_vars['outcome']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index'] : null)]['outcome_img_path'];?>
 "></td>
-                    <td class="ng-binding"><?php echo $_smarty_tpl->tpl_vars['outcome']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index'] : null)]['klub'];?>
+                    <td class="ng-binding"><br> <?php echo $_smarty_tpl->tpl_vars['outcome']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index'] : null)]['klub'];?>
 </td>
-                    <td class="ng-binding"><?php echo $_smarty_tpl->tpl_vars['outcome']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index'] : null)]['iznos_denari'];?>
+                    <td class="ng-binding"><br> <?php echo $_smarty_tpl->tpl_vars['outcome']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index'] : null)]['iznos_denari'];?>
 </td>
-                    <td class="ng-binding"><?php echo $_smarty_tpl->tpl_vars['outcome']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index'] : null)]['dres_id'];?>
+                    <td class="ng-binding"><br> <?php echo $_smarty_tpl->tpl_vars['outcome']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index'] : null)]['dres_id'];?>
  || <?php echo $_smarty_tpl->tpl_vars['outcome']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index'] : null)]['ime'];?>
   <?php echo $_smarty_tpl->tpl_vars['outcome']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index'] : null)]['prezime'];?>
  || <?php echo $_smarty_tpl->tpl_vars['outcome']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index'] : null)]['pozicija'];?>
