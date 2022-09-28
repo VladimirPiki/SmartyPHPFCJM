@@ -2,26 +2,26 @@
 
 /**
  * @author Vladimir Krstevski <vlade.piki23@hotmail.com>
- * @link 
+ * @link https://www.linkedin.com/in/vladimir-krstevski-6182aa24b/
  */
 
 //delete
 
-$data = json_decode(file_get_contents("php://input"));
-var_dump($data);
-
-require_once "../lib/class_database.php";
+//require_once "../lib/class_database.php";
 //           class name    __construct
-$objDB = new   DB            ();
+//$objDB = new   DB            ();
 
 //za koja tabela se raboti
 #$table_name="natprevaruvanje";
 
-$table_name=-1;
-$pk_value="";
+$table_name="";
+$pk_value=-1;
+$file_name="";
+if(isset($_GET["file_name"]) && $_GET["file_name"]=="delete"){
+
 if(isset($_GET["table_name"]) && isset($_GET["pk_value"])){
-    $table_name=$data[0]->table_name;
-    $pk_value=$data[0]->pk_value;
+    $table_name=$_GET["table_name"];
+    $pk_value=$_GET["pk_value"];
 }
 
 switch($table_name)
@@ -30,7 +30,7 @@ switch($table_name)
         require_once "DAO/igrachiDAO.php";//file path 
         $objIgrachi = new IgrachiDAO($objDB);
         //setters POJO
-        $objIgrachi->setDresId($data[0]->pk_value);
+        $objIgrachi->setDresId($pk_value);
         //DAO
         $objIgrachi ->deleteIgrachi();
 
@@ -41,7 +41,7 @@ switch($table_name)
       
         $objIncome = new IncomeDAO($objDB);
         //setters POJO
-        $objIncome->setIncomeId($data[0]->pk_value);
+        $objIncome->setIncomeId($pk_value);
         //DAO
         $objIncome ->deleteIncome();
     break;
@@ -51,7 +51,7 @@ switch($table_name)
         
         $objNatprevaruvanje = new NatprevaruvanjeDAO($objDB);
         //setters POJO
-        $objNatprevaruvanje ->setKoloId($data[0]->pk_value);
+        $objNatprevaruvanje ->setKoloId($pk_value);
         //DAO
         $objNatprevaruvanje -> deleteNatprevaruvanje();
     break;
@@ -61,7 +61,7 @@ switch($table_name)
        
         $objOutcome = new OutcomeDAO($objDB);
          //setters POJO
-         $objOutcome ->setOutcomeId($data[0]->pk_value);
+         $objOutcome ->setOutcomeId($pk_value);
          //DAO
         $objOutcome ->deleteOutcome();
     break;
@@ -72,7 +72,7 @@ switch($table_name)
         $objPublika = new PublikaDAO($objDB);
 
         //setters POJO
-        $objPublika ->setDatumId($data[0]->pk_value);
+        $objPublika ->setDatumId($pk_value);
         //DAO
         $objPublika ->deletePublika();
     break;
@@ -82,7 +82,7 @@ switch($table_name)
             
             $objSostav = new SostavDAO($objDB);
             //setters POJO
-            $objSostav ->setSostavId($data[0]->pk_value);
+            $objSostav ->setSostavId($pk_value);
             //DAO
             $objSostav ->deleteSostav();
 
@@ -93,7 +93,7 @@ switch($table_name)
             
             $objStadion= new StadionDAO($objDB);
             //setters POJO
-            $objStadion ->setStadionId($data[0]->pk_value);
+            $objStadion ->setStadionId($pk_value);
             //DAO
             $objStadion ->deleteStadion();
     break;
@@ -103,7 +103,7 @@ switch($table_name)
             
             $objUprava = new UpravaDAO($objDB);
             //setters POJO
-            $objUprava ->setDresId($data[0]->pk_value);
+            $objUprava ->setDresId($pk_value);
             //DAO
             $objUprava -> deleteUprava();
     break;
@@ -111,6 +111,6 @@ switch($table_name)
     default :
     echo "Погрешно име на табела ";
     break;
-
 }
+};
 ?>

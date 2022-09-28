@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.0, created on 2022-09-28 16:12:32
+/* Smarty version 4.2.0, created on 2022-09-28 21:07:03
   from 'D:\xampp\htdocs\SmartyPHPFCJM\demo\templates\sostav.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.0',
-  'unifunc' => 'content_6334565098fbb7_38103213',
+  'unifunc' => 'content_63349b573e9dc7_21991101',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '37f06f88a4899583ebcf2888dc5bb0b124c56358' => 
     array (
       0 => 'D:\\xampp\\htdocs\\SmartyPHPFCJM\\demo\\templates\\sostav.tpl',
-      1 => 1664371908,
+      1 => 1664389110,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6334565098fbb7_38103213 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63349b573e9dc7_21991101 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="table-responsive myViewCover22">
     <h3 class="text-center">Состав</h3>
     <table class="table">
@@ -90,7 +90,7 @@ for ($__section_sostav_position_0_iteration = 1, $_smarty_tpl->tpl_vars['__smart
                     <td title="Избриши <?php echo $_smarty_tpl->tpl_vars['sostav']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index'] : null)]['sostav_id'];?>
  <?php echo $_smarty_tpl->tpl_vars['sostav']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index'] : null)]['datum_sostav'];?>
 ">
-                        <br><br><a href="index.php?table_name=sostav&pk_value=<?php echo $_smarty_tpl->tpl_vars['sostav']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index'] : null)]['sostav_id'];?>
+                        <br><br><a href="index.php?file_name=delete&table_name=sostav&pk_value=<?php echo $_smarty_tpl->tpl_vars['sostav']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index'] : null)]['sostav_id'];?>
 " type="button" class="btn myBtn"> <i class="fa-solid fa-trash-can"></i></a>
                     </td>
                 </tr>

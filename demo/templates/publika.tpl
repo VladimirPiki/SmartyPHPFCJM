@@ -26,7 +26,7 @@
                     <td>{$publika[publika_position].karti_rasprodadeni}</td>
                     <td title="Измени"><i class="fa-solid fa-pen"></i></td>
                     <td title="Избриши {$publika[publika_position].datum_id}">
-                        <a href="index.php?table_name=publika&publika={$publika[publika_position].datum_id}" type="button" class="btn myBtn"> <i class="fa-solid fa-trash-can"></i></a>
+                        <a href="index.php?file_name=delete&table_name=publika&publika={$publika[publika_position].datum_id}" type="button" class="btn myBtn"> <i class="fa-solid fa-trash-can"></i></a>
                     </td>
                 </tr>
             {/section}

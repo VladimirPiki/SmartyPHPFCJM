@@ -62,7 +62,7 @@
                 </td>
                 <td title="Измени"><i class="fa-solid fa-pen"></i></td>
                 <td title="Избриши {$natprevaruvanje[natprevaruvanje_position].kolo_id} коло || {$natprevaruvanje[natprevaruvanje_position].datum} || {$natprevaruvanje[natprevaruvanje_position].protivnik}">
-                    <a href="index.php?table_name=natprevaruvanje&pk_value={$natprevaruvanje[natprevaruvanje_position].kolo_id}" type="button" class="btn myBtn"><i class="fa-solid fa-trash-can"></i></a>
+                    <a href="index.php?file_name=delete&table_name=natprevaruvanje&pk_value={$natprevaruvanje[natprevaruvanje_position].kolo_id}" type="button" class="btn myBtn"><i class="fa-solid fa-trash-can"></i></a>
                 </td>
             </tr>
         {/section}

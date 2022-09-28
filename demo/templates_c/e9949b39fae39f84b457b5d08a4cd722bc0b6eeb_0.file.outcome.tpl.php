@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.0, created on 2022-09-28 16:12:16
+/* Smarty version 4.2.0, created on 2022-09-28 20:18:55
   from 'D:\xampp\htdocs\SmartyPHPFCJM\demo\templates\outcome.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.0',
-  'unifunc' => 'content_63345640cc3f73_82999088',
+  'unifunc' => 'content_6334900f118759_72208248',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e9949b39fae39f84b457b5d08a4cd722bc0b6eeb' => 
     array (
       0 => 'D:\\xampp\\htdocs\\SmartyPHPFCJM\\demo\\templates\\outcome.tpl',
-      1 => 1664371839,
+      1 => 1664389089,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63345640cc3f73_82999088 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6334900f118759_72208248 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="table-responsive myViewCover22">
   <h3 class="text-center">Трансфери кој заминуваат</h3>
     <table class="table text-center">
@@ -81,7 +81,7 @@ for ($__section_outcome_position_0_iteration = 1, $_smarty_tpl->tpl_vars['__smar
  ||  <?php echo $_smarty_tpl->tpl_vars['outcome']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index'] : null)]['ime'];?>
   <?php echo $_smarty_tpl->tpl_vars['outcome']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index'] : null)]['prezime'];?>
 ">
-                    <br><a href="index.php?table_name=outcome&pk_value=<?php echo $_smarty_tpl->tpl_vars['outcome']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index'] : null)]['outcome_id'];?>
+                    <br><a href="index.php?file_name=delete&table_name=outcome&pk_value=<?php echo $_smarty_tpl->tpl_vars['outcome']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_outcome_position']->value['index'] : null)]['outcome_id'];?>
 " type="button" class="btn myBtn"> <i class="fa-solid fa-trash-can"></i></a>
                     </td>
                 </tr>

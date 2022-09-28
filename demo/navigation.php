@@ -1,4 +1,10 @@
 <?php
+
+/**
+ * @author Vladimir Krstevski <vlade.piki23@hotmail.com>
+ * @link https://www.linkedin.com/in/vladimir-krstevski-6182aa24b/
+ */
+
 //demo/navigation.php
 $smarty->display('header.tpl');
 require_once 'model/select.php';
@@ -70,32 +76,35 @@ $menu=array(
 				"url"=>"templates/details_uprava.tpl")
 );
 
+$main=array(
 
-echo '<nav class="navbar navbar-expand-sm  navbar-dark sticky-top">
+);
+
+echo '<nav class="navbar navbar-expand-sm  navbar-dark fixed-top">
 <div class="container-fluid">
-			<a href="#!main"><img src="assets/img/profilna nova.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"></a>
+			 <a href=""><img src="assets/img/profilna nova.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"></a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 	<div class="collapse navbar-collapse" id="collapsibleNavbar ">
 				<ul class="navbar-nav">
 				<li class="nav-item">
-					<a class="nav-link" href="#!main"><i class="fa-solid fa-house fa-2x" aria-hidden="true"></i></a>
+					<a class="nav-link" href=""><i class="fa-solid fa-house fa-2x" aria-hidden="true"></i></a>
 				</li>';
 for($i=1; $i <= count($menu)-8;$i++){
-	echo '<li class="nav-item" ><a class="nav-link" href="index.php?page='.$menu[$i]["page"].'&table_name='.$menu[$i]["table_name"].'">'.$menu[$i]["title"].'</a></li>';
+	echo '<li class="nav-item" ><a class="nav-link" href="index.php?file_name=select&page='.$menu[$i]["page"].'&table_name='.$menu[$i]["table_name"].'">'.$menu[$i]["title"].'</a></li>';
 }
 echo '<li class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Внесете</a>
 <ul class="dropdown-menu">';
 for($i=9; $i <= count($menu);$i++){
-	echo '<li class="nav-item"><a class="nav-link text-dark" href="index.php?page='.$menu[$i]["page"].'&table_name='.$menu[$i]["table_name"].'">'.$menu[$i]["title"].'</a></li>';
+	echo '<li class="nav-item"><a class="nav-link text-dark" href="index.php?file_name=select&page='.$menu[$i]["page"].'&table_name='.$menu[$i]["table_name"].'">'.$menu[$i]["title"].'</a></li>';
 }
 echo'</ul>
 </li>';
 
 echo "<li>
-<a href=\"#!main\"><img src=\"assets/img/Kojot.png\" alt=\"Avatar Logo\" style=\"width:40px;\" class=\"rounded-pill\"></a>
+<a href=\"\"><img src=\"assets/img/Kojot.png\" alt=\"Avatar Logo\" style=\"width:40px;\" class=\"rounded-pill\"></a>
 </li>
 </ul>
 </div>

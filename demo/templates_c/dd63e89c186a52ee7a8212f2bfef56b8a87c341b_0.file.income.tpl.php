@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.0, created on 2022-09-28 16:11:38
+/* Smarty version 4.2.0, created on 2022-09-28 21:06:52
   from 'D:\xampp\htdocs\SmartyPHPFCJM\demo\templates\income.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.0',
-  'unifunc' => 'content_6334561a77d773_85022711',
+  'unifunc' => 'content_63349b4c1c6260_41074137',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'dd63e89c186a52ee7a8212f2bfef56b8a87c341b' => 
     array (
       0 => 'D:\\xampp\\htdocs\\SmartyPHPFCJM\\demo\\templates\\income.tpl',
-      1 => 1664371533,
+      1 => 1664389075,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6334561a77d773_85022711 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63349b4c1c6260_41074137 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="table-responsive myViewCover22">
     <h3 class="text-center">Трансфери кој доааѓат</h3>
         <table class="table text-center">
@@ -81,7 +81,7 @@ for ($__section_income_position_0_iteration = 1, $_smarty_tpl->tpl_vars['__smart
                         <td title="Избриши <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['ime'];?>
  <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['prezime'];?>
 ">
-                                <br><a href="index.php?table_name=income&pk_value=<?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['income_id'];?>
+                                <br><a href="index.php?file_name=delete&table_name=income&pk_value=<?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['income_id'];?>
 " type="button" class="btn myBtn"><i class="fa-solid fa-trash-can"></i></a>
                         </td>
                     </tr>

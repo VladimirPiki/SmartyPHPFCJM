@@ -2,20 +2,16 @@
 
 /**
  * @author Vladimir Krstevski <vlade.piki23@hotmail.com>
- * @link 
+ * @link https://www.linkedin.com/in/vladimir-krstevski-6182aa24b/
  */
 
-$data = json_decode(file_get_contents("php://input"));
-var_dump($data);
-
- require_once "../lib/class_database.php";
+ //require_once "../lib/class_database.php";
  //           class name    __construct
- $objDB = new   DB            ();
+ //$objDB = new   DB            ();
 
-//insert
+$table_name=$_GET["table_name"];
 
-//za koja tabela se raboti
-$table_name=$data[0]->table_name;
+if(isset($_GET["file_name"]) && $_GET["file_name"]=="insert"){
 
 switch($table_name)
 {
@@ -29,14 +25,14 @@ switch($table_name)
 
         //setters POJO
 
-        $objIgrachi->setDresId($data[0]->dres_id);
-        $objIgrachi->setIme($data[0]->ime);
-        $objIgrachi->setPrezime($data[0]->prezime);
-        $objIgrachi->setPozicija($data[0]->pozicija);
-        $objIgrachi->setGodini($data[0]->godini);
-        $objIgrachi->setPlataDenari($data[0]->plata_denari);
-        $objIgrachi->setIncomeId($data[0]->income_id);
-        $objIgrachi->setIgrachiImgPath($data[0]->igrachi_img_path);
+        $objIgrachi->setDresId($_GET["dres_id"]);
+        $objIgrachi->setIme($_GET["ime"]);
+        $objIgrachi->setPrezime($_GET["prezime"]);
+        $objIgrachi->setPozicija($_GET["pozicija"]);
+        $objIgrachi->setGodini($_GET["godini"]);
+        $objIgrachi->setPlataDenari($_GET["plata_denari"]);
+        $objIgrachi->setIncomeId($_GET["income_id"]);
+        $objIgrachi->setIgrachiImgPath($_GET["igrachi_img_path"]);
         //DAO
         $objIgrachi ->insertIgrachi();
 
@@ -50,13 +46,13 @@ switch($table_name)
         $objIncome = new IncomeDAO( $objDB);
         //setters POJO
         //$objIncome->setIncomeId("1");
-        $objIncome->setIme($data[0]->ime);
-        $objIncome->setPrezime($data[0]->prezime);
-        $objIncome->setPozicija($data[0]->pozicija);
-        $objIncome->setGodini($data[0]->godini);
-        $objIncome->setKlub($data[0]->klub);
-        $objIncome->setIznosDenari($data[0]->iznos_denari);
-        $objIncome->setIncomeImgPath($data[0]->income_img_path);
+        $objIncome->setIme($_GET["ime"]);
+        $objIncome->setPrezime($_GET["prezime"]);
+        $objIncome->setPozicija($_GET["pozicija"]);
+        $objIncome->setGodini($_GET["godini"]);
+        $objIncome->setKlub($_GET["klub"]);
+        $objIncome->setIznosDenari($_GET["iznos_denari"]);
+        $objIncome->setIncomeImgPath($_GET["income_img_path"]);
         //DAO
         $objIncome ->insertIncome();
     break;
@@ -66,16 +62,16 @@ switch($table_name)
         
         $objNatprevaruvanje = new NatprevaruvanjeDAO($objDB);
         //setters POJO
-        $formatDatum=date("Y-m-d H:i:s",strtotime($data[0]->datum));
+        $formatDatum=date("Y-m-d H:i:s",strtotime($_GET["datum"]));
         //echo $data[0]->datum." ".$formatDatum;
-        $objNatprevaruvanje ->setKoloId($data[0]->kolo_id);
+        $objNatprevaruvanje ->setKoloId($_GET["kolo_id"]);
         $objNatprevaruvanje ->setDatum($formatDatum);
-        $objNatprevaruvanje ->setProtivnik($data[0]->protivnik);
-        $objNatprevaruvanje ->setRezultat($data[0]->rezultat);
-        $objNatprevaruvanje ->setMesto($data[0]->mesto);
-        $objNatprevaruvanje ->setSostavId($data[0]->sostav_id);
-        $objNatprevaruvanje ->setStadionId($data[0]->stadion_id);
-        $objNatprevaruvanje ->setDatumId($data[0]->datum_id);
+        $objNatprevaruvanje ->setProtivnik($_GET["protivnik"]);
+        $objNatprevaruvanje ->setRezultat($_GET["rezultat"]);
+        $objNatprevaruvanje ->setMesto($_GET["mesto"]);
+        $objNatprevaruvanje ->setSostavId($_GET["sostav_id"]);
+        $objNatprevaruvanje ->setStadionId($_GET["stadion_id"]);
+        $objNatprevaruvanje ->setDatumId($_GET["datum_id"]);
         //DAO
         $objNatprevaruvanje -> insertNatprevaruvanje();
     break;
@@ -86,10 +82,10 @@ switch($table_name)
         $objOutcome = new OutcomeDAO($objDB);
          //setters POJO
          //$objOutcome ->setOutcomeId(1);
-         $objOutcome ->setKlub($data[0]->klub);
-         $objOutcome ->setIznosDenari($data[0]->iznos_denari);
-         $objOutcome ->setDresId($data[0]->dres_id);
-         $objOutcome->setOutcomeImgPath($data[0]->outcome_img_path);
+         $objOutcome ->setKlub($_GET["klub"]);
+         $objOutcome ->setIznosDenari($_GET["iznos_denari"]);
+         $objOutcome ->setDresId($_GET["dres_id"]);
+         $objOutcome->setOutcomeImgPath($_GET["outcome_img_path"]);
          //DAO
         $objOutcome ->insertOutcome();
     break;
@@ -100,12 +96,12 @@ switch($table_name)
         $objPublika = new PublikaDAO($objDB);
 
         //Format time
-        $formatDatumId=date("Y-m-d",strtotime($data[0]->datum_id));
+        $formatDatumId=date("Y-m-d",strtotime($_GET["datum_id"]));
         //setters POJO
         $objPublika ->setDatumId($formatDatumId);
-        $objPublika ->setDomashna($data[0]->domashna);
-        $objPublika ->setGostinska($data[0]->gostinska);
-        $objPublika ->setKartiRasprodadeni($data[0]->karti_rasprodadeni);
+        $objPublika ->setDomashna($_GET["domashna"]);
+        $objPublika ->setGostinska($_GET["gostinska"]);
+        $objPublika ->setKartiRasprodadeni($_GET["karti_rasprodadeni"]);
 
         //DAO
         $objPublika ->insertPublika();
@@ -116,30 +112,30 @@ switch($table_name)
             
             $objSostav = new SostavDAO($objDB);
             //setters POJO
-            $formatDatumSostav=date("Y-m-d H:i:s",strtotime($data[0]->datum_sostav));
+            $formatDatumSostav=date("Y-m-d H:i:s",strtotime($_GET["datum_sostav"]));
 
-            $objSostav ->setSostavId($data[0]->sostav_id);
+            $objSostav ->setSostavId($_GET["sostav_id"]);
             $objSostav ->setDatumSostav($formatDatumSostav);
-            $objSostav ->setCoach($data[0]->coach);
-            $objSostav ->setGoalkeeper($data[0]->goalkeeper);
-            $objSostav ->setCentreBack1($data[0]->centre_back1);
-            $objSostav ->setCentreBack2($data[0]->centre_back2);
-            $objSostav ->setRightBack($data[0]->right_back);
-            $objSostav ->setLeftBack($data[0]->left_back);
-            $objSostav ->setDefensiveMidfielder($data[0]->defensive_midfielder);
-            $objSostav ->setCenterMidfielder($data[0]->center_midfielder);
-            $objSostav ->setAttackingMidfielder($data[0]->attacking_midfielder);
-            $objSostav ->setRightForward($data[0]->right_forward);
-            $objSostav ->setLeftForward($data[0]->left_forward);
-            $objSostav ->setCenterForward($data[0]->center_forward);
-            $objSostav ->setReserve1($data[0]->reserve1);
-            $objSostav ->setReserve2($data[0]->reserve2);
-            $objSostav ->setReserve3($data[0]->reserve3);
-            $objSostav ->setReserve4($data[0]->reserve4);
-            $objSostav ->setReserve5($data[0]->reserve5);
-            $objSostav ->setReserve6($data[0]->reserve6);
-            $objSostav ->setReserve7($data[0]->reserve7);
-            $objSostav ->setSostavImgPath($data[0]->sostav_img_path);
+            $objSostav ->setCoach($_GET["coach"]);
+            $objSostav ->setGoalkeeper($_GET["goalkeeper"]);
+            $objSostav ->setCentreBack1($_GET["centre_back1"]);
+            $objSostav ->setCentreBack2($_GET["centre_back2"]);
+            $objSostav ->setRightBack($_GET["right_back"]);
+            $objSostav ->setLeftBack($_GET["left_back"]);
+            $objSostav ->setDefensiveMidfielder($_GET["defensive_midfielder"]);
+            $objSostav ->setCenterMidfielder($_GET["center_midfielder"]);
+            $objSostav ->setAttackingMidfielder($_GET["attacking_midfielder"]);
+            $objSostav ->setRightForward($_GET["right_forward"]);
+            $objSostav ->setLeftForward($_GET["left_forward"]);
+            $objSostav ->setCenterForward($_GET["center_forward"]);
+            $objSostav ->setReserve1($_GET["reserve1"]);
+            $objSostav ->setReserve2($_GET["reserve2"]);
+            $objSostav ->setReserve3($_GET["reserve3"]);
+            $objSostav ->setReserve4($_GET["reserve4"]);
+            $objSostav ->setReserve5($_GET["reserve5"]);
+            $objSostav ->setReserve6($_GET["reserve6"]);
+            $objSostav ->setReserve7($_GET["reserve7"]);
+            $objSostav ->setSostavImgPath($_GET["sostav_img_path"]);
             //DAO
             $objSostav ->insertSostav();
 
@@ -151,9 +147,9 @@ switch($table_name)
             $objStadion= new StadionDAO($objDB);
             //setters POJO
             //$objStadion ->setStadionId($data[0]->stadion_id);
-            $objStadion ->setIme($data[0]->ime);
-            $objStadion ->setAdresa($data[0]->adresa);
-            $objStadion ->setKapacitet($data[0]->kapacitet);
+            $objStadion ->setIme($_GET["ime"]);
+            $objStadion ->setAdresa($_GET["adresa"]);
+            $objStadion ->setKapacitet($_GET["kapacitet"]);
             //DAO
             $objStadion ->insertStadion();
     break;
@@ -163,9 +159,9 @@ switch($table_name)
             
             $objUprava = new UpravaDAO($objDB);
             //setters POJO
-            $objUprava ->setDresId($data[0]->dres_id);
-            $objUprava ->setZalaganje($data[0]->zalaganje);
-            $objUprava ->setRabotnaOcenka($data[0]->rabotna_ocenka);
+            $objUprava ->setDresId($_GET["dres_id"]);
+            $objUprava ->setZalaganje($_GET["zalaganje"]);
+            $objUprava ->setRabotnaOcenka($_GET["rabotna_ocenka"]);
             //DAO
             $objUprava -> insertUprava();
     break;
@@ -173,6 +169,6 @@ switch($table_name)
     default :
     echo "Погрешно име на табела ";
     break;
-
 }
+};
 ?>

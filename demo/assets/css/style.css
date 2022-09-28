@@ -26,6 +26,7 @@ body{
 	background-color:#029934!important;
 }
 
+
 /************Footer************************/
 footer{
 	background-color:#1C4A9F!important;
@@ -61,7 +62,9 @@ footer i{
 }
 .myViewCover22{
 	background-image: url('../img/cover22.jpg');
-	background-repeat: repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
 	color: #1C4A9F;
 }
 div input{
@@ -124,8 +127,9 @@ h3:hover{
 }
 .myViewProfilnaNova{
 	background-image: url('../img/profilna\ nova.jpg');
-	background-size: 100% 100%;
-	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
 	color: #1C4A9F;
 	font-weight: bold;
 	font-size: 20px;
@@ -146,8 +150,22 @@ option{
 	height: 100%;
 	width: 100%;
 }
+
 .naslovRezultatiSostavi{
 	font-size: 35px;
 	font-weight: bolder;
 	color: #029934;
+}
+
+/********First img at top **********/
+.topImages{
+	background-image: url('../img/cover21sini.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	text-align: center;
+	color: #029934;
+	font-weight: bold;
+	font-size: 20px;
 }

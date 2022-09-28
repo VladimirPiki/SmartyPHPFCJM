@@ -26,7 +26,7 @@
                     <td>{$stadion[stadion_position].kapacitet}</td>
                     <td title="Измени"><i class="fa-solid fa-pen"></i></td>
                     <td title="Избриши {$stadion[stadion_position].stadion_id} || {$stadion[stadion_position].ime}">
-                        <a href="index.php?table_name=stadion&pk_value={$stadion[stadion_position].stadion_id}" type="button" class="btn myBtn"> <i class="fa-solid fa-trash-can"></i></a>
+                        <a href="index.php?file_name=delete&table_name=stadion&pk_value={$stadion[stadion_position].stadion_id}" type="button" class="btn myBtn"> <i class="fa-solid fa-trash-can"></i></a>
                     </td>
                 </tr>
             {/section}

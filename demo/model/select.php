@@ -2,7 +2,7 @@
 
 /**
  * @author Vladimir Krstevski <vlade.piki23@hotmail.com>
- * @link 
+ * @link https://www.linkedin.com/in/vladimir-krstevski-6182aa24b/
  */
 
     //select
@@ -13,7 +13,9 @@
 
 
     //za koja tabela se raboti
-    $table_name="igrachi";
+    $table_name="igrachi";;
+    if(isset($_GET["file_name"]) && $_GET["file_name"]=="select"){
+
     if(isset($_GET["table_name"])){
         $table_name=$_GET["table_name"];
     }
@@ -256,13 +258,15 @@
             }
         break;
         
+        /*
         default :
         echo "Погрешно име на табела ";
         break;
-
+        */
     }
 
     //echo json_encode($data);
 
     $smarty->assign($table_name,$data);
+};
 ?>

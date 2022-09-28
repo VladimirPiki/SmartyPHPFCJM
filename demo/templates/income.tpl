@@ -41,7 +41,7 @@
                         <td class="text-center ng-binding">  <br>  <br> </td>
                         <td title="Измени"><br><i class="fa-solid fa-pen"></i></td>
                         <td title="Избриши {$income[income_position].ime} {$income[income_position].prezime}">
-                                <br><a href="index.php?table_name=income&pk_value={$income[income_position].income_id}" type="button" class="btn myBtn"><i class="fa-solid fa-trash-can"></i></a>
+                                <br><a href="index.php?file_name=delete&table_name=income&pk_value={$income[income_position].income_id}" type="button" class="btn myBtn"><i class="fa-solid fa-trash-can"></i></a>
                         </td>
                     </tr>
                 {/section}

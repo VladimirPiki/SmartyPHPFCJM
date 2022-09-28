@@ -1,4 +1,10 @@
 <?php
+
+/**
+ * @author Vladimir Krstevski <vlade.piki23@hotmail.com>
+ * @link https://www.linkedin.com/in/vladimir-krstevski-6182aa24b/
+ */
+
 /**
  * Example Application
  *
@@ -34,6 +40,7 @@ $smarty->assign(
 ///Ovie se ascijativni nizi od proektot
 //require_once "model/select.php?table_name=igrachi";
 require_once "model/select.php";
+require_once "model/delete.php";
 require_once "navigation.php";
 /*
 $smarty->assign(
@@ -69,3 +76,4 @@ $smarty->assign("option_values", array("NY", "NE", "KS", "IA", "OK", "TX"));
 $smarty->assign("option_output", array("New York", "Nebraska", "Kansas", "Iowa", "Oklahoma", "Texas"));
 $smarty->assign("option_selected", "NE");
 $smarty->display('index.tpl');
+

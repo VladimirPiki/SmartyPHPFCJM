@@ -36,7 +36,7 @@
                     <td>{$uprava[uprava_position].rabotna_ocenka}</td>
                     <td title="Измени "><i class="fa-solid fa-pen"></i></td>
                     <td title="Избриши {$uprava[uprava_position].dres_id} || {$uprava[uprava_position].zalaganje}">
-                        <a href="index.php?table_name=uprava&pk_value={$uprava[uprava_position].dres_id}" type="button" class="btn myBtn"> <i class="fa-solid fa-trash-can"></i></a>
+                        <a href="index.php?file_name=delete&table_name=uprava&pk_value={$uprava[uprava_position].dres_id}" type="button" class="btn myBtn"> <i class="fa-solid fa-trash-can"></i></a>
                     </td>
                 </tr>
             </tbody>
