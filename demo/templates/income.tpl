@@ -41,7 +41,7 @@
                         <td class="text-center ng-binding">  <br>  <br> </td>
                         <td title="Измени"><br><i class="fa-solid fa-pen"></i></td>
                         <td title="Избриши {$income[income_position].ime} {$income[income_position].prezime}">
-                                <br><button type="button" class="btn myBtn" data-bs-toggle="modal" data-bs-target="#myModal"> <i class="fa-solid fa-trash-can"></i></button>
+                                <br><a href="index.php?table_name=income&pk_value={$income[income_position].income_id}" type="button" class="btn myBtn"><i class="fa-solid fa-trash-can"></i></a>
                         </td>
                     </tr>
                 {/section}

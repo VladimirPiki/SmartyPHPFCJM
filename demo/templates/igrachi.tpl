@@ -36,7 +36,7 @@
         <tbody id="myTable">
             {section name=igrachi_position loop=$igrachi}
                 <tr>
-                    <td>{$igrachi[igrachi_position].dres_id} </td>
+                    <td>{$igrachi[igrachi_position].dres_id}</td>
                     <td><img class="rounded sostavSlika" width="150" height="150" src="uploads/Images/igrachi/{$igrachi[igrachi_position].igrachi_img_path}" alt="{$igrachi[igrachi_position].igrachi_img_path}"> </td>
                     <td><br><br>{$igrachi[igrachi_position].ime_igrachi}</td>
                     <td><br><br>{$igrachi[igrachi_position].prezime_igrachi}</td>
@@ -46,7 +46,7 @@
                     <td><br><br>{$igrachi[igrachi_position].ime_income}{$igrachi[igrachi_position].prezime_income} <br> {$igrachi[igrachi_position].pozicija_income} <br> {$igrachi[igrachi_position].godini_income}</td>
                     <td title="Измени"><br><br><i class="fa-solid fa-pen"></i></td>
                     <td title="Избриши {$igrachi[igrachi_position].dres_id} || {$igrachi[igrachi_position].ime_igrachi} {$igrachi[igrachi_position].prezime_igrachi}">
-                    <br> <br><button type="button" class="btn myBtn" data-bs-toggle="modal" data-bs-target="#myModal"> <i class="fa-solid fa-trash-can"></i></button>
+                    <br> <br><a href="index.php?table_name=igrachi&pk_value={$igrachi[igrachi_position].dres_id}" type="button" class="btn myBtn"> <i class="fa-solid fa-trash-can"></i></a>
                     </td>
                 </tr>
             {/section}

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.0, created on 2022-09-28 13:45:14
+/* Smarty version 4.2.0, created on 2022-09-28 16:12:59
   from 'D:\xampp\htdocs\SmartyPHPFCJM\demo\templates\stadion.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.0',
-  'unifunc' => 'content_633433ca09bec8_58861179',
+  'unifunc' => 'content_6334566b518243_61631206',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'bd64afba437539ecd2c6ad25dce445f34ff697e9' => 
     array (
       0 => 'D:\\xampp\\htdocs\\SmartyPHPFCJM\\demo\\templates\\stadion.tpl',
-      1 => 1664365444,
+      1 => 1664371956,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_633433ca09bec8_58861179 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6334566b518243_61631206 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="table-responsive myViewCover22">
     <h3 class="text-center">Стадион</h3>
     <table class="table">
@@ -61,7 +61,8 @@ for ($__section_stadion_position_0_iteration = 1, $_smarty_tpl->tpl_vars['__smar
                     <td title="Избриши <?php echo $_smarty_tpl->tpl_vars['stadion']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_stadion_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_stadion_position']->value['index'] : null)]['stadion_id'];?>
  || <?php echo $_smarty_tpl->tpl_vars['stadion']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_stadion_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_stadion_position']->value['index'] : null)]['ime'];?>
 ">
-                    <button type="button" class="btn myBtn" data-bs-toggle="modal" data-bs-target="#myModal" > <i class="fa-solid fa-trash-can"></i></button>
+                        <a href="index.php?table_name=stadion&pk_value=<?php echo $_smarty_tpl->tpl_vars['stadion']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_stadion_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_stadion_position']->value['index'] : null)]['stadion_id'];?>
+" type="button" class="btn myBtn"> <i class="fa-solid fa-trash-can"></i></a>
                     </td>
                 </tr>
             <?php

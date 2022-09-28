@@ -1,4 +1,27 @@
-<div class="myViewProfilnaNova">
+<?php
+/* Smarty version 4.2.0, created on 2022-09-28 16:45:24
+  from 'D:\xampp\htdocs\SmartyPHPFCJM\demo\templates\details_igrachi.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.2.0',
+  'unifunc' => 'content_63345e04aa92f7_77858550',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'd6ca3070659a14f9b3801da6761874d4d2ebbdde' => 
+    array (
+      0 => 'D:\\xampp\\htdocs\\SmartyPHPFCJM\\demo\\templates\\details_igrachi.tpl',
+      1 => 1664376244,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_63345e04aa92f7_77858550 (Smarty_Internal_Template $_smarty_tpl) {
+?><div class="myViewProfilnaNova">
   <h3 class="text-center">
     Играчи
   </h3>
@@ -55,4 +78,5 @@
         </div>
         <button type="button" class="btn myBtn mb-5">Save</button>
       </form>
-</div>
+</div><?php }
+}

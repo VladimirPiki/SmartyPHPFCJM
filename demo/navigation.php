@@ -35,7 +35,39 @@ $menu=array(
 	"8"=>array("title"=>"Стручен штаб",
 				"page"=>"uprava",
 				"table_name"=>"uprava",
-				"url"=>"templates/uprava.tpl")
+				"url"=>"templates/uprava.tpl"),
+	"9"=>array("title"=>"Внесете играчи",
+				"page"=>"details_igrachi",
+				"table_name"=>"details_igrachi",
+				"url"=>"templates/details_igrachi.tpl"),
+	"10"=>array("title"=>"Внесете играчи кој доаѓаат",
+				"page"=>"details_income",
+				"table_name"=>"details_income",
+				"url"=>"templates/details_income.tpl"),
+	"11"=>array("title"=>"Внесете натпреварување",
+				"page"=>"details_natprevaruvanje",
+				"table_name"=>"details_natprevaruvanje",
+				"url"=>"templates/details_natprevaruvanje.tpl"),
+	"12"=>array("title"=>"Играчи кој заминуваат",
+				"page"=>"details_outcome",
+				"table_name"=>"details_outcome",
+				"url"=>"templates/details_outcome.tpl"),
+	"13"=>array("title"=>"Внесете публика",
+				"page"=>"details_publika",
+				"table_name"=>"details_publika",
+				"url"=>"templates/details_publika.tpl"),
+	"14"=>array("title"=>"Внесете состав",
+				"page"=>"details_sostav",
+				"table_name"=>"details_sostav",
+				"url"=>"templates/details_sostav.tpl"),
+	"15"=>array("title"=>"Внесете стадион",
+				"page"=>"details_stadion",
+				"table_name"=>"details_stadion",
+				"url"=>"templates/details_stadion.tpl"),
+	"16"=>array("title"=>"Внесете стручен штаб",
+				"page"=>"details_uprava",
+				"table_name"=>"details_uprava",
+				"url"=>"templates/details_uprava.tpl")
 );
 
 
@@ -49,12 +81,19 @@ echo '<nav class="navbar navbar-expand-sm  navbar-dark sticky-top">
 				<ul class="navbar-nav">
 				<li class="nav-item">
 					<a class="nav-link" href="#!main"><i class="fa-solid fa-house fa-2x" aria-hidden="true"></i></a>
-				</li>
-
-				';
-for($i=1; $i <= count($menu);$i++){
+				</li>';
+for($i=1; $i <= count($menu)-8;$i++){
 	echo '<li class="nav-item" ><a class="nav-link" href="index.php?page='.$menu[$i]["page"].'&table_name='.$menu[$i]["table_name"].'">'.$menu[$i]["title"].'</a></li>';
 }
+echo '<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Внесете</a>
+<ul class="dropdown-menu">';
+for($i=9; $i <= count($menu);$i++){
+	echo '<li class="nav-item"><a class="nav-link text-dark" href="index.php?page='.$menu[$i]["page"].'&table_name='.$menu[$i]["table_name"].'">'.$menu[$i]["title"].'</a></li>';
+}
+echo'</ul>
+</li>';
+
 echo "<li>
 <a href=\"#!main\"><img src=\"assets/img/Kojot.png\" alt=\"Avatar Logo\" style=\"width:40px;\" class=\"rounded-pill\"></a>
 </li>

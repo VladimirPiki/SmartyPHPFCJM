@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.0, created on 2022-09-27 00:54:23
+/* Smarty version 4.2.0, created on 2022-09-28 16:12:32
   from 'D:\xampp\htdocs\SmartyPHPFCJM\demo\templates\sostav.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.0',
-  'unifunc' => 'content_63322d9ff2b5c0_14710907',
+  'unifunc' => 'content_6334565098fbb7_38103213',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '37f06f88a4899583ebcf2888dc5bb0b124c56358' => 
     array (
       0 => 'D:\\xampp\\htdocs\\SmartyPHPFCJM\\demo\\templates\\sostav.tpl',
-      1 => 1664232861,
+      1 => 1664371908,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63322d9ff2b5c0_14710907 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6334565098fbb7_38103213 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="table-responsive myViewCover22">
     <h3 class="text-center">Состав</h3>
     <table class="table">
@@ -28,7 +28,7 @@ function content_63322d9ff2b5c0_14710907 (Smarty_Internal_Template $_smarty_tpl)
             <tr class="text-center">
                 <th>Составот на колото</th>
                 <th>
-                    <select class="form-control text-center myDropdown" name="searchByDatum" id="searchByDatum" ng-model="searchByDatum">
+                    <select class="form-control text-center myDropdown">
                         <option class="myDropdown" value="">Датум</option>
                         <option class="myDropdown" >
                         <?php echo $_smarty_tpl->tpl_vars['natprevaruvanje']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_natprevaruvanje_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_natprevaruvanje_position']->value['index'] : null)]['datum'];?>
@@ -37,7 +37,7 @@ function content_63322d9ff2b5c0_14710907 (Smarty_Internal_Template $_smarty_tpl)
                     </select>
                 </th>
                 <th>
-                    <select class="form-control text-center myDropdown" name="searchByNatprevar" id="searchByNatprevar" ng-model="searchByNatprevar">
+                    <select class="form-control text-center myDropdown" >
                         <option class="myDropdown"  value="">Натпревар</option>
                         <option class="myDropdown">
                         <?php echo $_smarty_tpl->tpl_vars['natprevaruvanje']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_natprevaruvanje_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_natprevaruvanje_position']->value['index'] : null)]['protivnik'];?>
@@ -48,7 +48,7 @@ function content_63322d9ff2b5c0_14710907 (Smarty_Internal_Template $_smarty_tpl)
                     </select>
                 </th>
                 <th>
-                    <select class="form-control text-center myDropdown" name="searchBySostav" id="searchBySostav" ng-model="searchBySostav">
+                    <select class="form-control text-center myDropdown">
                         <option class="myDropdown" value="">Состав</option>
                         <option class="myDropdown" >
                             <?php echo $_smarty_tpl->tpl_vars['sostav']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index'] : null)]['sostav_id'];?>
@@ -71,15 +71,15 @@ $_smarty_tpl->tpl_vars['__smarty_section_sostav_position'] = new Smarty_Variable
 if ($__section_sostav_position_0_total !== 0) {
 for ($__section_sostav_position_0_iteration = 1, $_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index'] = 0; $__section_sostav_position_0_iteration <= $__section_sostav_position_0_total; $__section_sostav_position_0_iteration++, $_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index']++){
 ?>
-                <tr class="ng-scope">
-                    <td class="ng-binding"><br><br> <?php echo $_smarty_tpl->tpl_vars['sostav']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index'] : null)]['sostav_id'];?>
+                <tr>
+                    <td><br><br> <?php echo $_smarty_tpl->tpl_vars['sostav']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index'] : null)]['sostav_id'];?>
  </td>
-                    <td class="ng-binding"><br><br> <?php echo $_smarty_tpl->tpl_vars['sostav']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index'] : null)]['datum_sostav'];?>
+                    <td><br><br> <?php echo $_smarty_tpl->tpl_vars['sostav']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index'] : null)]['datum_sostav'];?>
 </td>
-                    <td class="ng-binding"><br><br> <?php echo $_smarty_tpl->tpl_vars['sostav']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index'] : null)]['natprevar'];?>
+                    <td><br><br> <?php echo $_smarty_tpl->tpl_vars['sostav']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index'] : null)]['natprevar'];?>
 </td>
                     <td>
-                        <br><br><button type="button" class="btn myBtn" data-bs-toggle="modal" data-bs-target="#myModalSostav" ng-click="passPosition($index)"> <i class="fa-solid fa-shirt"></i></button>
+                        <br><br><button type="button" class="btn myBtn" data-bs-toggle="modal" data-bs-target="#myModalSostav"> <i class="fa-solid fa-shirt"></i></button>
                     </td>
                     <td>
                         <img class="sostavSlika" width="150" height="150" src="uploads/Images/sostav/<?php echo $_smarty_tpl->tpl_vars['sostav']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index'] : null)]['sostav_img_path'];?>
@@ -90,7 +90,8 @@ for ($__section_sostav_position_0_iteration = 1, $_smarty_tpl->tpl_vars['__smart
                     <td title="Избриши <?php echo $_smarty_tpl->tpl_vars['sostav']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index'] : null)]['sostav_id'];?>
  <?php echo $_smarty_tpl->tpl_vars['sostav']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index'] : null)]['datum_sostav'];?>
 ">
-                        <br><br><button type="button" class="btn myBtn" data-bs-toggle="modal" data-bs-target="#myModal" ng-click="passPosition($index)"> <i class="fa-solid fa-trash-can"></i></button>
+                        <br><br><a href="index.php?table_name=sostav&pk_value=<?php echo $_smarty_tpl->tpl_vars['sostav']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index'] : null)]['sostav_id'];?>
+" type="button" class="btn myBtn"> <i class="fa-solid fa-trash-can"></i></a>
                     </td>
                 </tr>
             <?php

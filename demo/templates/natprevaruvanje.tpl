@@ -54,15 +54,15 @@
                 <td>{$natprevaruvanje[natprevaruvanje_position].rezultat}</td>
                 <td>{$natprevaruvanje[natprevaruvanje_position].mesto}</td>
                 <td>
-                    <button type="button" class="btn myBtn" data-bs-toggle="modal" data-bs-target="#myModalSostav"> <i class="fa-solid fa-shirt"></i></button>
+                    <button type="button" class="btn myBtn"> <i class="fa-solid fa-shirt"></i></button>
                 </td>
                 <td>{$natprevaruvanje[natprevaruvanje_position].ime}</td>
                 <td>
-                    <button type="button" class="btn myBtn" data-bs-toggle="modal" data-bs-target="#myModalPublika"><i class="fa-solid fa-futbol"></i></button>
+                    <button type="button" class="btn myBtn"><i class="fa-solid fa-futbol"></i></button>
                 </td>
                 <td title="Измени"><i class="fa-solid fa-pen"></i></td>
                 <td title="Избриши {$natprevaruvanje[natprevaruvanje_position].kolo_id} коло || {$natprevaruvanje[natprevaruvanje_position].datum} || {$natprevaruvanje[natprevaruvanje_position].protivnik}">
-                    <button type="button" class="btn myBtn" data-bs-toggle="modal" data-bs-target="#myModal"> <i class="fa-solid fa-trash-can"></i></button>
+                    <a href="index.php?table_name=natprevaruvanje&pk_value={$natprevaruvanje[natprevaruvanje_position].kolo_id}" type="button" class="btn myBtn"><i class="fa-solid fa-trash-can"></i></a>
                 </td>
             </tr>
         {/section}

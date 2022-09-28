@@ -17,8 +17,12 @@ $objDB = new   DB            ();
 //za koja tabela se raboti
 #$table_name="natprevaruvanje";
 
-$table_name=$data[0]->table_name;
-$pk_value=$data[0]->pk_value;
+$table_name=-1;
+$pk_value="";
+if(isset($_GET["table_name"]) && isset($_GET["pk_value"])){
+    $table_name=$data[0]->table_name;
+    $pk_value=$data[0]->pk_value;
+}
 
 switch($table_name)
 {

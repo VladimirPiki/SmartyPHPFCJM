@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.0, created on 2022-09-28 13:30:34
+/* Smarty version 4.2.0, created on 2022-09-28 16:11:04
   from 'D:\xampp\htdocs\SmartyPHPFCJM\demo\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.0',
-  'unifunc' => 'content_6334305ada9b45_30611234',
+  'unifunc' => 'content_633455f8edc6c1_98151147',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'dd2e5fc8d5f90ae5cb750a62ef34332594903a34' => 
     array (
       0 => 'D:\\xampp\\htdocs\\SmartyPHPFCJM\\demo\\templates\\header.tpl',
-      1 => 1664364418,
+      1 => 1664374256,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6334305ada9b45_30611234 (Smarty_Internal_Template $_smarty_tpl) {
+function content_633455f8edc6c1_98151147 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,8 +35,11 @@ function content_6334305ada9b45_30611234 (Smarty_Internal_Template $_smarty_tpl)
 >
 
   <!--јQuery framework-->
-  <?php echo '<script'; ?>
- src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"><?php echo '</script'; ?>
+<?php echo '<script'; ?>
+ src="assets/js/jquery.min.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ src="assets/js/script.js"><?php echo '</script'; ?>
 >
 
   <!--Icons link-->
@@ -54,18 +57,7 @@ function content_6334305ada9b45_30611234 (Smarty_Internal_Template $_smarty_tpl)
 </div>
 
 
-  <?php echo '<script'; ?>
->
-    $(document).ready(function(){
-      $("input[name='myInput']").on("keyup", function() {
-        var value = $(this).val().toLowerCase();
-        $("#myTable tr").filter(function() {
-          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-        });
-      });
-    });
-  <?php echo '</script'; ?>
->
+
 
 
 

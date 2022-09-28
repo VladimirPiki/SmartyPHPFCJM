@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.0, created on 2022-09-28 13:30:35
+/* Smarty version 4.2.0, created on 2022-09-28 15:34:49
   from 'D:\xampp\htdocs\SmartyPHPFCJM\demo\templates\igrachi.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.0',
-  'unifunc' => 'content_6334305b35d319_76090821',
+  'unifunc' => 'content_63344d7970d315_28860131',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5cbead70b5e0d2c24c0f987874464d394545c7af' => 
     array (
       0 => 'D:\\xampp\\htdocs\\SmartyPHPFCJM\\demo\\templates\\igrachi.tpl',
-      1 => 1664364626,
+      1 => 1664371536,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6334305b35d319_76090821 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63344d7970d315_28860131 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="table-responsive myViewCover22 ">
     <h3 class="text-center">Играчи</h3>
     <table class="table">
@@ -71,7 +71,7 @@ for ($__section_igrachi_position_0_iteration = 1, $_smarty_tpl->tpl_vars['__smar
 ?>
                 <tr>
                     <td><?php echo $_smarty_tpl->tpl_vars['igrachi']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index'] : null)]['dres_id'];?>
- </td>
+</td>
                     <td><img class="rounded sostavSlika" width="150" height="150" src="uploads/Images/igrachi/<?php echo $_smarty_tpl->tpl_vars['igrachi']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index'] : null)]['igrachi_img_path'];?>
 " alt="<?php echo $_smarty_tpl->tpl_vars['igrachi']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index'] : null)]['igrachi_img_path'];?>
 "> </td>
@@ -95,7 +95,8 @@ echo $_smarty_tpl->tpl_vars['igrachi']->value[(isset($_smarty_tpl->tpl_vars['__s
  || <?php echo $_smarty_tpl->tpl_vars['igrachi']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index'] : null)]['ime_igrachi'];?>
  <?php echo $_smarty_tpl->tpl_vars['igrachi']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index'] : null)]['prezime_igrachi'];?>
 ">
-                    <br> <br><button type="button" class="btn myBtn" data-bs-toggle="modal" data-bs-target="#myModal"> <i class="fa-solid fa-trash-can"></i></button>
+                    <br> <br><a href="index.php?table_name=igrachi&pk_value=<?php echo $_smarty_tpl->tpl_vars['igrachi']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index'] : null)]['dres_id'];?>
+" type="button" class="btn myBtn"> <i class="fa-solid fa-trash-can"></i></a>
                     </td>
                 </tr>
             <?php

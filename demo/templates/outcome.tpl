@@ -33,7 +33,7 @@
                     <td><br> {$outcome[outcome_position].dres_id} || {$outcome[outcome_position].ime}  {$outcome[outcome_position].prezime} || {$outcome[outcome_position].pozicija} || {$outcome[outcome_position].godini}</td>
                     <td title="Измени"><br><i class="fa-solid fa-pen"></i></td>
                     <td title="Избриши {$outcome[outcome_position].outcome_id} || {$outcome[outcome_position].klub} ||  {$outcome[outcome_position].ime}  {$outcome[outcome_position].prezime}">
-                    <br><button type="button" class="btn myBtn" data-bs-toggle="modal" data-bs-target="#myModal"> <i class="fa-solid fa-trash-can"></i></button>
+                    <br><a href="index.php?table_name=outcome&pk_value={$outcome[outcome_position].outcome_id}" type="button" class="btn myBtn"> <i class="fa-solid fa-trash-can"></i></a>
                     </td>
                 </tr>
             {/section}

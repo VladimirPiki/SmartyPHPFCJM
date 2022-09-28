@@ -36,7 +36,7 @@
                     <td>{$uprava[uprava_position].rabotna_ocenka}</td>
                     <td title="Измени "><i class="fa-solid fa-pen"></i></td>
                     <td title="Избриши {$uprava[uprava_position].dres_id} || {$uprava[uprava_position].zalaganje}">
-                        <button type="button" class="btn myBtn" data-bs-toggle="modal" data-bs-target="#myModal"> <i class="fa-solid fa-trash-can"></i></button>
+                        <a href="index.php?table_name=uprava&pk_value={$uprava[uprava_position].dres_id}" type="button" class="btn myBtn"> <i class="fa-solid fa-trash-can"></i></a>
                     </td>
                 </tr>
             </tbody>

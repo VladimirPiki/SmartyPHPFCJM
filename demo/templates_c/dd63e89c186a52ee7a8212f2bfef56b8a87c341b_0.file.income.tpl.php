@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.0, created on 2022-09-28 13:10:10
+/* Smarty version 4.2.0, created on 2022-09-28 16:11:38
   from 'D:\xampp\htdocs\SmartyPHPFCJM\demo\templates\income.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.0',
-  'unifunc' => 'content_63342b92483ba3_82715388',
+  'unifunc' => 'content_6334561a77d773_85022711',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'dd63e89c186a52ee7a8212f2bfef56b8a87c341b' => 
     array (
       0 => 'D:\\xampp\\htdocs\\SmartyPHPFCJM\\demo\\templates\\income.tpl',
-      1 => 1664363408,
+      1 => 1664371533,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63342b92483ba3_82715388 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6334561a77d773_85022711 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="table-responsive myViewCover22">
     <h3 class="text-center">Трансфери кој доааѓат</h3>
         <table class="table text-center">
@@ -29,22 +29,22 @@ function content_63342b92483ba3_82715388 (Smarty_Internal_Template $_smarty_tpl)
                         <th>Трансфери кој доааѓат</th>
                         <th></th>
                         <th>
-                            <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByName" id="searchByName" ng-model="searchByName" placeholder="Име">
+                            <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Име">
                         </th>
                         <th> 
-                            <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByLastName" id="searchByLastName" ng-model="searchByLastName" placeholder="Презиме">
+                            <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Презиме">
                         </th>
                         <th>
-                            <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByPosition" id="searchByPosition" ng-model="searchByPosition" placeholder="Позиција">
+                            <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Позиција">
                         </th>
                         <th>
-                            <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByYear" id="searchByYear" ng-model="searchByYear" placeholder="Години">
+                            <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Години">
                         </th>
                         <th>
-                            <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByClub" id="searchByClub" ng-model="searchByClub" placeholder="Клубот">
+                            <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Клубот">
                         </th>
                         <th>
-                            <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByIznosDenari" id="searchByIznosDenari" ng-model="searchByIznosDenari" placeholder="Износот на трансферот">
+                            <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Износот на трансферот">
                         </th>
                         <th><i class="fa-solid fa-pen"></i>Измени</th>
                         <th><i class="fa-solid fa-trash-can"></i>Избриши</th>
@@ -58,30 +58,31 @@ $_smarty_tpl->tpl_vars['__smarty_section_income_position'] = new Smarty_Variable
 if ($__section_income_position_0_total !== 0) {
 for ($__section_income_position_0_iteration = 1, $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] = 0; $__section_income_position_0_iteration <= $__section_income_position_0_total; $__section_income_position_0_iteration++, $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']++){
 ?>
-                    <tr class="ng-scope">
-                        <td class="ng-binding"><br> <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['income_id'];?>
+                    <tr>
+                        <td><br> <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['income_id'];?>
 </td>
-                        <td class="ng-binding"><img class="rounded-circle" width="100" height="100" src="uploads/Images/income/<?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['income_img_path'];?>
+                        <td><img class="rounded-circle" width="100" height="100" src="uploads/Images/income/<?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['income_img_path'];?>
 " alt="<?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['income_img_path'];?>
 "></td>
-                        <td class="ng-binding"><br> <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['ime'];?>
+                        <td><br> <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['ime'];?>
 </td>
-                        <td class="ng-binding"><br> <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['prezime'];?>
+                        <td><br> <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['prezime'];?>
 </td>
-                        <td class="ng-binding"><br> <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['pozicija'];?>
+                        <td><br> <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['pozicija'];?>
 </td>
-                        <td class="ng-binding"><br> <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['godini'];?>
+                        <td>><br> <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['godini'];?>
 </td>
-                        <td class="ng-binding"><br> <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['klub'];?>
+                        <td><br> <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['klub'];?>
 </td>
-                        <td class="ng-binding"><br> <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['iznos_denari'];?>
+                        <td><br> <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['iznos_denari'];?>
 </td>
                         <td class="text-center ng-binding">  <br>  <br> </td>
                         <td title="Измени"><br><i class="fa-solid fa-pen"></i></td>
                         <td title="Избриши <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['ime'];?>
  <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['prezime'];?>
 ">
-                                <br><button type="button" class="btn myBtn" data-bs-toggle="modal" data-bs-target="#myModal" ng-click="passPosition($index)"> <i class="fa-solid fa-trash-can"></i></button>
+                                <br><a href="index.php?table_name=income&pk_value=<?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['income_id'];?>
+" type="button" class="btn myBtn"><i class="fa-solid fa-trash-can"></i></a>
                         </td>
                     </tr>
                 <?php

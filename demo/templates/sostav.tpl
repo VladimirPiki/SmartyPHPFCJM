@@ -47,7 +47,7 @@
                     </td>
                     <td title="Измени"><br><br><i class="fa-solid fa-pen"></i></td>
                     <td title="Избриши {$sostav[sostav_position].sostav_id} {$sostav[sostav_position].datum_sostav}">
-                        <br><br><button type="button" class="btn myBtn" data-bs-toggle="modal" data-bs-target="#myModal"> <i class="fa-solid fa-trash-can"></i></button>
+                        <br><br><a href="index.php?table_name=sostav&pk_value={$sostav[sostav_position].sostav_id}" type="button" class="btn myBtn"> <i class="fa-solid fa-trash-can"></i></a>
                     </td>
                 </tr>
             {/section}

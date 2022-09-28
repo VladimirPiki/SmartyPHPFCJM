@@ -10,7 +10,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 
   <!--јQuery framework-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/script.js"></script>
 
   <!--Icons link-->
 	<link rel="stylesheet" href="assets/icons/fontawesome-free-6.1.2-web/css/all.css">
@@ -26,16 +27,7 @@
 </div>
 
 
-  <script>
-    $(document).ready(function(){
-      $("input[name='myInput']").on("keyup", function() {
-        var value = $(this).val().toLowerCase();
-        $("#myTable tr").filter(function() {
-          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-        });
-      });
-    });
-  </script>
+
 
 
 
