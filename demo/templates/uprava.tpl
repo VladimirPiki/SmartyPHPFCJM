@@ -7,7 +7,7 @@
                     Број на дрес во стручен штаб
                 </th>
                 <th>
-                    <select class="form-control text-center myDropdown" name="searchByZalaganje" id="searchByZalaganje" ng-model="searchByZalaganje">
+                    <select class="form-control text-center myDropdown">
                         <option class="myDropdown" value="">Залагање во клубот</option>
                         <option class="myDropdown">nedovolno</option>
                         <option class="myDropdown" >dovolno</option>
@@ -15,7 +15,7 @@
                     </select>
                 </th>
                 <th>
-                    <select class="form-control text-center myDropdown" name="searchByRabotnaOcenka" id="searchByRabotnaOcenka" ng-model="searchByRabotnaOcenka">
+                    <select class="form-control text-center myDropdown">
                         <option class="myDropdown" value="">Работна оценка</option>
                         <option class="myDropdown">1</option>
                         <option class="myDropdown" >2</option>
@@ -30,13 +30,13 @@
         </thead>
         {section name=uprava_position loop=$uprava}
             <tbody>
-                <tr class="ng-scope">
-                    <td class="ng-binding">{$uprava[uprava_position].dres_id}</td>
-                    <td class="ng-binding">{$uprava[uprava_position].zalaganje}</td>
-                    <td class="ng-binding">{$uprava[uprava_position].rabotna_ocenka}</td>
+                <tr>
+                    <td>{$uprava[uprava_position].dres_id}</td>
+                    <td>{$uprava[uprava_position].zalaganje}</td>
+                    <td>{$uprava[uprava_position].rabotna_ocenka}</td>
                     <td title="Измени "><i class="fa-solid fa-pen"></i></td>
                     <td title="Избриши {$uprava[uprava_position].dres_id} || {$uprava[uprava_position].zalaganje}">
-                        <button type="button" class="btn myBtn" data-bs-toggle="modal" data-bs-target="#myModal" ng-click="passPosition($index)"> <i class="fa-solid fa-trash-can"></i></button>
+                        <button type="button" class="btn myBtn" data-bs-toggle="modal" data-bs-target="#myModal"> <i class="fa-solid fa-trash-can"></i></button>
                     </td>
                 </tr>
             </tbody>
