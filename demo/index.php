@@ -11,6 +11,7 @@ $smarty->debugging = false;
 $smarty->caching = false;
 $smarty->cache_lifetime = 120;
 $smarty->assign("fullName","Vladimir Krstevski");
+$smarty->assign("fullNameKirilica","Владимир Крстевски");
 $smarty->assign("Name", "Fred Irving Johnathan Bradley Peppergill", true);
 $smarty->assign("FirstName", array("John", "Mary", "James", "Henry"));
 $smarty->assign("LastName", array("Doe", "Smith", "Johnson", "Case"));

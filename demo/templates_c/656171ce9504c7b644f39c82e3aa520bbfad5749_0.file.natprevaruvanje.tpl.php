@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.0, created on 2022-09-27 00:45:52
+/* Smarty version 4.2.0, created on 2022-09-28 11:14:56
   from 'D:\xampp\htdocs\SmartyPHPFCJM\demo\templates\natprevaruvanje.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.0',
-  'unifunc' => 'content_63322ba0cd95e9_32320956',
+  'unifunc' => 'content_633410901b9ea9_51333667',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '656171ce9504c7b644f39c82e3aa520bbfad5749' => 
     array (
       0 => 'D:\\xampp\\htdocs\\SmartyPHPFCJM\\demo\\templates\\natprevaruvanje.tpl',
-      1 => 1664232347,
+      1 => 1664233642,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63322ba0cd95e9_32320956 (Smarty_Internal_Template $_smarty_tpl) {
+function content_633410901b9ea9_51333667 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="table-responsive myViewCover22">
     <h3 class="text-center">Натпреварување</h3>
     <table class="table">

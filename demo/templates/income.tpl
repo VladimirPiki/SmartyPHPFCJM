@@ -6,28 +6,28 @@
                         <th>Трансфери кој доааѓат</th>
                         <th></th>
                         <th>
-                            <input class="form-control text-center fw-bold" type="text" name="searchByName" id="searchByName" ng-model="searchByName" placeholder="Име">
+                            <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByName" id="searchByName" ng-model="searchByName" placeholder="Име">
                         </th>
                         <th> 
-                            <input class="form-control text-center fw-bold" type="text" name="searchByLastName" id="searchByLastName" ng-model="searchByLastName" placeholder="Презиме">
+                            <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByLastName" id="searchByLastName" ng-model="searchByLastName" placeholder="Презиме">
                         </th>
                         <th>
-                            <input class="form-control text-center fw-bold" type="text" name="searchByPosition" id="searchByPosition" ng-model="searchByPosition" placeholder="Позиција">
+                            <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByPosition" id="searchByPosition" ng-model="searchByPosition" placeholder="Позиција">
                         </th>
                         <th>
-                            <input class="form-control text-center fw-bold" type="text" name="searchByYear" id="searchByYear" ng-model="searchByYear" placeholder="Години">
+                            <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByYear" id="searchByYear" ng-model="searchByYear" placeholder="Години">
                         </th>
                         <th>
-                            <input class="form-control text-center fw-bold" type="text" name="searchByClub" id="searchByClub" ng-model="searchByClub" placeholder="Клубот">
+                            <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByClub" id="searchByClub" ng-model="searchByClub" placeholder="Клубот">
                         </th>
                         <th>
-                            <input class="form-control text-center fw-bold" type="text" name="searchByIznosDenari" id="searchByIznosDenari" ng-model="searchByIznosDenari" placeholder="Износот на трансферот">
+                            <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByIznosDenari" id="searchByIznosDenari" ng-model="searchByIznosDenari" placeholder="Износот на трансферот">
                         </th>
                         <th><i class="fa-solid fa-pen"></i>Измени</th>
                         <th><i class="fa-solid fa-trash-can"></i>Избриши</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="myTable">
                 {section name=income_position loop=$income}
                     <tr class="ng-scope">
                         <td class="ng-binding"><br> {$income[income_position].income_id}</td>

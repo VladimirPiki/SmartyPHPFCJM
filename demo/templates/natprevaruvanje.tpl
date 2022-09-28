@@ -5,16 +5,16 @@
             <tr class="text-center">
                 <th>Коло</th>
                 <th>
-                    <input class="form-control text-center fw-bold" type="text" name="searchByDatum" id="searchByDatum" ng-model="searchByDatum" placeholder="Датум">
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByDatum" id="searchByDatum" ng-model="searchByDatum" placeholder="Датум">
                 </th>
                 <th>
-                    <input class="form-control text-center fw-bold" type="text" name="searchByProtivnik" id="searchByProtivnik" ng-model="searchByProtivnik" placeholder="Противник">
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByProtivnik" id="searchByProtivnik" ng-model="searchByProtivnik" placeholder="Противник">
                 </th>
                 <th>
-                    <input class="form-control text-center fw-bold" type="text" name="searchByRezultat" id="searchByRezultat" ng-model="searchByRezultat" placeholder="Резултат">
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByRezultat" id="searchByRezultat" ng-model="searchByRezultat" placeholder="Резултат">
                 </th>
                 <th>
-                    <input class="form-control text-center fw-bold" type="text" name="searchByMesto" id="searchByMesto" ng-model="searchByMesto" placeholder="Место">
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByMesto" id="searchByMesto" ng-model="searchByMesto" placeholder="Место">
                 </th>
                  <th>
                     <select class="form-control text-center myDropdown" id="searchBySostavId" name="searchBySostavId" ng-model="searchBySostavId">
@@ -45,7 +45,7 @@
             </tr>
         </thead>
 
-        <tbody>
+        <tbody id="myTable">
          {section name=natprevaruvanje_position loop=$natprevaruvanje}
             <tr class="ng-scope">
                 <td class="ng-binding">{$natprevaruvanje[natprevaruvanje_position].kolo_id} </td>

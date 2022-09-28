@@ -6,10 +6,10 @@
                 <th>Трансфери кој заминуваат</th>
                 <th></th>
                 <th>
-                    <input class="form-control text-center fw-bold" type="text" name="searchByKlub" id="searchByKlub" ng-model="searchByKlub" placeholder="Името на клуб">
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByKlub" id="searchByKlub" ng-model="searchByKlub" placeholder="Името на клуб">
                 </th>
                 <th>
-                    <input class="form-control text-center fw-bold" type="text" name="searchByIznosDenari" id="searchByIznosDenari" ng-model="searchByIznosDenari" placeholder="Износот на трансфер">
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" name="searchByIznosDenari" id="searchByIznosDenari" ng-model="searchByIznosDenari" placeholder="Износот на трансфер">
                 </th>
                 <th>
                     <select class="form-control text-center myDropdown" id="searchByDresId" name="searchByDresId"  ng-model="searchByDresId">
@@ -23,7 +23,7 @@
                 <th><i class="fa-solid fa-trash-can"></i>Избриши</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="myTable">
             {section name=outcome_position loop=$outcome}
                 <tr class="ng-scope">
                     <td class="ng-binding"> <br> {$outcome[outcome_position].outcome_id} </td>

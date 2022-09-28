@@ -1,4 +1,4 @@
-<div class="table-responsive myViewCover22">
+<div class="table-responsive myViewCover22 ">
     <h3 class="text-center">Играчи</h3>
     <table class="table">
         <thead >
@@ -6,19 +6,19 @@
                 <th>Број на дрес</th>
                 <th></th>
                 <th>
-                    <input class="form-control text-center fw-bold" type="text" name="searchByName" id="searchByName" ng-model="searchByName" placeholder="Име">
+                    <input class="form-control text-center fw-bold" name="myInput" type="text" name="searchByName" id="searchByName" ng-model="searchByName" placeholder="Име">
                 </th>
                 <th>
-                    <input class="form-control text-center fw-bold" type="text" name="searchByLastName" id="searchByLastName" ng-model="searchByLastName" placeholder="Презиме">
+                    <input class="form-control text-center fw-bold" name="myInput" type="text" name="searchByLastName" id="searchByLastName" ng-model="searchByLastName" placeholder="Презиме">
                 </th>
                 <th>
-                    <input class="form-control text-center fw-bold " type="text" name="searchByPosition" id="searchByPosition" ng-model="searchByPosition" placeholder="Позиција">
+                    <input class="form-control text-center fw-bold"  name="myInput" type="text" name="searchByPosition" id="searchByPosition" ng-model="searchByPosition" placeholder="Позиција">
                 </th>
                 <th>
-                    <input class="form-control text-center fw-bold" type="text" name="searchByYear" id="searchByYear" ng-model="searchByYear" placeholder="Години">
+                    <input class="form-control text-center fw-bold" name="myInput"  type="text" name="searchByYear" id="searchByYear" ng-model="searchByYear" placeholder="Години">
                 </th>
                 <th>
-                    <input class="form-control text-center fw-bold" type="text" name="searchBySalary" id="searchBySalary" ng-model="searchBySalary" placeholder="Плата">
+                    <input class="form-control text-center fw-bold" name="myInput"  type="text" name="searchBySalary" id="searchBySalary" ng-model="searchBySalary" placeholder="Плата">
                 </th>
                 <th>
                     <select class="form-control text-center myDropdown ng-scope" id="searchByIncomeId" name="searchByIncomeId" ng-model="searchByIncomeId">
@@ -33,12 +33,12 @@
             </tr>
         </thead>
 
-        <tbody>
+        <tbody id="myTable">
             {section name=igrachi_position loop=$igrachi}
-                <tr class="ng-scope">
-                    <td class="ng-binding">{$igrachi[igrachi_position].dres_id} </td>
+                <tr class="ng-scope" >
+                    <td class="ng-binding" >{$igrachi[igrachi_position].dres_id} </td>
                     <td class="ng-binding"><img class="rounded sostavSlika" width="150" height="150" src="uploads/Images/igrachi/{$igrachi[igrachi_position].igrachi_img_path}" alt="{$igrachi[igrachi_position].igrachi_img_path}"> </td>
-                    <td class="text-center"><br><br>{$igrachi[igrachi_position].ime_igrachi}</td>
+                    <td class="text-center "><br><br>{$igrachi[igrachi_position].ime_igrachi}</td>
                     <td class="text-center"><br><br>{$igrachi[igrachi_position].prezime_igrachi}</td>
                     <td class="text-center"><br><br>{$igrachi[igrachi_position].pozicija_igrachi}</td>
                     <td class="text-center"><br><br>{$igrachi[igrachi_position].godini_igrachi}</td>
