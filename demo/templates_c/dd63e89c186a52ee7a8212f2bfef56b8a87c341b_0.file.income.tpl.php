@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.0, created on 2022-09-28 21:06:52
+/* Smarty version 4.2.0, created on 2022-09-30 13:44:51
   from 'D:\xampp\htdocs\SmartyPHPFCJM\demo\templates\income.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.0',
-  'unifunc' => 'content_63349b4c1c6260_41074137',
+  'unifunc' => 'content_6336d6b366ce01_10057239',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'dd63e89c186a52ee7a8212f2bfef56b8a87c341b' => 
     array (
       0 => 'D:\\xampp\\htdocs\\SmartyPHPFCJM\\demo\\templates\\income.tpl',
-      1 => 1664389075,
+      1 => 1664538288,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63349b4c1c6260_41074137 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6336d6b366ce01_10057239 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="table-responsive myViewCover22">
     <h3 class="text-center">Трансфери кој доааѓат</h3>
         <table class="table text-center">
@@ -38,13 +38,13 @@ function content_63349b4c1c6260_41074137 (Smarty_Internal_Template $_smarty_tpl)
                             <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Позиција">
                         </th>
                         <th>
-                            <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Години">
+                            <input name="myInput" class="form-control text-center fw-bold" type="number" placeholder="Години">
                         </th>
                         <th>
                             <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Клубот">
                         </th>
                         <th>
-                            <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Износот на трансферот">
+                            <input name="myInput" class="form-control text-center fw-bold" type="number" placeholder="Износот на трансферот">
                         </th>
                         <th><i class="fa-solid fa-pen"></i>Измени</th>
                         <th><i class="fa-solid fa-trash-can"></i>Избриши</th>
@@ -70,13 +70,12 @@ for ($__section_income_position_0_iteration = 1, $_smarty_tpl->tpl_vars['__smart
 </td>
                         <td><br> <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['pozicija'];?>
 </td>
-                        <td>><br> <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['godini'];?>
+                        <td><br><?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['godini'];?>
 </td>
                         <td><br> <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['klub'];?>
 </td>
                         <td><br> <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['iznos_denari'];?>
 </td>
-                        <td class="text-center ng-binding">  <br>  <br> </td>
                         <td title="Измени"><br><i class="fa-solid fa-pen"></i></td>
                         <td title="Избриши <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['ime'];?>
  <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['prezime'];?>

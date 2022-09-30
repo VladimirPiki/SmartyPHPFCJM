@@ -9,7 +9,7 @@
                     <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Името на клуб">
                 </th>
                 <th>
-                    <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Износот на трансфер">
+                    <input name="myInput" class="form-control text-center fw-bold" type="number" placeholder="Износот на трансфер">
                 </th>
                 <th>
                     <select class="form-control text-center myDropdown">

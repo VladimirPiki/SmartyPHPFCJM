@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.0, created on 2022-09-28 20:12:19
+/* Smarty version 4.2.0, created on 2022-09-30 20:31:18
   from 'D:\xampp\htdocs\SmartyPHPFCJM\demo\templates\igrachi.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.0',
-  'unifunc' => 'content_63348e83e12b15_40945350',
+  'unifunc' => 'content_633735f695fd26_22612029',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5cbead70b5e0d2c24c0f987874464d394545c7af' => 
     array (
       0 => 'D:\\xampp\\htdocs\\SmartyPHPFCJM\\demo\\templates\\igrachi.tpl',
-      1 => 1664388689,
+      1 => 1664562390,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63348e83e12b15_40945350 (Smarty_Internal_Template $_smarty_tpl) {
+function content_633735f695fd26_22612029 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="table-responsive myViewCover22 ">
     <h3 class="text-center">Играчи</h3>
     <table class="table">
@@ -28,23 +28,46 @@ function content_63348e83e12b15_40945350 (Smarty_Internal_Template $_smarty_tpl)
             <tr>
                 <th>Број на дрес</th>
                 <th></th>
-                <th colspan="4">
-                    <input class="form-control text-center fw-bold" name="myInput" type="text"  placeholder="Пребарај">
-                </th>
- 
                 <th>
-                    <select class="form-control text-center myDropdown">
-                        <option class="myDropdown ng-binding"  value="">Трансфери кој доааѓат</option>
-                        <option class="myDropdown ng-binding"  value="<?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['income_id'];?>
-" >
-                            <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['income_id'];?>
- || <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['ime'];?>
- || <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['prezime'];?>
- || <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['pozicija'];?>
-
-                        </option>
-                    </select>
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Име">
                 </th>
+                <th> 
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Презиме">
+                </th>
+                <th>
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Позиција">
+                </th>
+                <th>
+                    <input name="myInput" class="form-control text-center fw-bold" type="number" placeholder="Години">
+                </th>
+                 <th>
+                    <input name="myInput" class="form-control text-center fw-bold" type="number" placeholder="Плата во денари">
+                </th>
+
+                <th>
+
+                    <select class="form-control text-center myDropdown">
+                    <?php
+$__section_igrachi_position_0_loop = (is_array(@$_loop=$_smarty_tpl->tpl_vars['igrachi']->value) ? count($_loop) : max(0, (int) $_loop));
+$__section_igrachi_position_0_total = $__section_igrachi_position_0_loop;
+$_smarty_tpl->tpl_vars['__smarty_section_igrachi_position'] = new Smarty_Variable(array());
+if ($__section_igrachi_position_0_total !== 0) {
+for ($__section_igrachi_position_0_iteration = 1, $_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index'] = 0; $__section_igrachi_position_0_iteration <= $__section_igrachi_position_0_total; $__section_igrachi_position_0_iteration++, $_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index']++){
+?>
+                            <option class="myDropdown"  value="income" >
+                            <?php echo $_smarty_tpl->tpl_vars['igrachi']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index'] : null)]['income_id'];?>
+    <?php echo $_smarty_tpl->tpl_vars['igrachi']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index'] : null)]['ime_income'];?>
+ || <?php echo $_smarty_tpl->tpl_vars['igrachi']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index'] : null)]['prezime_income'];?>
+
+                            </option>
+                    <?php
+}
+}
+?>
+                    </select>
+
+                </th>
+
                 <th><i class="fa-solid fa-pen"></i>Измени</th>
                 <th><i class="fa-solid fa-trash-can"></i>Избриши</th>
             </tr>
@@ -52,11 +75,11 @@ function content_63348e83e12b15_40945350 (Smarty_Internal_Template $_smarty_tpl)
 
         <tbody id="myTable">
             <?php
-$__section_igrachi_position_0_loop = (is_array(@$_loop=$_smarty_tpl->tpl_vars['igrachi']->value) ? count($_loop) : max(0, (int) $_loop));
-$__section_igrachi_position_0_total = $__section_igrachi_position_0_loop;
+$__section_igrachi_position_1_loop = (is_array(@$_loop=$_smarty_tpl->tpl_vars['igrachi']->value) ? count($_loop) : max(0, (int) $_loop));
+$__section_igrachi_position_1_total = $__section_igrachi_position_1_loop;
 $_smarty_tpl->tpl_vars['__smarty_section_igrachi_position'] = new Smarty_Variable(array());
-if ($__section_igrachi_position_0_total !== 0) {
-for ($__section_igrachi_position_0_iteration = 1, $_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index'] = 0; $__section_igrachi_position_0_iteration <= $__section_igrachi_position_0_total; $__section_igrachi_position_0_iteration++, $_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index']++){
+if ($__section_igrachi_position_1_total !== 0) {
+for ($__section_igrachi_position_1_iteration = 1, $_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index'] = 0; $__section_igrachi_position_1_iteration <= $__section_igrachi_position_1_total; $__section_igrachi_position_1_iteration++, $_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index']++){
 ?>
                 <tr>
                     <td><br><br><?php echo $_smarty_tpl->tpl_vars['igrachi']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index'] : null)]['dres_id'];?>

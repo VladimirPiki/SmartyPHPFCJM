@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.0, created on 2022-09-28 16:13:08
+/* Smarty version 4.2.0, created on 2022-09-30 20:50:34
   from 'D:\xampp\htdocs\SmartyPHPFCJM\demo\templates\uprava.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.0',
-  'unifunc' => 'content_63345674eee666_14719751',
+  'unifunc' => 'content_63373a7a48cf41_65767042',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '07bea3935ed2575dadab6644cb694707760e2780' => 
     array (
       0 => 'D:\\xampp\\htdocs\\SmartyPHPFCJM\\demo\\templates\\uprava.tpl',
-      1 => 1664371988,
+      1 => 1664563829,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63345674eee666_14719751 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63373a7a48cf41_65767042 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="table-responsive myViewCover22">
     <h3 class="text-center">Стручен штаб</h3>
     <table class="table">
@@ -70,7 +70,7 @@ for ($__section_uprava_position_0_iteration = 1, $_smarty_tpl->tpl_vars['__smart
                     <td title="Избриши <?php echo $_smarty_tpl->tpl_vars['uprava']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_uprava_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_uprava_position']->value['index'] : null)]['dres_id'];?>
  || <?php echo $_smarty_tpl->tpl_vars['uprava']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_uprava_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_uprava_position']->value['index'] : null)]['zalaganje'];?>
 ">
-                        <a href="index.php?table_name=uprava&pk_value=<?php echo $_smarty_tpl->tpl_vars['uprava']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_uprava_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_uprava_position']->value['index'] : null)]['dres_id'];?>
+                        <a href="index.php?file_name=delete&table_name=uprava&pk_value=<?php echo $_smarty_tpl->tpl_vars['uprava']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_uprava_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_uprava_position']->value['index'] : null)]['dresBroj'];?>
 " type="button" class="btn myBtn"> <i class="fa-solid fa-trash-can"></i></a>
                     </td>
                 </tr>

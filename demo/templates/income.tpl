@@ -15,13 +15,13 @@
                             <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Позиција">
                         </th>
                         <th>
-                            <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Години">
+                            <input name="myInput" class="form-control text-center fw-bold" type="number" placeholder="Години">
                         </th>
                         <th>
                             <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Клубот">
                         </th>
                         <th>
-                            <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Износот на трансферот">
+                            <input name="myInput" class="form-control text-center fw-bold" type="number" placeholder="Износот на трансферот">
                         </th>
                         <th><i class="fa-solid fa-pen"></i>Измени</th>
                         <th><i class="fa-solid fa-trash-can"></i>Избриши</th>
@@ -35,10 +35,9 @@
                         <td><br> {$income[income_position].ime}</td>
                         <td><br> {$income[income_position].prezime}</td>
                         <td><br> {$income[income_position].pozicija}</td>
-                        <td>><br> {$income[income_position].godini}</td>
+                        <td><br>{$income[income_position].godini}</td>
                         <td><br> {$income[income_position].klub}</td>
                         <td><br> {$income[income_position].iznos_denari}</td>
-                        <td class="text-center ng-binding">  <br>  <br> </td>
                         <td title="Измени"><br><i class="fa-solid fa-pen"></i></td>
                         <td title="Избриши {$income[income_position].ime} {$income[income_position].prezime}">
                                 <br><a href="index.php?file_name=delete&table_name=income&pk_value={$income[income_position].income_id}" type="button" class="btn myBtn"><i class="fa-solid fa-trash-can"></i></a>

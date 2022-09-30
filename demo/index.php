@@ -41,6 +41,7 @@ $smarty->assign(
 //require_once "model/select.php?table_name=igrachi";
 require_once "model/select.php";
 require_once "model/delete.php";
+require_once "model/insert.php";
 require_once "navigation.php";
 /*
 $smarty->assign(

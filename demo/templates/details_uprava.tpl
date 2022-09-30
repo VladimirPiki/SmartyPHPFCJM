@@ -2,16 +2,14 @@
   <h3 class="text-center">
     Стручен штаб
   </h3>
-  <div class="alert alert-success" >
+  <span class="alert alert-success" id="wrong_threeCharacters">
     Успешно ги внесовте податоците!
-  </div>
-  <div class="alert alert-danger" >
+  </span>
     Ве молиме пополнете го правилно формуларот!
-  </div>
+  </span>
   <form name="myForm">
     <div class="mb-3">
       <label for="dres_id" class="form-label">dres_id</label>
-      <span class="alert alert-danger">Внесете име со најмалце 1 бројка!!!</span>
           <select class="form-control myInputDetails" id="dres_id" name="dres_id" >
             <option class="text-light" value="">Изберете опции</option>
             <option class="text-light"  value="" >
@@ -39,6 +37,6 @@
             <option name="rabotna_ocenka" id="rabotna_ocenka">5</option>
           </select>
       </div>
-      <button type="button" class="btn myBtn mb-5">Save</button>
+        <input type="submit" class="btn myBtn mb-5" id="save">Save</input>
     </form>
 </div>

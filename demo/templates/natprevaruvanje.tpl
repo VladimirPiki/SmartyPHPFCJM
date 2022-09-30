@@ -16,14 +16,18 @@
                 <th>
                     <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Место">
                 </th>
+
                  <th>
                     <select class="form-control text-center myDropdown">
-                        <option class="myDropdown" value="">Состав</option>
-                        <option class="myDropdown" >
-                            {$sostav[sostav_position].datum_sostav}
-                        </option>
+                        {section name=sostav_position loop=$sostav}
+                            <option class="myDropdown" value="">Состав</option>
+                            <option class="myDropdown" >
+                                {$sostav[sostav_position].datum_sostav}
+                            </option>
+                         {/section}
                     </select>
                 </th>
+
                 <th>
                     <select class="form-control text-center myDropdown">
                         <option class="myDropdown" value="">Стадион</option>

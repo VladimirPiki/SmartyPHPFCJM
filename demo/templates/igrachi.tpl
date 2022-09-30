@@ -5,18 +5,34 @@
             <tr>
                 <th>Број на дрес</th>
                 <th></th>
-                <th colspan="4">
-                    <input class="form-control text-center fw-bold" name="myInput" type="text"  placeholder="Пребарај">
-                </th>
- 
                 <th>
-                    <select class="form-control text-center myDropdown">
-                        <option class="myDropdown ng-binding"  value="">Трансфери кој доааѓат</option>
-                        <option class="myDropdown ng-binding"  value="{$income[income_position].income_id}" >
-                            {$income[income_position].income_id} || {$income[income_position].ime} || {$income[income_position].prezime} || {$income[income_position].pozicija}
-                        </option>
-                    </select>
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Име">
                 </th>
+                <th> 
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Презиме">
+                </th>
+                <th>
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Позиција">
+                </th>
+                <th>
+                    <input name="myInput" class="form-control text-center fw-bold" type="number" placeholder="Години">
+                </th>
+                 <th>
+                    <input name="myInput" class="form-control text-center fw-bold" type="number" placeholder="Плата во денари">
+                </th>
+
+                <th>
+
+                    <select class="form-control text-center myDropdown">
+                    {section name=igrachi_position loop=$igrachi}
+                            <option class="myDropdown"  value="income" >
+                            {$igrachi[igrachi_position].income_id}    {$igrachi[igrachi_position].ime_income} || {$igrachi[igrachi_position].prezime_income}
+                            </option>
+                    {/section}
+                    </select>
+
+                </th>
+
                 <th><i class="fa-solid fa-pen"></i>Измени</th>
                 <th><i class="fa-solid fa-trash-can"></i>Избриши</th>
             </tr>

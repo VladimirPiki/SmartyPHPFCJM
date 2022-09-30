@@ -1,4 +1,27 @@
-<div class="myViewCover22">
+<?php
+/* Smarty version 4.2.0, created on 2022-09-30 16:43:29
+  from 'D:\xampp\htdocs\SmartyPHPFCJM\demo\templates\details_sostav.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.2.0',
+  'unifunc' => 'content_63370091d4de31_29583831',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'ffb9ba9043eee65b0bf55cb2dfdb92d71f965240' => 
+    array (
+      0 => 'D:\\xampp\\htdocs\\SmartyPHPFCJM\\demo\\templates\\details_sostav.tpl',
+      1 => 1664549003,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_63370091d4de31_29583831 (Smarty_Internal_Template $_smarty_tpl) {
+?><div class="myViewCover22">
     <h3 class="text-center">
         Состав
     </h3>
@@ -24,9 +47,10 @@
         <label for="coach" class="form-label">Тренер</label>
         <span class="alert alert-danger" id="wrong_oneCharacters">Внесете најмалку со 1 бројка!!!</span>  
             <input class="form-control myInputDetails" type="text" name="myInputDet" placeholder="Пребарај по позиција на играчот">
-            <select class="form-control myInputDetails" id="mySelect">
+            <select class="form-control myInputDetails" id="coach" name="coach">
                 <option class="text-light" value="">Изберете опции</option>
                 <option class="text-light" value="" >
+
                 </option>   
             </select>
         </div>
@@ -232,6 +256,7 @@
             <label for="sostav_img_path" class="form-label">Слика</label>
             <input type="text" class="form-control myInputDetails"  placeholder="Внесете слика од натпреварот"  id="sostav_img_path" name="sostav_img_path" ng-model="sostav_img_path">
         </div>
-        <input type="submit" class="btn myBtn mb-5" id="save">Save</input>
+        <button type="button" class="btn myBtn mb-5">Save</button>
     </form>
-</div>
+</div><?php }
+}

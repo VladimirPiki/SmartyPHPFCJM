@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.0, created on 2022-09-29 00:35:43
+/* Smarty version 4.2.0, created on 2022-09-30 20:58:57
   from 'D:\xampp\htdocs\SmartyPHPFCJM\demo\templates\main.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.0',
-  'unifunc' => 'content_6334cc3f6732d8_52286879',
+  'unifunc' => 'content_63373c7188c899_50950253',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '44f183d442b03e0c23a0cb1f4d913b5c2100c06d' => 
     array (
       0 => 'D:\\xampp\\htdocs\\SmartyPHPFCJM\\demo\\templates\\main.tpl',
-      1 => 1664404419,
+      1 => 1664530487,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6334cc3f6732d8_52286879 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63373c7188c899_50950253 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="container-fluid mojSlider">
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
         <div class="carousel-indicators">

@@ -40,7 +40,7 @@
                     <td><br><br> {$sostav[sostav_position].datum_sostav}</td>
                     <td><br><br> {$sostav[sostav_position].natprevar}</td>
                     <td>
-                        <br><br><button type="button" class="btn myBtn" data-bs-toggle="modal" data-bs-target="#myModalSostav"> <i class="fa-solid fa-shirt"></i></button>
+                        <br><br><button type="button" class="btn myBtn" id="mojDijalog"> <i class="fa-solid fa-shirt"></i></button>
                     </td>
                     <td>
                         <img class="sostavSlika" width="150" height="150" src="uploads/Images/sostav/{$sostav[sostav_position].sostav_img_path}" alt="{$sostav[sostav_position].sostav_img_path}">
@@ -54,3 +54,15 @@
         </tbody>
     </table>
 </div>
+
+<div id="dialog-message" title="Download complete">
+  <p>
+    <span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span>
+    Your files have downloaded successfully into the My Downloads folder.
+  </p>
+  <p>
+    Currently using <b>36% of your storage space</b>.
+  </p>
+</div>
+ 
+<p>Sed vel diam id libero <a href="http://example.com">rutrum convallis</a>. Donec aliquet leo vel magna. Phasellus rhoncus faucibus ante. Etiam bibendum, enim faucibus aliquet rhoncus, arcu felis ultricies neque, sit amet auctor elit eros a lectus.</p>

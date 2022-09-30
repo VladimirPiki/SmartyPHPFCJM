@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.0, created on 2022-09-28 21:07:03
+/* Smarty version 4.2.0, created on 2022-09-30 18:48:41
   from 'D:\xampp\htdocs\SmartyPHPFCJM\demo\templates\sostav.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.0',
-  'unifunc' => 'content_63349b573e9dc7_21991101',
+  'unifunc' => 'content_63371de9692a82_89210353',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '37f06f88a4899583ebcf2888dc5bb0b124c56358' => 
     array (
       0 => 'D:\\xampp\\htdocs\\SmartyPHPFCJM\\demo\\templates\\sostav.tpl',
-      1 => 1664389110,
+      1 => 1664556508,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63349b573e9dc7_21991101 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63371de9692a82_89210353 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="table-responsive myViewCover22">
     <h3 class="text-center">Состав</h3>
     <table class="table">
@@ -79,7 +79,7 @@ for ($__section_sostav_position_0_iteration = 1, $_smarty_tpl->tpl_vars['__smart
                     <td><br><br> <?php echo $_smarty_tpl->tpl_vars['sostav']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index'] : null)]['natprevar'];?>
 </td>
                     <td>
-                        <br><br><button type="button" class="btn myBtn" data-bs-toggle="modal" data-bs-target="#myModalSostav"> <i class="fa-solid fa-shirt"></i></button>
+                        <br><br><button type="button" class="btn myBtn" id="mojDijalog"> <i class="fa-solid fa-shirt"></i></button>
                     </td>
                     <td>
                         <img class="sostavSlika" width="150" height="150" src="uploads/Images/sostav/<?php echo $_smarty_tpl->tpl_vars['sostav']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_sostav_position']->value['index'] : null)]['sostav_img_path'];?>
@@ -100,5 +100,17 @@ for ($__section_sostav_position_0_iteration = 1, $_smarty_tpl->tpl_vars['__smart
 ?>
         </tbody>
     </table>
-</div><?php }
+</div>
+
+<div id="dialog-message" title="Download complete">
+  <p>
+    <span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span>
+    Your files have downloaded successfully into the My Downloads folder.
+  </p>
+  <p>
+    Currently using <b>36% of your storage space</b>.
+  </p>
+</div>
+ 
+<p>Sed vel diam id libero <a href="http://example.com">rutrum convallis</a>. Donec aliquet leo vel magna. Phasellus rhoncus faucibus ante. Etiam bibendum, enim faucibus aliquet rhoncus, arcu felis ultricies neque, sit amet auctor elit eros a lectus.</p><?php }
 }

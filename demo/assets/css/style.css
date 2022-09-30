@@ -50,6 +50,11 @@ footer i{
 	background-color:#1C4A9F;
 	color: white;
 }
+.mySubmit{
+	background-color:#029934!important;
+	color: white!important;
+	background-image: none!important;
+}
 .myBackgroundSostav{
 	background-image: url('../../uploads/Images/field6.jpg');
 	background-position: center;
@@ -81,6 +86,8 @@ div select{
 }
 table{
 	color: #1C4A9F!important;
+
+	width: 100%;
 }
 td{
 	color: #1C4A9F;

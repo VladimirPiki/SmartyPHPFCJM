@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.0, created on 2022-09-28 20:18:55
+/* Smarty version 4.2.0, created on 2022-09-30 14:29:03
   from 'D:\xampp\htdocs\SmartyPHPFCJM\demo\templates\outcome.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.0',
-  'unifunc' => 'content_6334900f118759_72208248',
+  'unifunc' => 'content_6336e10f417da2_36187547',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e9949b39fae39f84b457b5d08a4cd722bc0b6eeb' => 
     array (
       0 => 'D:\\xampp\\htdocs\\SmartyPHPFCJM\\demo\\templates\\outcome.tpl',
-      1 => 1664389089,
+      1 => 1664539940,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6334900f118759_72208248 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6336e10f417da2_36187547 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="table-responsive myViewCover22">
   <h3 class="text-center">Трансфери кој заминуваат</h3>
     <table class="table text-center">
@@ -32,7 +32,7 @@ function content_6334900f118759_72208248 (Smarty_Internal_Template $_smarty_tpl)
                     <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Името на клуб">
                 </th>
                 <th>
-                    <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Износот на трансфер">
+                    <input name="myInput" class="form-control text-center fw-bold" type="number" placeholder="Износот на трансфер">
                 </th>
                 <th>
                     <select class="form-control text-center myDropdown">

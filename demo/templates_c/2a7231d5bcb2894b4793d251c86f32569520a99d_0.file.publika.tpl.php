@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.0, created on 2022-09-28 21:07:01
+/* Smarty version 4.2.0, created on 2022-09-30 14:31:57
   from 'D:\xampp\htdocs\SmartyPHPFCJM\demo\templates\publika.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.0',
-  'unifunc' => 'content_63349b55e10a41_06231936',
+  'unifunc' => 'content_6336e1bdf3f8c2_08516587',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2a7231d5bcb2894b4793d251c86f32569520a99d' => 
     array (
       0 => 'D:\\xampp\\htdocs\\SmartyPHPFCJM\\demo\\templates\\publika.tpl',
-      1 => 1664389096,
+      1 => 1664541115,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63349b55e10a41_06231936 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6336e1bdf3f8c2_08516587 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="table-responsive myViewCover22">
     <h3 class="text-center">Публика</h3>
     <table class="table text-center">
@@ -60,7 +60,7 @@ for ($__section_publika_position_0_iteration = 1, $_smarty_tpl->tpl_vars['__smar
                     <td title="Измени"><i class="fa-solid fa-pen"></i></td>
                     <td title="Избриши <?php echo $_smarty_tpl->tpl_vars['publika']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_publika_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_publika_position']->value['index'] : null)]['datum_id'];?>
 ">
-                        <a href="index.php?file_name=delete&table_name=publika&publika=<?php echo $_smarty_tpl->tpl_vars['publika']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_publika_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_publika_position']->value['index'] : null)]['datum_id'];?>
+                        <a href="index.php?file_name=delete&table_name=publika&pk_value=<?php echo $_smarty_tpl->tpl_vars['publika']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_publika_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_publika_position']->value['index'] : null)]['datum_id'];?>
 " type="button" class="btn myBtn"> <i class="fa-solid fa-trash-can"></i></a>
                     </td>
                 </tr>
