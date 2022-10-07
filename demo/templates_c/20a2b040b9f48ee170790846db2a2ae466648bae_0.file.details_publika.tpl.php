@@ -1,4 +1,27 @@
-<div class="myViewProfilnaNova">
+<?php
+/* Smarty version 4.2.0, created on 2022-10-07 19:07:22
+  from 'D:\xampp\htdocs\SmartyPHPFCJM\demo\templates\details_publika.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.2.0',
+  'unifunc' => 'content_63405ccae565c6_36601744',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '20a2b040b9f48ee170790846db2a2ae466648bae' => 
+    array (
+      0 => 'D:\\xampp\\htdocs\\SmartyPHPFCJM\\demo\\templates\\details_publika.tpl',
+      1 => 1665154342,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_63405ccae565c6_36601744 (Smarty_Internal_Template $_smarty_tpl) {
+?><div class="myViewProfilnaNova">
   <h3  class="text-center">
     Публика
   </h3>
@@ -29,4 +52,5 @@
       <input type="hidden" name="table_name" value="publika">
       <input type="submit" class="btn mySubmit mb-5" id="save">
   </form>
-</div>
+</div><?php }
+}

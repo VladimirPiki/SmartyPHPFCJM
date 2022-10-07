@@ -6,6 +6,7 @@ $(document).ready(function(){
   $("span#wrong_fourCharacters").hide();
   $("span#wrong_fiveCharacters").hide();
   $("span#wrong_yearsCharacters").hide();
+  $( "span#dialog-confirm" ).hide();
 
   //.on da premini vo .delegate
     $("input[name='myInput']").on("keyup", function() {
@@ -14,25 +15,6 @@ $(document).ready(function(){
         $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
       });
     });
-
-
-    $("input[name='myInputDet']").on("keyup", function() {
-      var value = $(this).val().toLowerCase();
-      $("#mySelect").filter(function() {
-        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-      });
-    });
-
-    $("button[name='mojDijalog']").click(function() {
-      $( "#dialog-message" ).dialog({
-        modal: true,
-        buttons: {
-          Ok: function() {
-            $( this ).dialog( "close" );
-          }
-        }
-      });
-    } );
 
     $("submit#save").click(function(){
       // $(this).hide();

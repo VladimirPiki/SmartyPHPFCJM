@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.0, created on 2022-09-30 14:29:03
+/* Smarty version 4.2.0, created on 2022-10-07 21:44:09
   from 'D:\xampp\htdocs\SmartyPHPFCJM\demo\templates\outcome.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.0',
-  'unifunc' => 'content_6336e10f417da2_36187547',
+  'unifunc' => 'content_63408189a22986_35261597',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e9949b39fae39f84b457b5d08a4cd722bc0b6eeb' => 
     array (
       0 => 'D:\\xampp\\htdocs\\SmartyPHPFCJM\\demo\\templates\\outcome.tpl',
-      1 => 1664539940,
+      1 => 1665171606,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6336e10f417da2_36187547 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63408189a22986_35261597 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="table-responsive myViewCover22">
   <h3 class="text-center">Трансфери кој заминуваат</h3>
     <table class="table text-center">
@@ -35,17 +35,7 @@ function content_6336e10f417da2_36187547 (Smarty_Internal_Template $_smarty_tpl)
                     <input name="myInput" class="form-control text-center fw-bold" type="number" placeholder="Износот на трансфер">
                 </th>
                 <th>
-                    <select class="form-control text-center myDropdown">
-                        <option class="myDropdown"  value="">Број на дрес, име, презиме, позиција, години</option>
-                        <option class="myDropdown" >
-                            <?php echo $_smarty_tpl->tpl_vars['igrachi']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index'] : null)]['dres_id'];?>
- || <?php echo $_smarty_tpl->tpl_vars['igrachi']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index'] : null)]['ime_igrachi'];?>
-  <?php echo $_smarty_tpl->tpl_vars['igrachi']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index'] : null)]['prezime_igrachi'];?>
- || <?php echo $_smarty_tpl->tpl_vars['igrachi']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index'] : null)]['pozicija_igrachi'];?>
- || <?php echo $_smarty_tpl->tpl_vars['igrachi']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_igrachi_position']->value['index'] : null)]['godini_igrachi'];?>
-
-                        </option>
-                    </select>
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Број на дрес, име, презиме, позиција, години">
                 </th>
                 <th><i class="fa-solid fa-pen"></i>Измени</th>
                 <th><i class="fa-solid fa-trash-can"></i>Избриши</th>

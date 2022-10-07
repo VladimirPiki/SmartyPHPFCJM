@@ -18,31 +18,14 @@
                 </th>
 
                  <th>
-                    <select class="form-control text-center myDropdown">
-                        {section name=sostav_position loop=$sostav}
-                            <option class="myDropdown" value="">Состав</option>
-                            <option class="myDropdown" >
-                                {$sostav[sostav_position].datum_sostav}
-                            </option>
-                         {/section}
-                    </select>
+                     <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Состав">
                 </th>
 
                 <th>
-                    <select class="form-control text-center myDropdown">
-                        <option class="myDropdown" value="">Стадион</option>
-                        <option class="myDropdown">
-                            {$stadion[stadion_position].ime}
-                        </option>
-                    </select>
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Стадион">
                 </th>
                 <th>
-                    <select class="form-control text-center myDropdown">
-                        <option class="myDropdown" value="">Публика</option>
-                        <option class="myDropdown ">
-                            {$publika[publika_position].datum_id}
-                        </option>
-                    </select>
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Публика">
                 </th>
                 <th><i class="fa-solid fa-pen"></i>Измени</th>
                 <th><i class="fa-solid fa-trash-can"></i>Избриши</th>
@@ -58,12 +41,10 @@
                 <td>{$natprevaruvanje[natprevaruvanje_position].rezultat}</td>
                 <td>{$natprevaruvanje[natprevaruvanje_position].mesto}</td>
                 <td>
-                    <button type="button" class="btn myBtn"> <i class="fa-solid fa-shirt"></i></button>
+                    <button type="button" id="sostav" class="btn myBtn"> <i class="fa-solid fa-shirt"></i></button>
                 </td>
                 <td>{$natprevaruvanje[natprevaruvanje_position].ime}</td>
-                <td>
-                    <button type="button" class="btn myBtn"><i class="fa-solid fa-futbol"></i></button>
-                </td>
+                <td class="d-block">{$natprevaruvanje[natprevaruvanje_position].domashna} домашна  {$natprevaruvanje[natprevaruvanje_position].gostinska} гостинска</td>
                 <td title="Измени"><i class="fa-solid fa-pen"></i></td>
                 <td title="Избриши {$natprevaruvanje[natprevaruvanje_position].kolo_id} коло || {$natprevaruvanje[natprevaruvanje_position].datum} || {$natprevaruvanje[natprevaruvanje_position].protivnik}">
                     <a href="index.php?file_name=delete&table_name=natprevaruvanje&pk_value={$natprevaruvanje[natprevaruvanje_position].kolo_id}" type="button" class="btn myBtn"><i class="fa-solid fa-trash-can"></i></a>

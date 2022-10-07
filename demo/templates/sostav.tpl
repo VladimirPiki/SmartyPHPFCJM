@@ -5,28 +5,13 @@
             <tr class="text-center">
                 <th>Составот на колото</th>
                 <th>
-                    <select class="form-control text-center myDropdown">
-                        <option class="myDropdown" value="">Датум</option>
-                        <option class="myDropdown" >
-                        {$natprevaruvanje[natprevaruvanje_position].datum}
-                        </option>
-                    </select>
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Датум">
                 </th>
                 <th>
-                    <select class="form-control text-center myDropdown" >
-                        <option class="myDropdown"  value="">Натпревар</option>
-                        <option class="myDropdown">
-                        {$natprevaruvanje[natprevaruvanje_position].protivnik} || {$natprevaruvanje[natprevaruvanje_position].rezultat} || {$natprevaruvanje[natprevaruvanje_position].mesto}
-                        </option>
-                    </select>
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Натпревар">
                 </th>
                 <th>
-                    <select class="form-control text-center myDropdown">
-                        <option class="myDropdown" value="">Состав</option>
-                        <option class="myDropdown" >
-                            {$sostav[sostav_position].sostav_id} || {$sostav[sostav_position].datum_sostav}  || {$sostav[sostav_position].natprevar}
-                        </option>
-                    </select>
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Состав">
                 </th>
                 <th></th>
                 <th><i class="fa-solid fa-pen"></i>Измени</th>
@@ -54,15 +39,3 @@
         </tbody>
     </table>
 </div>
-
-<div id="dialog-message" title="Download complete">
-  <p>
-    <span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span>
-    Your files have downloaded successfully into the My Downloads folder.
-  </p>
-  <p>
-    Currently using <b>36% of your storage space</b>.
-  </p>
-</div>
- 
-<p>Sed vel diam id libero <a href="http://example.com">rutrum convallis</a>. Donec aliquet leo vel magna. Phasellus rhoncus faucibus ante. Etiam bibendum, enim faucibus aliquet rhoncus, arcu felis ultricies neque, sit amet auctor elit eros a lectus.</p>

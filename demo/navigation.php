@@ -52,11 +52,11 @@ $menu=array(
 				"url"=>"templates/details_income.tpl"),
 	"11"=>array("title"=>"Внесете натпреварување",
 				"page"=>"details_natprevaruvanje",
-				"table_name"=>"details_natprevaruvanje",
+				"table_name"=>"stadion",
 				"url"=>"templates/details_natprevaruvanje.tpl"),
 	"12"=>array("title"=>"Играчи кој заминуваат",
 				"page"=>"details_outcome",
-				"table_name"=>"details_outcome",
+				"table_name"=>"igrachi",
 				"url"=>"templates/details_outcome.tpl"),
 	"13"=>array("title"=>"Внесете публика",
 				"page"=>"details_publika",
@@ -64,7 +64,7 @@ $menu=array(
 				"url"=>"templates/details_publika.tpl"),
 	"14"=>array("title"=>"Внесете состав",
 				"page"=>"details_sostav",
-				"table_name"=>"details_sostav",
+				"table_name"=>"igrachi",
 				"url"=>"templates/details_sostav.tpl"),
 	"15"=>array("title"=>"Внесете стадион",
 				"page"=>"details_stadion",
@@ -72,7 +72,7 @@ $menu=array(
 				"url"=>"templates/details_stadion.tpl"),
 	"16"=>array("title"=>"Внесете стручен штаб",
 				"page"=>"details_uprava",
-				"table_name"=>"details_uprava",
+				"table_name"=>"igrachi",
 				"url"=>"templates/details_uprava.tpl")
 );
 

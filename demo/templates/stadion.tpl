@@ -5,13 +5,13 @@
             <tr class="text-center display-6">
                 <th>Стадион</th>
                 <th>
-                    <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Пребарај по име на стадионот">
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Име на стадионот">
                 </th>
                 <th>
-                    <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Пребарај по адреса на стадионот">
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Адреса на стадионот">
                 </th>
                 <th>
-                    <input name="myInput" class="form-control text-center fw-bold" type="number"  placeholder="Пребарај по капацитет на стадионот">
+                    <input name="myInput" class="form-control text-center fw-bold" type="number"  placeholder="Капацитет на стадионот">
                 </th>
                 <th><i class="fa-solid fa-pen"></i>Измени</th>
                 <th><i class="fa-solid fa-trash-can"></i>Избриши</th>

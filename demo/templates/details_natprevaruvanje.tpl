@@ -16,7 +16,7 @@
         </div>
         <div class="mb-3">
             <label for="datum" class="form-label">Датум</label>
-            <input type="datetime-local" class="form-control myInputDetails" id="datum" name="datum" placeholder="yyyy-MM-ddTHH:mm:ss" min="2001-01-01T00:00:00" max="2222-12-31T00:00:00" required >
+            <input type="datetime-local" class="form-control myInputDetails" id="datum" name="datum" placeholder="yyyy-MM-ddTHH:mm:ssPM" min="2001-01-01T00:00:00" max="2222-12-31T00:00:00" required>
         </div>
         <div class="mb-3">
             <label for="protivnik" class="form-label">Противник</label>
@@ -35,32 +35,22 @@
         </div>
         <div class="mb-3">
             <label for="sostav_id" class="form-label">Составот на колото</label>
-                          <select class="form-control myInputDetails" id="sostav_id" name="sostav_id">
-            {section name=sostav_position loop=$sostav}
-                        <option  class="text-light" value="{$sostav[sostav_position].sostav_id}" >
-                        {$sostav[sostav_position].datum_sostav}  {$sostav[sostav_position].natprevar}
-                        </option>
-            {/section}
-                </select>
+            <span class="alert alert-danger" id="wrong_oneCharacters">Внесете број на составот во кое се одигра утакмицата со најмалку 1 карактери!!!</span>
+            <input type="number" class="form-control myInputDetails"  placeholder="Внесете  број на составот во кое коло се одигра утакмицата"  id="sostav_id" name="sostav_id"> 
         </div>
         <div class="mb-3">
             <label for="stadion_id" class="form-label">Број на стадион</label>
                 <select class="form-control myInputDetails" id="stadion_id" name="stadion_id">
-                    {section name=stadion_position loop=$stadion}
-                        <option  class="text-light" value="{$stadion[stadion_position].stadion_id}" >
-                        {$stadion[stadion_position].stadion_id}  {$stadion[stadion_position].ime} {$stadion[stadion_position].adresa}
-                        </option>
-                    {/section}
+                            {section name=stadion_position loop=$stadion}
+                                        <option  class="text-light" value="{$stadion[stadion_position].stadion_id}" >
+                                        {$stadion[stadion_position].stadion_id} || {$stadion[stadion_position].ime} || {$stadion[stadion_position].adresa} || {$stadion[stadion_position].kapacitet}
+                                        </option>
+                            {/section}
                 </select>
         </div>
         <div class="mb-3">
             <label for="datum_id" class="form-label">Датум</label>
-                <select class="form-control myInputDetails" >
-                    <option  class="text-light" value="">Изберете опции</option>
-                    <option  class="text-light" value="" >
-                   
-                    </option>
-                </select>
+            <input type="date" class="form-control myInputDetails" id="datum_id" name="datum_id">  
         </div>
       <input type="hidden" name="file_name" value="insert">
       <input type="hidden" name="table_name" value="natprevaruvanje">

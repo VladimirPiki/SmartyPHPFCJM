@@ -8,7 +8,7 @@
   <span class="alert alert-danger" id="wrong_threeCharacters">
     Ве молиме пополнете го правилно формуларот!
   </span>
-  <form name="myForm">
+  <form action="index.php" method="get">
       <div class="mb-3">
         <label for="ime" class="form-label">Име на стадион</label>
         <span class="alert alert-danger" id="wrong_threeCharacters">Внесете име со најмалце 3 карактери!!!</span>
@@ -24,6 +24,8 @@
           <span class="alert alert-danger" id="wrong_threeCharacters">Внесете капацитет со најмалце 3 бројки!!!</span>
           <input type="number" class="form-control myInputDetails"  placeholder="Внесете го капацитетот на стадионот"  id="kapacitet"  name="kapacitet" >
       </div>
-        <input type="submit" class="btn myBtn mb-5" id="save">Save</input>
+       <input type="hidden" name="file_name" value="insert">
+      <input type="hidden" name="table_name" value="stadion">
+      <input type="submit" class="btn mySubmit mb-5" id="save">
     </form>
 </div>

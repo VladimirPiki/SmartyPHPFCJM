@@ -44,11 +44,11 @@
             <label for="income_id" class="form-label">Број на трансфер што доаѓа</label>
 
             <select class="form-control myInputDetails" id="income_id" name="income_id">
-  {section name=income_position loop=$income}
+        {section name=income_position loop=$income}
               <option class="text-light" value="{$income[income_position].income_id}">
-              {$income[income_position].ime} {$income[income_position].prezime}
+              {$income[income_position].ime} {$income[income_position].prezime} || {$income[income_position].pozicija} || {$income[income_position].godini}
               </option>
-  {/section}
+        {/section}
             </select>
    
         </div>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.0, created on 2022-09-30 19:57:07
+/* Smarty version 4.2.0, created on 2022-10-07 16:59:38
   from 'D:\xampp\htdocs\SmartyPHPFCJM\demo\templates\details_igrachi.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.0',
-  'unifunc' => 'content_63372df366e2c7_56065122',
+  'unifunc' => 'content_63403eda867c02_22495915',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd6ca3070659a14f9b3801da6761874d4d2ebbdde' => 
     array (
       0 => 'D:\\xampp\\htdocs\\SmartyPHPFCJM\\demo\\templates\\details_igrachi.tpl',
-      1 => 1664560590,
+      1 => 1665154758,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63372df366e2c7_56065122 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63403eda867c02_22495915 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="myViewProfilnaNova">
   <h3 class="text-center">
     Играчи
@@ -67,7 +67,7 @@ function content_63372df366e2c7_56065122 (Smarty_Internal_Template $_smarty_tpl)
             <label for="income_id" class="form-label">Број на трансфер што доаѓа</label>
 
             <select class="form-control myInputDetails" id="income_id" name="income_id">
-  <?php
+        <?php
 $__section_income_position_0_loop = (is_array(@$_loop=$_smarty_tpl->tpl_vars['income']->value) ? count($_loop) : max(0, (int) $_loop));
 $__section_income_position_0_total = $__section_income_position_0_loop;
 $_smarty_tpl->tpl_vars['__smarty_section_income_position'] = new Smarty_Variable(array());
@@ -78,9 +78,11 @@ for ($__section_income_position_0_iteration = 1, $_smarty_tpl->tpl_vars['__smart
 ">
               <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['ime'];?>
  <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['prezime'];?>
+ || <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['pozicija'];?>
+ || <?php echo $_smarty_tpl->tpl_vars['income']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_income_position']->value['index'] : null)]['godini'];?>
 
               </option>
-  <?php
+        <?php
 }
 }
 ?>

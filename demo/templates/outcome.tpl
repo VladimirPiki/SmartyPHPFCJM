@@ -12,12 +12,7 @@
                     <input name="myInput" class="form-control text-center fw-bold" type="number" placeholder="Износот на трансфер">
                 </th>
                 <th>
-                    <select class="form-control text-center myDropdown">
-                        <option class="myDropdown"  value="">Број на дрес, име, презиме, позиција, години</option>
-                        <option class="myDropdown" >
-                            {$igrachi[igrachi_position].dres_id} || {$igrachi[igrachi_position].ime_igrachi}  {$igrachi[igrachi_position].prezime_igrachi} || {$igrachi[igrachi_position].pozicija_igrachi} || {$igrachi[igrachi_position].godini_igrachi}
-                        </option>
-                    </select>
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Број на дрес, име, презиме, позиција, години">
                 </th>
                 <th><i class="fa-solid fa-pen"></i>Измени</th>
                 <th><i class="fa-solid fa-trash-can"></i>Избриши</th>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.0, created on 2022-09-30 13:38:02
+/* Smarty version 4.2.0, created on 2022-10-07 21:45:16
   from 'D:\xampp\htdocs\SmartyPHPFCJM\demo\templates\stadion.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.0',
-  'unifunc' => 'content_6336d51ac8e1d3_62598993',
+  'unifunc' => 'content_634081cce9f719_16366753',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'bd64afba437539ecd2c6ad25dce445f34ff697e9' => 
     array (
       0 => 'D:\\xampp\\htdocs\\SmartyPHPFCJM\\demo\\templates\\stadion.tpl',
-      1 => 1664389119,
+      1 => 1665171913,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6336d51ac8e1d3_62598993 (Smarty_Internal_Template $_smarty_tpl) {
+function content_634081cce9f719_16366753 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="table-responsive myViewCover22">
     <h3 class="text-center">Стадион</h3>
     <table class="table">
@@ -28,13 +28,13 @@ function content_6336d51ac8e1d3_62598993 (Smarty_Internal_Template $_smarty_tpl)
             <tr class="text-center display-6">
                 <th>Стадион</th>
                 <th>
-                    <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Пребарај по име на стадионот">
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Име на стадионот">
                 </th>
                 <th>
-                    <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Пребарај по адреса на стадионот">
+                    <input name="myInput" class="form-control text-center fw-bold" type="text" placeholder="Адреса на стадионот">
                 </th>
                 <th>
-                    <input name="myInput" class="form-control text-center fw-bold" type="number"  placeholder="Пребарај по капацитет на стадионот">
+                    <input name="myInput" class="form-control text-center fw-bold" type="number"  placeholder="Капацитет на стадионот">
                 </th>
                 <th><i class="fa-solid fa-pen"></i>Измени</th>
                 <th><i class="fa-solid fa-trash-can"></i>Избриши</th>
